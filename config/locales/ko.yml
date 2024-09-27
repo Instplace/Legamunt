@@ -1777,6 +1777,9 @@ ko:
     modern-contrast: "모던 / 고대비"
     modern: "모던 / 다크"
     modern-light: "모던 / 라이트"
+    bird-contrast: "짹쨱 / 고대비"
+    bird: "짹짹 / 다크"
+    bird-light: "짹짹 / 라이트"
   time:
     formats:
       default: "%Y-%m-%d %H:%M"

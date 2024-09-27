@@ -1804,11 +1804,14 @@ en:
     default: Mastodon (Dark)
     mastodon-light: Mastodon (Light)
     system: Automatic (use system theme)
-    tangerineui-cherry: Cherry UI
-    tangerineui-lagoon: Lagoon UI
+    tangerineui-cherry: Tangerine (Cherry)
+    tangerineui-lagoon: Tangerine (Lagoon)
     modern-contrast: Modern (High contrast)
     modern: Modern (Dark)
     modern-light: Modern (Light)
+    bird-contrast: Bird (High contrast)
+    bird: Bird (Dark)
+    bird-light: Bird (Light)
   time:
     formats:
       default: "%b %d, %Y, %H:%M"
