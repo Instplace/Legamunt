@@ -233,7 +233,7 @@ class Request
       contents
     end
 
-    def body_with_limit(limit = 1.megabyte)
+    def body_with_limit(limit = 30.megabyte)
       require_limit_not_exceeded!(limit)
 
       contents = truncated_body(limit)
