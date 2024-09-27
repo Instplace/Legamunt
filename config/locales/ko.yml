@@ -1768,10 +1768,15 @@ ko:
   tags:
     does_not_match_previous_name: 이전 이름과 맞지 않습니다
   themes:
-    contrast: 마스토돈 (고대비)
-    default: 마스토돈 (어두움)
-    mastodon-light: 마스토돈 (밝음)
-    system: 자동 (시스템 테마 사용)
+    contrast: "마스토돈 / 고대비"
+    default: "마스토돈 / 다크"
+    mastodon-light: "마스토돈 / 라이트"
+    system: "마스토돈 / 자동"
+    tangerineui-cherry: "감귤 UI / 체리"
+    tangerineui-lagoon: "감귤 UI / 블루탱"
+    modern-contrast: "모던 / 고대비"
+    modern: "모던 / 다크"
+    modern-light: "모던 / 라이트"
   time:
     formats:
       default: "%Y-%m-%d %H:%M"
