@@ -30,7 +30,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/mastodon/mastodon.git"
+    "url": "https://github.com/SWREI/high-school.band.git"
   },
   "private": true,
   "dependencies": {
