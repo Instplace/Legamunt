@@ -11,6 +11,7 @@ $grey-600: hsl(240deg, 8%, 33%); // Trout
 $grey-100: hsl(240deg, 51%, 90%); // Topaz
 
 $success-green: #79bd9a !default; // Padua
+$success-green: #79bd9a !default; // Padua
 $error-red: $red-500 !default; // Cerise
 $warning-red: #ff5050 !default; // Sunset Orange
 $gold-star: #ca8f04 !default; // Dark Goldenrod
@@ -90,7 +91,7 @@ $media-modal-media-max-height: 80%;
 $no-gap-breakpoint: 1175px;
 $mobile-breakpoint: 630px;
 
-$font-sans-serif: 'mastodon-font-sans-serif' !default;
+$font-sans-serif: 'Pretendard JP' !default;
 $font-display: 'mastodon-font-display' !default;
 $font-monospace: 'mastodon-font-monospace' !default;
 
