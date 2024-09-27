@@ -1804,6 +1804,8 @@ en:
     default: Mastodon (Dark)
     mastodon-light: Mastodon (Light)
     system: Automatic (use system theme)
+    tangerineui-cherry: Cherry UI
+    tangerineui-lagoon: Lagoon UI
   time:
     formats:
       default: "%b %d, %Y, %H:%M"
