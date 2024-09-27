@@ -16,7 +16,7 @@ Rails.application.config.content_security_policy do |p|
   p.base_uri        :none
   p.default_src     :none
   p.frame_ancestors :none
-  p.font_src        :self, assets_host
+  p.font_src        :self, :blob, assets_host, :unsafe_inline, *media_hosts
   p.img_src         :self, :data, :blob, *media_hosts
   p.style_src       :self, assets_host, *media_hosts
   p.media_src       :self, :data, *media_hosts
@@ -28,8 +28,8 @@ Rails.application.config.content_security_policy do |p|
     p.form_action :self
   end
 
-  p.child_src  :self, :blob, assets_host
-  p.worker_src :self, :blob, assets_host
+  p.child_src  :self, :blob, assets_host, :unsafe_inline, *media_hosts
+  p.worker_src :self, :blob, assets_host, :unsafe_inline, *media_hosts
 
   if Rails.env.development?
     webpacker_public_host = ENV.fetch('WEBPACKER_DEV_SERVER_PUBLIC', Webpacker.config.dev_server[:public])
@@ -66,7 +66,7 @@ Rails.application.reloader.to_prepare do
 
   if Rails.env.development?
     LetterOpenerWeb::LettersController.content_security_policy do |p|
-      p.child_src       :self
+      p.child_src       :self, :unsafe_inline, *media_hosts
       p.connect_src     :none
       p.frame_ancestors :self
       p.frame_src       :self
