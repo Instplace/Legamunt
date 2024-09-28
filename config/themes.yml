@@ -1,11 +1,12 @@
-default: styles/application.scss
-contrast: styles/contrast.scss
-mastodon-light: styles/mastodon-light.scss
+default: styles/tangerineui-cherry.scss
+# default: styles/application.scss
+# contrast: styles/contrast.scss
+# mastodon-light: styles/mastodon-light.scss
 tangerineui-cherry: styles/tangerineui-cherry.scss
 tangerineui-lagoon: styles/tangerineui-lagoon.scss
-modern-contrast: styles/modern-contrast.scss
-modern: styles/modern.scss
-modern-light: styles/modern-light.scss
-bird-contrast: styles/bird-contrast.scss
-bird: styles/bird.scss
-bird-light: styles/bird-light.scss
+# modern-contrast: styles/modern-contrast.scss
+# modern: styles/modern.scss
+# modern-light: styles/modern-light.scss
+# bird-contrast: styles/bird-contrast.scss
+# bird: styles/bird.scss
+# bird-light: styles/bird-light.scss

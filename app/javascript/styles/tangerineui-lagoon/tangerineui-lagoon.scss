@@ -7006,7 +7006,7 @@ a:is(.active,
 .app-body .about__section:nth-child(3) {
   order: 3;
 }
-.app-body .about__meta {
+.app-body .about__section:nth-child(2) {
   order: 2;
 }
 .app-body .about__section:nth-child(4) {
@@ -7021,7 +7021,7 @@ a:is(.active,
 .app-body .about__footer {
   order: 7;
 }
-.app-body #mastodon > div > div > div.columns-area__panels > div.columns-area__panels__main > div.columns-area.columns-area--mobile > div > div > div.about__section.active:nth-of-type(3) > div.about__section__title {
+.app-body #mastodon > div > div > div.columns-area__panels > div.columns-area__panels__main > div.columns-area.columns-area--mobile > div > div > div.about__section.active:nth-of-type(2) > div.about__section__title {
   display: none;
 }
 .app-body .about__header p,
