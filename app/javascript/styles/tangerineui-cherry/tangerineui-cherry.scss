@@ -7102,7 +7102,7 @@ a:is(.active,
 .app-body .about__section.active .about__section__title {
   border-radius: 8px 8px 0 0;
 }
-.app-body .about__section.active:not(:nth-of-type(3)) .about__section__body {
+.app-body .about__section.active:not(:nth-of-type(2)) .about__section__body {
   border: 0 !important;
   background-color: var(--color-content-secondary-bg);
   border-radius: 0 0 8px 8px;
