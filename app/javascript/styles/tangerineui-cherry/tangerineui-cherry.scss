@@ -7001,7 +7001,7 @@ a:is(.active,
 }
 .app-body .about__header {
   order: 1;
-  margin-bottom: 10px;
+  margin-bottom: 5px;
 }
 .app-body .about__section:nth-child(3) {
   order: 3;
@@ -7036,7 +7036,8 @@ a:is(.active,
 }
 .app-body .about__header__hero,
 .app-body .about__meta {
-  margin-bottom: 10px;
+  margin-top: 20px;
+  margin-bottom: 0;
 }
 .app-body .about__header > h1 {
   color: var(--color-content-fg);
@@ -7049,7 +7050,7 @@ a:is(.active,
   opacity: .8;
   text-align: left;
   margin-left: 20px;
-  margin-bottom: 15px;
+//  margin-bottom: 15px;
   font-size: 14px;
 }
 @media screen and (min-width:890px) {
