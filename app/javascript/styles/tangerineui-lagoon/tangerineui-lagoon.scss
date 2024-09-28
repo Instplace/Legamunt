@@ -7034,7 +7034,9 @@ a:is(.active,
   border-radius: 0;
   background-color: var(--color-content-bg);
 }
-.app-body .about__header__hero,
+.app-body .about__header__hero {
+  margin-bottom: 10px;
+}
 .app-body .about__meta {
   margin-top: 20px;
   margin-bottom: 0;
