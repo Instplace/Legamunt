@@ -5,7 +5,10 @@ module Account::Header
 
   IMAGE_MIME_TYPES = ['image/jpeg', 'image/png', 'image/gif', 'image/webp'].freeze
   LIMIT = 200.megabytes
-  MAX_PIXELS = 5_000_000 # 1500x500px
+
+  HEADER_DIMENSIONS = [6000, 2000].freeze
+  HEADER_GEOMETRY = [HEADER_DIMENSIONS.first, HEADER_DIMENSIONS.last].join('x')
+  MAX_PIXELS = HEADER_DIMENSIONS.first * HEADER_DIMENSIONS.last
 
   class_methods do
     def header_styles(file)
