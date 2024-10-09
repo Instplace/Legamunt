@@ -8,7 +8,7 @@
 
 /* 📄 Meta */
 :root {
-  --version: "v2.0.0-pre7~";
+  --version: "v2.0";
 
   --variant-name: "Lagoon";
   --variant-emoji: "\1F420\00A0";
@@ -4098,8 +4098,18 @@ button {
   border: 0;
   z-index: 1;
 }
-.app-body .compose-panel hr, .navigation-panel hr {
+.app-body .compose-panel hr,
+.app-body .navigation-panel .list-panel hr {
   display: none;
+}
+
+@media screen and (min-width:1175px) {
+  .app-body .navigation-panel hr:has(+ .column-link[href="/settings/preferences"]) {
+    margin-right: 25px;
+    margin-left: 10px;
+    margin-bottom: 12px;
+    border-color: var(--color-lines);
+  }
 }
 .app-body .column-link span {
   vertical-align: middle;
