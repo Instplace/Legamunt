@@ -21,6 +21,13 @@ class PublicStatusesIndex < Chewy::Index
       },
     },
 
+    tokenizer: {
+      nori: {
+        type: 'nori_tokenizer',
+        decompound_mode: 'mixed',
+      },
+    },
+
     analyzer: {
       verbatim: {
         tokenizer: 'uax_url_email',
@@ -28,7 +35,7 @@ class PublicStatusesIndex < Chewy::Index
       },
 
       content: {
-        tokenizer: 'standard',
+        tokenizer: 'nori',
         filter: %w(
           lowercase
           asciifolding
