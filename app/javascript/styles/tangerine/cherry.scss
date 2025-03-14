@@ -4614,7 +4614,10 @@ div[tabindex='-1']
     position: fixed;
   }
 
-  .app-body:not(.layout-multiple-columns, :has(.ui .ui__header__links > .button[href='/auth/sign_in']))
+  .app-body:not(
+      .layout-multiple-columns,
+      :has(.ui .ui__header__links > .button[href='/auth/sign_in'])
+    )
     .tabs-bar__wrapper {
     z-index: 3;
   }
@@ -4941,16 +4944,17 @@ div[tabindex='-1']
   border: 0;
   width: 50px;
   height: 50px;
-  background-image: var(--logo);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: 32px auto;
+
+  //  background-image: var(--logo);
+  //  background-repeat: no-repeat;
+  //  background-position: center;
+  //  background-size: 32px auto;
 }
 
-.app-body .column-link.column-link--logo svg,
-.app-body .ui__header__logo svg {
-  display: none;
-}
+// .app-body .column-link.column-link--logo img,
+// .app-body .ui__header__logo img {
+//   display: none;
+// }
 
 .app-body .navigation-panel__logo {
   margin-bottom: 5px;
