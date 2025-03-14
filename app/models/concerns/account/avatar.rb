@@ -3,11 +3,9 @@
 module Account::Avatar
   extend ActiveSupport::Concern
 
-  IMAGE_MIME_TYPES = ['image/jpeg', 'image/png', 'image/gif', 'image/webp'].freeze
-  LIMIT = 200.megabytes
-  MAX_PIXELS = 5_000_000 # 1500x500px
-
-  AVATAR_DIMENSIONS = [400, 400].freeze
+  AVATAR_IMAGE_MIME_TYPES = ['image/jpeg', 'image/png', 'image/gif', 'image/webp'].freeze
+  AVATAR_LIMIT = Rails.configuration.x.use_vips ? 400.megabytes : 200.megabytes
+  AVATAR_DIMENSIONS = [4096, 4096].freeze
   AVATAR_GEOMETRY = [AVATAR_DIMENSIONS.first, AVATAR_DIMENSIONS.last].join('x')
 
   class_methods do
@@ -23,9 +21,9 @@ module Account::Avatar
   included do
     # Avatar upload
     has_attached_file :avatar, styles: ->(f) { avatar_styles(f) }, convert_options: { all: '+profile "!icc,*" +set date:modify +set date:create +set date:timestamp' }, processors: [:lazy_thumbnail]
-    validates_attachment_content_type :avatar, content_type: IMAGE_MIME_TYPES
-    validates_attachment_size :avatar, less_than: LIMIT
-    remotable_attachment :avatar, LIMIT, suppress_errors: false
+    validates_attachment_content_type :avatar, content_type: AVATAR_IMAGE_MIME_TYPES
+    validates_attachment_size :avatar, less_than: AVATAR_LIMIT
+    remotable_attachment :avatar, AVATAR_LIMIT, suppress_errors: false
   end
 
   def avatar_original_url

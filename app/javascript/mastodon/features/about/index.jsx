@@ -13,12 +13,12 @@ import { connect } from 'react-redux';
 import ChevronRightIcon from '@/material-icons/400-24px/chevron_right.svg?react';
 import ExpandMoreIcon from '@/material-icons/400-24px/expand_more.svg?react';
 import { fetchServer, fetchExtendedDescription, fetchDomainBlocks  } from 'mastodon/actions/server';
+import { Account } from 'mastodon/components/account';
 import Column from 'mastodon/components/column';
 import { Icon  }  from 'mastodon/components/icon';
 import { ServerHeroImage } from 'mastodon/components/server_hero_image';
 import { Skeleton } from 'mastodon/components/skeleton';
-import Account from 'mastodon/containers/account_container';
-import LinkFooter from 'mastodon/features/ui/components/link_footer';
+import { LinkFooter } from 'mastodon/features/ui/components/link_footer';
 
 const messages = defineMessages({
   title: { id: 'column.about', defaultMessage: 'About' },
@@ -140,7 +140,7 @@ class About extends PureComponent {
             ) : (extendedDescription.get('content')?.length > 0 ? (
               <div
                 className='prose'
-                dangerouslySetInnerHTML={{__html: extendedDescription.get('content')}}
+                dangerouslySetInnerHTML={{ __html: extendedDescription.get('content') }}
               />
             ) : (
               <p><FormattedMessage id='about.not_available' defaultMessage='This information has not been made available on this server.' /></p>
@@ -165,8 +165,7 @@ class About extends PureComponent {
 
           <Section title={intl.formatMessage(messages.rules)}>
             {!isLoading && (server.get('rules', ImmutableList()).isEmpty() ? (
-              <p><FormattedMessage id='about.not_available'
-                                   defaultMessage='This information has not been made available on this server.'/></p>
+              <p><FormattedMessage id='about.not_available' defaultMessage='This information has not been made available on this server.' /></p>
             ) : (
               <ol className='rules-list'>
                 {server.get('rules').map(rule => (
