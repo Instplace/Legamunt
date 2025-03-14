@@ -3,7 +3,7 @@ ko:
   devise:
     confirmations:
       confirmed: 이메일 인증이 완료되었습니다.
-      send_instructions: 몇 분 이내로 확인 이메일이 발송 됩니다. 이메일을 받지 못했다면 스팸 폴더를 확인하세요.
+      send_instructions: 몇 분 이내로 확인 이메일이 발송됩니다. 이메일을 받지 못했다면 스팸 폴더를 확인하세요.
       send_paranoid_instructions: 해당 이메일로 등록된 계정이 있다면 곧 이메일이 발송될 것입니다. 이메일을 받지 못했다면 스팸 폴더를 확인하세요.
     failure:
       already_authenticated: 이미 로그인되어 있습니다.

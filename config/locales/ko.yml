@@ -1,10 +1,10 @@
 ---
 ko:
   about:
-    about_mastodon_html: '미래의 소셜 네트워크: 광고 없음, 기업 감시 없음, 윤리적 설계, 탈중앙화! 여러분만의 데이터를 Mastodon으로 보호하고 누리세요!'
+    about_mastodon_html: '레가문트에서 광고 없는 나만의 SNS 경험을 펼쳐나가보세요.'
     contact_missing: 미설정
     contact_unavailable: 없음
-    hosted_on: "%{domain}에서 호스팅 되는 마스토돈"
+    hosted_on: "레가문트, 그리고 %{domain}"
     title: 정보
   accounts:
     followers:
@@ -12,14 +12,14 @@ ko:
     following: 팔로잉
     instance_actor_flash: 이 계정은 서버 자신을 나타내기 위한 가상의 계정이며 개인 사용자가 아닙니다. 이 계정은 연합을 위해 사용되며 정지되지 않아야 합니다.
     last_active: 최근 활동
-    link_verified_on: "%{date}에 이 링크의 소유가 확인되었습니다"
-    nothing_here: 아무 것도 없습니다!
+    link_verified_on: "%{date}에 마지막으로 이 링크를 소유함을 확인했습니다."
+    nothing_here: 아무 것도 없습니다.
     pin_errors:
-      following: 추천하려는 사람을 팔로우 하고 있어야 합니다
+      following: 추천하려는 사람을 팔로우하고 있어야 합니다.
     posts:
       other: 게시물
     posts_tab_heading: 게시물
-    self_follow_error: 본인의 계정을 팔로우할 수는 없습니다
+    self_follow_error: 자신의 계정을 팔로우할 수 없습니다.
   admin:
     account_actions:
       action: 조치 취하기
@@ -32,7 +32,7 @@ ko:
       destroyed_msg: 중재 참고사항을 지웠습니다!
     accounts:
       add_email_domain_block: 이메일 도메인 차단
-      approve: 허가
+      approve: 승인
       approved_msg: 성공적으로 %{username}의 가입 신청서를 승인했습니다
       are_you_sure: 확실합니까?
       avatar: 아바타
@@ -70,7 +70,7 @@ ko:
       enable: 동결 해제
       enable_sign_in_token_auth: 이메일 토큰 인증 활성화
       enabled: 활성
-      enabled_msg: "%{username}의 동결을 성공적으로 해제 했습니다."
+      enabled_msg: "%{username}의 동결을 성공적으로 해제했습니다."
       followers: 팔로워
       follows: 팔로우
       header: 헤더
@@ -212,7 +212,7 @@ ko:
         memorialize_account: 고인의 계정으로 전환
         promote_user: 사용자 승급
         publish_terms_of_service: 이용 약관 게시
-        reject_appeal: 이의 제기 거절
+        reject_appeal: 이의제기 거절
         reject_user: 사용자 거부
         remove_avatar_user: 아바타 지우기
         reopen_report: 신고 다시 열기
@@ -235,7 +235,7 @@ ko:
         update_status: 게시물 수정
         update_user_role: 역할 수정
       actions:
-        approve_appeal_html: "%{name} 님이 %{target}의 중재 결정에 대한 이의 제기를 승인했습니다"
+        approve_appeal_html: "%{name} 님이 %{target}의 중재 결정에 대한 이의제기를 승인했습니다"
         approve_user_html: "%{name} 님이 %{target} 님의 가입을 승인했습니다"
         assigned_to_self_report_html: "%{name} 님이 신고 %{target}을 자신에게 할당했습니다"
         change_email_user_html: "%{name} 님이 %{target} 님의 이메일 주소를 변경했습니다"
@@ -277,7 +277,7 @@ ko:
         memorialize_account_html: "%{name} 님이 %{target}의 계정을 고인의 계정 페이지로 전환했습니다"
         promote_user_html: "%{name} 님이 사용자 %{target}를 승급시켰습니다"
         publish_terms_of_service_html: "%{name} 님이 이용 약관을 업데이트했습니다"
-        reject_appeal_html: "%{name} 님이 %{target}의 중재 결정에 대한 이의 제기를 거절했습니다"
+        reject_appeal_html: "%{name} 님이 %{target}의 중재 결정에 대한 이의제기를 거절했습니다"
         reject_user_html: "%{name} 님이 %{target} 님의 가입을 거부했습니다"
         remove_avatar_user_html: "%{name} 님이 %{target} 님의 아바타를 지웠습니다"
         reopen_report_html: "%{name} 님이 신고 %{target}을 다시 열었습니다"
@@ -368,7 +368,7 @@ ko:
       new_users: 새 사용자
       opened_reports: 신고 열림
       pending_appeals_html:
-        other: "<strong>%{count}</strong>개의 대기 중인 이의 제기"
+        other: "<strong>%{count}</strong>개의 대기 중인 이의제기"
       pending_reports_html:
         other: "<strong>%{count}</strong>건의 대기 중인 신고"
       pending_tags_html:
@@ -856,7 +856,7 @@ ko:
         suspend: "%{name} 님이 %{target}의 계정을 정지시켰습니다"
       appeal_approved: 이의 받아들여짐
       appeal_pending: 이의제기 대기중
-      appeal_rejected: 이의 제기 거절됨
+      appeal_rejected: 이의제기 거절됨
     system_checks:
       database_schema_check:
         message_html: 대기 중인 데이터베이스 마이그레이션이 있습니다. 애플리케이션이 예상대로 동작할 수 있도록 마이그레이션을 실행해 주세요
@@ -1123,21 +1123,21 @@ ko:
       hint_html: 하나만 더! 당신이 사람인지 확인이 필요합니다 (스팸 계정을 거르기 위해서 필요한 과정입니다). 아래에 있는 CAPTCHA를 풀고 "계속"을 누르세요
       title: 보안 체크
     confirmations:
-      awaiting_review: 이메일 주소가 확인되었습니다! 이제 %{domain} 스태프가 가입을 검토할 것입니다. 계정이 승인되면 이메일을 받게 됩니다!
-      awaiting_review_title: 가입 신청을 검토 중입니다
+      awaiting_review: 이메일 주소가 확인되었으며, 당신의 계정은 운영진의 검토를 기다리고 있습니다.
+      awaiting_review_title: 당신의 계정은 운영진의 검토를 기다리고 있습니다.
       clicking_this_link: 이 링크를 클릭
       login_link: 로그인
-      proceed_to_login_html: 이제 %{login_link} 할 수 있습니다.
-      redirect_to_app_html: 곧 <strong>%{app_name}</strong>으로 리디렉션 됩니다. 안 된다면, %{clicking_this_link}하거나 직접 앱으로 돌아가세요.
-      registration_complete: 지금 막 %{domain} 가입이 완료되었습니다!
-      welcome_title: "%{name} 님 반갑습니다!"
+      proceed_to_login_html: 이제 %{login_link}할 수 있습니다.
+      redirect_to_app_html: 곧 <strong>%{app_name}</strong>으로 돌아갑니다. 돌아가지 않는다면 %{clicking_this_link}하거나 직접 앱으로 돌아가세요.
+      registration_complete: %{domain} 가입이 완료되었습니다!
+      welcome_title: "%{name}님, 레가문트에 어서오세요!"
       wrong_email_hint: 만약 이메일 주소가 올바르지 않다면, 계정 설정에서 변경할 수 있습니다.
     delete_account: 계정 삭제
-    delete_account_html: 계정을 삭제하고 싶은 경우, <a href="%{path}">여기서</a> 삭제할 수 있습니다. 삭제 전 확인 화면이 표시됩니다.
+    delete_account_html: 계정을 삭제하고 싶은 경우, <a href="%{path}">여기서</a> 삭제할 수 있습니다. 삭제하려면 본인 인증이 필요합니다.
     description:
-      prefix_invited_by_user: "@%{name}님이 마스토돈 서버에 초대했습니다!"
-      prefix_sign_up: 마스토돈에 가입하세요!
-      suffix: 계정 하나로 사람들을 팔로우 하고, 게시물을 작성하며 마스토돈을 포함한 다른 어떤 서버의 사용자와도 메시지를 주고 받을 수 있습니다!
+      prefix_invited_by_user: "@%{name}님이 레가문트 인스턴스로 당신을 초대했습니다!"
+      prefix_sign_up: 레가문트 인스턴스에 가입하세요!
+      suffix: 계정을 만들고 연합우주의 다른 사람들과 만나고, 대화하며 자신의 이야기를 펼쳐보세요.
     didnt_get_confirmation: 확인 링크를 못 받았나요?
     dont_have_your_security_key: 보안 키가 없습니까?
     forgot_password: 암호를 잊었나요?
@@ -1148,62 +1148,62 @@ ko:
     login: 로그인
     logout: 로그아웃
     migrate_account: 계정 옮기기
-    migrate_account_html: 이 계정을 다른 계정으로 리디렉션 하길 원하는 경우 <a href="%{path}">여기</a>에서 설정할 수 있습니다.
-    or_log_in_with: 다른 방법으로 로그인 하려면
+    migrate_account_html: 이 계정을 다른 계정으로 이사하기를 원하는 경우 <a href="%{path}">여기</a>에서 시작할 수 있습니다.
+    or_log_in_with: 외부 플랫폼으로 인증하기
     progress:
       confirm: 이메일 확인
       details: 세부사항
       review: 심사 결과
-      rules: 규정을 수락합니다.
+      rules: 규정 확인
     providers:
       cas: CAS
       saml: SAML
-    register: 등록하기
-    registration_closed: "%{instance}는 새로운 가입을 받지 않고 있습니다"
-    resend_confirmation: 확인 링크 다시 보내기
+    register: 계정 만들기
+    registration_closed: "%{instance}에서는 신규 사용자를 받고 있지 않습니다."
+    resend_confirmation: 이메일을 받지 못하셨나요?
     reset_password: 암호 재설정
     rules:
       accept: 수락
       back: 뒤로가기
-      invited_by: '당신이 받은 초대장 덕분에 %{domain}에 가입할 수 있습니다:'
-      preamble: 다음은 %{domain}의 중재자들에 의해 설정되고 적용되는 규칙들입니다.
-      preamble_invited: 계속하기 전에, %{domain}의 중재자들이 정해놓은 규칙들을 검토해주세요.
-      title: 몇 개의 규칙이 있습니다.
-      title_invited: 초대를 받았습니다.
+      invited_by: '당신은 %{domain}에 있는 다른 사용자에게 초대받았습니다:'
+      preamble: %{domain}에서 적용되는 몇 가지 규칙을 확인해야 합니다.
+      preamble_invited: 계속하려면, %{domain}에서 적용되는 몇 가지 규칙을 확인해야 합니다.
+      title: 먼저 확인해야 할 게 있습니다...
+      title_invited: 초대장을 받았습니다!
     security: 보안
-    set_new_password: 새 암호 설정
+    set_new_password: 새로운 암호 설정
     setup:
-      email_below_hint_html: 스팸 폴더를 체크해보거나, 새로 요청할 수 있습니다. 이메일을 잘못 입력한 경우 수정할 수 있습니다.
-      email_settings_hint_html: "%{email}로 보낸 링크를 클릭해 마스토돈을 시작하세요. 기다리고 있겠습니다."
-      link_not_received: 링크를 못 받으셨나요?
-      new_confirmation_instructions_sent: 확인 링크가 담긴 이메일이 몇 분 안에 도착할것입니다!
-      title: 수신함 확인하기
+      email_below_hint_html: 몇 분 이내로 확인 이메일이 발송됩니다. 이메일을 받지 못했다면 아래 이메일 주소를 확인하거나, 스팸 폴더를 확인하세요.
+      email_settings_hint_html: "%{email} 이메일로 보낸 링크를 클릭해 시작할 수 있습니다."
+      link_not_received: 이메일을 받지 못하셨나요?
+      new_confirmation_instructions_sent: 몇 분 이내로 확인 이메일이 발송됩니다.
+      title: 마지막으로, 이메일을 확인해주세요.
     sign_in:
-      preamble_html: "<strong>%{domain}</strong>의 계정 정보를 이용해 로그인 하세요. 만약 내 계정이 다른 서버에 존재한다면, 여기서는 로그인 할 수 없습니다."
-      title: "%{domain}에 로그인"
+      preamble_html: "<strong>%{domain}</strong>에 돌아오신 것을 환영합니다. 외부 플랫폼을 통해 인증하거나, 이 인스턴스의 계정 정보를 입력하세요."
+      title: "당신을 기다리고 있었습니다,"
     sign_up:
-      manual_review: "%{domain} 가입은 중재자들의 심사를 거쳐 진행됩니다. 가입 절차를 원활하게 하기 위해, 간단한 자기소개와 왜 %{domain}에 계정을 만들려고 하는지 적어주세요."
-      preamble: 이 마스토돈 서버의 계정을 통해, 연합우주에 속한 다른 사람들을, 그들이 어떤 서버에 있든 팔로우 할 수 있습니다.
+      manual_review: "%{domain}에 가입하려면 관리자의 승인을 받아야 합니다. 왜 %{domain}에 계정을 생성하고 싶은지 작성해주세요."
+      preamble: 이 레가문트 인스턴스에서 다른 인스턴스의 사용자를 팔로우하거나, 그들의 글을 받아볼 수 있습니다.
       title: "%{domain}에 가입하기 위한 정보들을 입력하세요."
     status:
       account_status: 계정 상태
-      confirming: 이메일 확인 과정이 완료되기를 기다리는 중.
-      functional: 계정이 완벽히 작동합니다.
-      pending: 당신의 가입 신청은 스태프의 검사를 위해 대기 중입니다. 시간이 조금 걸릴 수 있습니다. 가입 신청이 승인되면 이메일을 받게 됩니다.
-      redirecting_to: 계정이 %{acct}로 리다이렉트 중이기 때문에 비활성 상태입니다.
+      confirming: 이메일 주소 인증을 기다리고 있습니다.
+      functional: 완벽합니다!
+      pending: 계정이 아직 관리자의 승인을 기다리고 있습니다.
+      redirecting_to: %{acct} 계정으로 이사되었으며, 계정이 비활성화되었습니다.
       self_destruct: "%{domain}에서 운영하는 레가문트가 종료되었으므로, 제한적인 접근만 가능합니다."
       view_strikes: 내 계정에 대한 과거 중재 기록 보기
-    too_fast: 너무 빠르게 양식이 제출되었습니다, 다시 시도하세요.
+    too_fast: 너무 빠른 것 같습니다. 심호흡하고, 다시 시도하세요.
     use_security_key: 보안 키 사용
-    user_agreement_html: <a href="%{terms_of_service_path}" target="_blank">이용 약관</a>과 <a href="%{privacy_policy_path}" target="_blank">개인정보처리방침</a>을 읽었고 동의합니다
-    user_privacy_agreement_html: <a href="%{privacy_policy_path}" target="_blank">개인정보처리방침</a>을 읽었고 동의합니다
+    user_agreement_html: <a href="%{terms_of_service_path}" target="_blank">이용 약관</a>과 <a href="%{privacy_policy_path}" target="_blank">개인정보처리방침</a>을 확인하였으며, 이에 동의합니다.
+    user_privacy_agreement_html: <a href="%{privacy_policy_path}" target="_blank">개인정보처리방침</a>을 확인하였으며, 이에 동의합니다.
   author_attribution:
     example_title: 예시 텍스트
     hint_html: 마스토돈 밖에서 뉴스나 블로그 글을 쓰시나요? 마스토돈에 공유되었을 때 어떻게 표시될지를 제어하세요.
     instructions: '이 코드가 글의 HTML 안에 포함되는지 확인하세요:'
     more_from_html: "%{name}의 게시물 더 보기"
     s_blog: "%{name}의 블로그"
-    then_instructions: 그리고 발행처의 도메인 네임을 아래 입력란에 추가하세요.
+    then_instructions: 그리고 발행처의 도메인을 아래 입력란에 추가하세요.
     title: 작성자 기여
   challenge:
     confirm: 계속
@@ -1233,37 +1233,37 @@ ko:
       x_seconds: "%{count}초"
   deletes:
     challenge_not_passed: 입력한 정보가 올바르지 않습니다
-    confirm_password: 본인 확인을 위해 현재 사용 중인 암호를 입력해 주십시오
-    confirm_username: 절차를 진행하려면 당신의 사용자명을 입력하세요
+    confirm_password: 본인 확인을 위해 암호를 입력해주세요
+    confirm_username: 계정 삭제를 진행하려면 당신의 사용자명을 입력하세요
     proceed: 계정 삭제
-    success_msg: 계정이 성공적으로 삭제되었습니다
+    success_msg: 계정이 삭제되었습니다. 안녕히 가세요!
     warning:
       before: '진행하기 전, 주의사항을 꼼꼼히 읽어보세요:'
-      caches: 다른 서버에 캐싱된 정보들은 남아있을 수 있습니다
-      data_removal: 당신의 게시물과 다른 정보들은 영구적으로 삭제 됩니다
-      email_change_html: 계정을 지우지 않고도 <a href="%{path}">이메일 주소를 변경할 수 있습니다</a>
-      email_contact_html: 아직 도착하지 않았다면, <a href="mailto:%{email}">%{email}</a>에 메일을 보내 도움을 요청할 수 있습니다
-      email_reconfirmation_html: 아직 확인 메일이 도착하지 않은 경우, <a href="%{path}">다시 요청할 수 있습니다</a>
-      irreversible: 계정을 복구하거나 다시 사용할 수 없게 됩니다
+      caches: 다른 인스턴스에 전달된 정보들은 남아있을 수 있습니다.
+      data_removal: 당신의 게시물과 다른 정보들은 영구적으로 삭제됩니다.
+      email_change_html: 계정을 지우지 않고도 <a href="%{path}">이메일 주소를 변경할 수 있습니다</a>.
+      email_contact_html: 아직 도착하지 않았다면, <a href="mailto:%{email}">%{email}</a>에 메일을 보내 도움을 요청할 수 있습니다.
+      email_reconfirmation_html: 아직 확인 메일이 도착하지 않은 경우, <a href="%{path}">다시 요청할 수 있습니다</a>.
+      irreversible: 계정을 복구하거나 다시 사용할 수 없게 됩니다.
       more_details_html: 더 자세한 정보는, <a href="%{terms_path}">개인정보처리방침</a>을 참고하세요.
-      username_available: 당신의 계정명은 다시 사용할 수 있게 됩니다
-      username_unavailable: 당신의 계정명은 앞으로 사용할 수 없습니다
+      username_available: 당신의 사용자명은 다시 사용할 수 있게 됩니다.
+      username_unavailable: 당신의 사용자명은 앞으로 사용할 수 없습니다.
   disputes:
     strikes:
       action_taken: 내려진 징계
       appeal: 이의제기
-      appeal_approved: 이 중재기록은 소명이 받아들여졌으며 더이상 유효하지 않습니다
-      appeal_rejected: 소명이 기각되었습니다
-      appeal_submitted_at: 이의제기 제출일
-      appealed_msg: 당신의 이의제기가 접수되었습니다. 만약 승인된다면, 알림을 받게 될 것입니다.
+      appeal_approved: 이의제기가 승인되었으며, 더 이상 유효한 제재내역이 아닙니다.
+      appeal_rejected: 이의제기가 거부되었습니다.
+      appeal_submitted_at: 이의제기 제출 시각
+      appealed_msg: 당신의 이의제기가 접수되었습니다. 승인되는 경우, 알림을 받게됩니다.
       appeals:
-        submit: 이의 제출
+        submit: 이의제기 제출
       approve_appeal: 이의제기 승인
       associated_report: 관련된 신고
       created_at: 날짜
       description_html: 이 결정사항들은 당신에 계정에 대해 행해졌고 %{instance}의 스태프에 의해 경고가 발송되었습니다.
       recipient: 수신자
-      reject_appeal: 이의 제기 거절
+      reject_appeal: 이의제기 기각
       status: '게시물 #%{id}'
       status_removed: 게시물이 이미 시스템에서 지워졌습니다
       title: "%{action}: %{date}"
@@ -1891,7 +1891,7 @@ ko:
       explanation: "%{strike_date}에 일어난 중재결정에 대한 소명을 %{appeal_date}에 작성했지만 반려되었습니다."
       subject: "%{date}에 작성한 소명이 반려되었습니다."
       subtitle: 소명이 기각되었습니다.
-      title: 이의 제기가 거절되었습니다
+      title: 이의제기가 거절되었습니다
     backup_ready:
       explanation: 마스토돈 계정에 대한 전체 백업을 요청했습니다
       extra: 다운로드 할 준비가 되었습니다!
