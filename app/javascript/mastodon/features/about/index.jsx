@@ -123,7 +123,7 @@ class About extends PureComponent {
           <div className='about__header'>
             <ServerHeroImage blurhash={server.getIn(['thumbnail', 'blurhash'])} src={server.getIn(['thumbnail', 'url'])} srcSet={server.getIn(['thumbnail', 'versions'])?.map((value, key) => `${value} ${key.replace('@', '')}`).join(', ')} className='about__header__hero' />
             <h1>{isLoading ? <Skeleton width='10ch' /> : server.get('title')}</h1>
-            <p><FormattedMessage id='about.powered_by' defaultMessage='A little school band powered by {mastodon}' values={{ mastodon: <a href='/@Springtime' className='about__mail' target='_blank'>Ablers Academy</a> }} /></p>
+            <p><FormattedMessage id='about.powered_by' defaultMessage='Little microblogging platform powered by {mastodon}' values={{ mastodon: <a href='https://git.psec.dev/CloudToys/Legamunt' className='about__mail' target='_blank'>Legamunt</a> }} /></p>
           </div>
 
           <Section open title={intl.formatMessage(messages.title)}>

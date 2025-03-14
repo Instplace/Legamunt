@@ -3,7 +3,7 @@ import { FormattedMessage } from 'react-intl';
 import { Link } from 'react-router-dom';
 
 import {
-  domain,
+  title,
   version,
   source_url,
   statusPageUrl,
@@ -19,7 +19,7 @@ export const LinkFooter: React.FC<{
   return (
     <div className='link-footer'>
       <p>
-        <strong>{domain}</strong>:{' '}
+        <strong>{title}</strong>:{' '}
         <Link to='/about' target={multiColumn ? '_blank' : undefined}>
           <FormattedMessage id='footer.about' defaultMessage='About' />
         </Link>
@@ -42,6 +42,21 @@ export const LinkFooter: React.FC<{
             </Link>
           </>
         )}
+        {termsOfServiceEnabled && (
+            <>
+              <DividingCircle />
+              <Link
+                  to='/terms-of-service'
+                  target={multiColumn ? '_blank' : undefined}
+                  rel='terms-of-service'
+              >
+                <FormattedMessage
+                    id='footer.terms_of_service'
+                    defaultMessage='Terms of service'
+                />
+              </Link>
+            </>
+        )}
         <DividingCircle />
         <Link
           to='/privacy-policy'
@@ -53,21 +68,22 @@ export const LinkFooter: React.FC<{
             defaultMessage='Privacy policy'
           />
         </Link>
-        {termsOfServiceEnabled && (
-          <>
-            <DividingCircle />
-            <Link
-              to='/terms-of-service'
-              target={multiColumn ? '_blank' : undefined}
-              rel='terms-of-service'
-            >
-              <FormattedMessage
-                id='footer.terms_of_service'
-                defaultMessage='Terms of service'
-              />
-            </Link>
-          </>
-        )}
+        <DividingCircle />
+        <a
+            href='https://schezo.puyopuyotetr.is'
+            target='_blank'
+            rel='noreferrer noopener'
+        >
+          Elk
+        </a>
+        <DividingCircle />
+        <a
+            href='https://klug.puyopuyotetr.is'
+            target='_blank'
+            rel='noreferrer noopener'
+        >
+          Phanpy
+        </a>
       </p>
 
       <p>

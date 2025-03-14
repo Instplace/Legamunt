@@ -309,7 +309,7 @@ ko:
       back: 공지사항으로 돌아가기
       destroyed_msg: 공지가 성공적으로 삭제되었습니다!
       edit:
-        title: 공지사항 편집
+        title: 공지사항 수정
       empty: 공지를 찾을 수 없습니다.
       live: 진행 중
       new:
@@ -1022,7 +1022,7 @@ ko:
     warning_presets:
       add_new: 새로 추가
       delete: 삭제
-      edit_preset: 경고 프리셋 편집
+      edit_preset: 경고 프리셋 수정
       empty: 아직 어떤 경고 틀도 정의되지 않았습니다.
       title: 경고 프리셋
     webhooks:
@@ -1332,7 +1332,7 @@ ko:
       keywords: 키워드
       statuses: 개별 게시물
       statuses_hint_html: 이 필터는 아래의 키워드에 매칭되는지 여부와 관계 없이 몇몇개의 게시물들에 별개로 적용되었습니다. <a href="%{path}">검토하거나 필터에서 삭제하세요</a>
-      title: 필터 편집
+      title: 필터 수정
     errors:
       deprecated_api_multiple_keywords: 이 파라미터들은 하나를 초과하는 필터 키워드에 적용되기 때문에 이 응용프로그램에서 수정될 수 없습니다. 더 최신의 응용프로그램이나 웹 인터페이스를 사용하세요.
       invalid_context: 컨텍스트가 없거나 올바르지 않습니다
@@ -1734,7 +1734,7 @@ ko:
     back: 마스토돈으로 돌아가기
     delete: 계정 삭제
     development: 개발
-    edit_profile: 프로필 편집
+    edit_profile: 프로필 수정
     export: 내보내기
     featured_tags: 추천 해시태그
     import: 데이터 가져오기
@@ -1774,7 +1774,7 @@ ko:
     default_language: 화면 표시 언어와 동일하게
     disallowed_hashtags:
       other: '허용되지 않은 해시태그를 포함하고 있습니다: %{tags}'
-    edited_at_html: "%{date}에 편집됨"
+    edited_at_html: "%{date}에 수정됨"
     errors:
       in_reply_not_found: 답장하려는 게시물이 존재하지 않습니다.
     over_character_limit: 최대 %{max}자까지 입력할 수 있습니다
@@ -1831,7 +1831,7 @@ ko:
     sensitive_content: 민감한 내용
   strikes:
     errors:
-      too_late: 이의를 제기하기에 너무 늦었습니다
+      too_late: 이의제기 기간이 지났습니다.
   tags:
     does_not_match_previous_name: 이전 이름과 맞지 않습니다
   terms_of_service:
@@ -1843,6 +1843,8 @@ ko:
     system: "마스토돈 / 자동"
     tangerineui-cherry: "감귤 UI / 체리"
     tangerineui-lagoon: "감귤 UI / 블루탱"
+    tangerineui-orange: "감귤 UI / 오렌지"
+    tangerineui-grape: "감귤 UI / 포도"
     modern-contrast: "모던 / 고대비"
     modern: "모던 / 다크"
     modern-light: "모던 / 라이트"
@@ -1862,16 +1864,16 @@ ko:
   two_factor_authentication:
     add: 추가
     disable: 비활성화
-    disabled_success: 2단계 인증이 비활성화 되었습니다.
+    disabled_success: 2단계 인증이 비활성화되었습니다.
     edit: 수정
-    enabled: 2단계 인증이 활성화 되어 있습니다
-    enabled_success: 2단계 인증이 활성화 되었습니다
+    enabled: 2단계 인증이 활성화된 상태입니다.
+    enabled_success: 2단계 인증이 활성화되었습니다.
     generate_recovery_codes: 복구 코드 생성
     lost_recovery_codes: 복구 코드를 사용하면 휴대전화를 분실한 경우에도 계정에 접근할 수 있게 됩니다. 복구 코드를 분실한 경우에도 여기서 다시 생성할 수 있지만, 예전 복구 코드는 비활성화 됩니다.
     methods: 2단계 인증
     otp: 인증 애플리케이션
     recovery_codes: 복구 코드
-    recovery_codes_regenerated: 복구 코드가 다시 생성되었습니다
+    recovery_codes_regenerated: 복구 코드를 다시 생성했습니다.
     recovery_instructions_html: 휴대전화를 분실한 경우, 아래 복구 코드 중 하나를 사용해 계정에 접근할 수 있습니다. <strong>복구 코드는 안전하게 보관해 주십시오.</strong> 이 코드를 인쇄해 중요한 서류와 함께 보관하는 것도 좋습니다.
     webauthn: 보안 키
   user_mailer:
@@ -1931,13 +1933,13 @@ ko:
       reason: '사유:'
       statuses: '인용된 게시물:'
       subject:
-        delete_statuses: 당신의 계정 %{acct}에서 작성한 게시물이 삭제되었습니다
-        disable: "%{acct} 계정은 동결되었습니다."
-        mark_statuses_as_sensitive: "%{acct}로 작성한 당신의 게시물은 민감한 것으로 표시되었습니다"
-        none: "%{acct}에게의 경고"
-        sensitive: "%{acct}로 작성되는 당신의 게시물은 이제부터 민감한 것으로 표시됩니다"
-        silence: 당신의 계정 %{acct}가 제한 되었습니다
-        suspend: 당신의 계정 %{acct}가 정지 되었습니다
+        delete_statuses: 당신의 %{acct} 계정에서 작성한 게시물이 삭제되었습니다.
+        disable: "당신의 %{acct} 계정이 동결되었습니다."
+        mark_statuses_as_sensitive: "%{acct}로 작성한 당신의 게시물은 민감한 것으로 표시되었습니다."
+        none: "당신의 %{acct} 계정이 경고를 받았습니다."
+        sensitive: "%{acct}로 작성되는 당신의 게시물은 이제부터 민감한 것으로 표시됩니다."
+        silence: 당신의 %{acct} 계정이 제한되었습니다.
+        suspend: 당신의 %{acct} 게정이 정지되었습니다.
       title:
         delete_statuses: 게시물 삭제됨
         disable: 계정 동결됨
