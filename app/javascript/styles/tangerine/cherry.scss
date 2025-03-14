@@ -6118,14 +6118,18 @@ div[tabindex='-1']
   opacity: 0.4;
 }
 
+.app-body .search__icon {
+  top: 12px;
+  margin-left: 30px;
+}
+
 .app-body .search__icon .icon {
   padding: 5px;
   transform: scale(1) translateY(-50%);
   background-size: 24px !important;
-  top: 12px;
+  top: 50%;
   inset-inline-start: unset;
   inset-inline-end: 12px;
-  margin-left: 30px;
 }
 
 .app-body .search__input:not(:placeholder-shown) + .search__icon:hover .icon {

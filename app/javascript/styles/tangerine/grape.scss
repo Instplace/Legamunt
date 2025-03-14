@@ -8,9 +8,9 @@
 
 /* 📄 Meta */
 :root {
-  --version: "v2.4~";
-  --variant-name: "Grape";
-  --variant-emoji: "\1FABB\00A0";
+  --version: 'v2.4~';
+  --variant-name: 'Grape';
+  --variant-emoji: '\1FABB\00A0';
   --variant: var(--variant-emoji) var(--variant-name);
   --meta: 'Powered by OSCAR Node #4 ' var(--version) ' \00B7 ' var(--variant);
 }
@@ -28,7 +28,11 @@
   --color-content-bg: #ffffff;
   --color-content-fg: #444a5a;
   --color-content-fg-bold: #000000;
-  --color-content-fg-muted: color-mix(in srgb, var(--color-content-fg), var(--color-content-bg) 40%);
+  --color-content-fg-muted: color-mix(
+    in srgb,
+    var(--color-content-fg),
+    var(--color-content-bg) 40%
+  );
   --color-content-secondary-bg: #f5f4f9;
   --color-content-secondary-separator: rgba(223, 219, 237, 40%);
   --color-content-bg-focus: #fffcfa;
@@ -41,7 +45,7 @@
   --color-lines-translucent: rgba(0, 0, 0, 15%);
   --color-confirm: #79bd9a;
   --color-confirm-bg: rgba(121, 189, 154, 30%);
-  --color-confirm-fg: #4E8A6B;
+  --color-confirm-fg: #4e8a6b;
   --color-reject: #df405a;
   --color-reject-bg: rgba(223, 64, 90, 30%);
 }
@@ -213,7 +217,7 @@
   --icon-edited-accent: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='32' height='32' fill='%236364ff' viewBox='0 0 256 256'%3E%3Cpath d='M221.66,90.34,192,120,136,64l29.66-29.66a8,8,0,0,1,11.31,0L221.66,79A8,8,0,0,1,221.66,90.34Z' opacity='0.2'%3E%3C/path%3E%3Cpath d='M227.32,73.37,182.63,28.69a16,16,0,0,0-22.63,0L36.69,152A15.86,15.86,0,0,0,32,163.31V208a16,16,0,0,0,16,16H216a8,8,0,0,0,0-16H115.32l112-112A16,16,0,0,0,227.32,73.37ZM48,163.31l88-88L180.69,120l-88,88H48Zm144-54.62L147.32,64l24-24L216,84.69Z'%3E%3C/path%3E%3C/svg%3E");
   --icon-timer: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='32' height='32' fill='%236364ff' viewBox='0 0 256 256'%3E%3Cpath d='M128,44a96,96,0,1,0,96,96A96.11,96.11,0,0,0,128,44Zm0,168a72,72,0,1,1,72-72A72.08,72.08,0,0,1,128,212ZM164.49,99.51a12,12,0,0,1,0,17l-28,28a12,12,0,0,1-17-17l28-28A12,12,0,0,1,164.49,99.51ZM92,16A12,12,0,0,1,104,4h48a12,12,0,0,1,0,24H104A12,12,0,0,1,92,16Z'%3E%3C/path%3E%3C/svg%3E");
   --icon-timer-inv: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='32' height='32' fill='%23ffffff' viewBox='0 0 256 256'%3E%3Cpath d='M128,44a96,96,0,1,0,96,96A96.11,96.11,0,0,0,128,44Zm0,168a72,72,0,1,1,72-72A72.08,72.08,0,0,1,128,212ZM164.49,99.51a12,12,0,0,1,0,17l-28,28a12,12,0,0,1-17-17l28-28A12,12,0,0,1,164.49,99.51ZM92,16A12,12,0,0,1,104,4h48a12,12,0,0,1,0,24H104A12,12,0,0,1,92,16Z'%3E%3C/path%3E%3C/svg%3E");
-  --icon-check-radio: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='32' height='32' fill='%236364ff' viewBox='0 0 256 256'%3E%3Cpath d='M176.49,95.51a12,12,0,0,1,0,17l-56,56a12,12,0,0,1-17,0l-24-24a12,12,0,1,1,17-17L112,143l47.51-47.52A12,12,0,0,1,176.49,95.51ZM236,128A108,108,0,1,1,128,20,108.12,108.12,0,0,1,236,128Zm-24,0a84,84,0,1,0-84,84A84.09,84.09,0,0,0,212,128Z'%3E%3C/path%3E%3C/svg%3E");;
+  --icon-check-radio: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='32' height='32' fill='%236364ff' viewBox='0 0 256 256'%3E%3Cpath d='M176.49,95.51a12,12,0,0,1,0,17l-56,56a12,12,0,0,1-17,0l-24-24a12,12,0,1,1,17-17L112,143l47.51-47.52A12,12,0,0,1,176.49,95.51ZM236,128A108,108,0,1,1,128,20,108.12,108.12,0,0,1,236,128Zm-24,0a84,84,0,1,0-84,84A84.09,84.09,0,0,0,212,128Z'%3E%3C/path%3E%3C/svg%3E");
   --icon-check-radio-inv: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='32' height='32' fill='%23ffffff' viewBox='0 0 256 256'%3E%3Cpath d='M176.49,95.51a12,12,0,0,1,0,17l-56,56a12,12,0,0,1-17,0l-24-24a12,12,0,1,1,17-17L112,143l47.51-47.52A12,12,0,0,1,176.49,95.51ZM236,128A108,108,0,1,1,128,20,108.12,108.12,0,0,1,236,128Zm-24,0a84,84,0,1,0-84,84A84.09,84.09,0,0,0,212,128Z'%3E%3C/path%3E%3C/svg%3E");
   --icon-check-box: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='32' height='32' fill='%236364ff' viewBox='0 0 256 256'%3E%3Cpath d='M79.51,144.49a12,12,0,1,1,17-17L112,143l47.51-47.52a12,12,0,0,1,17,17l-56,56a12,12,0,0,1-17,0ZM228,48V208a20,20,0,0,1-20,20H48a20,20,0,0,1-20-20V48A20,20,0,0,1,48,28H208A20,20,0,0,1,228,48Zm-24,4H52V204H204Z'%3E%3C/path%3E%3C/svg%3E");
   --icon-check-box-inv: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='32' height='32' fill='%23ffffff' viewBox='0 0 256 256'%3E%3Cpath d='M79.51,144.49a12,12,0,1,1,17-17L112,143l47.51-47.52a12,12,0,0,1,17,17l-56,56a12,12,0,0,1-17,0ZM228,48V208a20,20,0,0,1-20,20H48a20,20,0,0,1-20-20V48A20,20,0,0,1,48,28H208A20,20,0,0,1,228,48Zm-24,4H52V204H204Z'%3E%3C/path%3E%3C/svg%3E");
@@ -268,7 +272,7 @@
     --icon-ellipsis-accent: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='32' height='32' fill='%237a7af9' viewBox='0 0 256 256'%3E%3Cpath d='M152,128a24,24,0,1,1-24-24A24,24,0,0,1,152,128ZM48,104a24,24,0,1,0,24,24A24,24,0,0,0,48,104Zm160,0a24,24,0,1,0,24,24A24,24,0,0,0,208,104Z' opacity='0.2'%3E%3C/path%3E%3Cpath d='M128,96a32,32,0,1,0,32,32A32,32,0,0,0,128,96Zm0,48a16,16,0,1,1,16-16A16,16,0,0,1,128,144ZM48,96a32,32,0,1,0,32,32A32,32,0,0,0,48,96Zm0,48a16,16,0,1,1,16-16A16,16,0,0,1,48,144ZM208,96a32,32,0,1,0,32,32A32,32,0,0,0,208,96Zm0,48a16,16,0,1,1,16-16A16,16,0,0,1,208,144Z'%3E%3C/path%3E%3C/svg%3E");
     --icon-poll: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='32' height='32' fill='%23ffffff' viewBox='0 0 256 256'%3E%3Cpath d='M224,92H188V56a12,12,0,0,0-12-12H60V40a12,12,0,0,0-24,0V216a12,12,0,0,0,24,0v-4h84a12,12,0,0,0,12-12V164h68a12,12,0,0,0,12-12V104A12,12,0,0,0,224,92ZM164,68V92H60V68ZM132,188H60V164h72Zm80-48H60V116H212Z'%3E%3C/path%3E%3C/svg%3E");
     --icon-poll-accent: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='32' height='32' fill='%237a7af9' viewBox='0 0 256 256'%3E%3Cpath d='M224,104v48H48V104Z' opacity='0.2'%3E%3C/path%3E%3Cpath d='M224,96H184V56a8,8,0,0,0-8-8H56V40a8,8,0,0,0-16,0V216a8,8,0,0,0,16,0v-8h88a8,8,0,0,0,8-8V160h72a8,8,0,0,0,8-8V104A8,8,0,0,0,224,96ZM168,64V96H56V64ZM136,192H56V160h80Zm80-48H56V112H216Z'%3E%3C/path%3E%3C/svg%3E");
-    --icon-post: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='32' height='32' fill='%23ffffff' viewBox='0 0 256 256'%3E%3Cpath d='M224,128A96,96,0,0,1,79.93,211.11h0L42.54,223.58a8,8,0,0,1-10.12-10.12l12.47-37.39h0A96,96,0,1,1,224,128Z' opacity='0.2'%3E%3C/path%3E%3Cpath d='M128,24A104,104,0,0,0,36.18,176.88L24.83,210.93a16,16,0,0,0,20.24,20.24l34.05-11.35A104,104,0,1,0,128,24Zm0,192a87.87,87.87,0,0,1-44.06-11.81,8,8,0,0,0-4-1.08,7.85,7.85,0,0,0-2.53.42L40,216,52.47,178.6a8,8,0,0,0-.66-6.54A88,88,0,1,1,128,216Zm12-88a12,12,0,1,1-12-12A12,12,0,0,1,140,128Zm-44,0a12,12,0,1,1-12-12A12,12,0,0,1,96,128Zm88,0a12,12,0,1,1-12-12A12,12,0,0,1,184,128Z'%3E%3C/path%3E%3C/svg%3E");;
+    --icon-post: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='32' height='32' fill='%23ffffff' viewBox='0 0 256 256'%3E%3Cpath d='M224,128A96,96,0,0,1,79.93,211.11h0L42.54,223.58a8,8,0,0,1-10.12-10.12l12.47-37.39h0A96,96,0,1,1,224,128Z' opacity='0.2'%3E%3C/path%3E%3Cpath d='M128,24A104,104,0,0,0,36.18,176.88L24.83,210.93a16,16,0,0,0,20.24,20.24l34.05-11.35A104,104,0,1,0,128,24Zm0,192a87.87,87.87,0,0,1-44.06-11.81,8,8,0,0,0-4-1.08,7.85,7.85,0,0,0-2.53.42L40,216,52.47,178.6a8,8,0,0,0-.66-6.54A88,88,0,1,1,128,216Zm12-88a12,12,0,1,1-12-12A12,12,0,0,1,140,128Zm-44,0a12,12,0,1,1-12-12A12,12,0,0,1,96,128Zm88,0a12,12,0,1,1-12-12A12,12,0,0,1,184,128Z'%3E%3C/path%3E%3C/svg%3E");
     --icon-post-notification: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='32' height='32' fill='%23ffffff' viewBox='0 0 256 256'%3E%3Cpath d='M120,128a16,16,0,1,1-16-16A16,16,0,0,1,120,128Zm32-16a16,16,0,1,0,16,16A16,16,0,0,0,152,112Zm84,16A108,108,0,0,1,78.77,224.15L46.34,235A20,20,0,0,1,21,209.66l10.81-32.43A108,108,0,1,1,236,128Zm-24,0A84,84,0,1,0,55.27,170.06a12,12,0,0,1,1,9.81l-9.93,29.79,29.79-9.93a12.1,12.1,0,0,1,3.8-.62,12,12,0,0,1,6,1.62A84,84,0,0,0,212,128Z'%3E%3C/path%3E%3C/svg%3E");
     --icon-post-notification-accent: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='32' height='32' fill='%237a7af9' viewBox='0 0 256 256'%3E%3Cpath d='M224,128A96,96,0,0,1,79.93,211.11h0L42.54,223.58a8,8,0,0,1-10.12-10.12l12.47-37.39h0A96,96,0,1,1,224,128Z' opacity='0.2'%3E%3C/path%3E%3Cpath d='M128,24A104,104,0,0,0,36.18,176.88L24.83,210.93a16,16,0,0,0,20.24,20.24l34.05-11.35A104,104,0,1,0,128,24Zm0,192a87.87,87.87,0,0,1-44.06-11.81,8,8,0,0,0-4-1.08,7.85,7.85,0,0,0-2.53.42L40,216,52.47,178.6a8,8,0,0,0-.66-6.54A88,88,0,1,1,128,216Zm12-88a12,12,0,1,1-12-12A12,12,0,0,1,140,128Zm-44,0a12,12,0,1,1-12-12A12,12,0,0,1,96,128Zm88,0a12,12,0,1,1-12-12A12,12,0,0,1,184,128Z'%3E%3C/path%3E%3C/svg%3E");
     --icon-users: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='32' height='32' fill='%23ffffff' viewBox='0 0 256 256'%3E%3Cpath d='M136,108A52,52,0,1,1,84,56,52,52,0,0,1,136,108Z' opacity='0.2'%3E%3C/path%3E%3Cpath d='M117.25,157.92a60,60,0,1,0-66.5,0A95.83,95.83,0,0,0,3.53,195.63a8,8,0,1,0,13.4,8.74,80,80,0,0,1,134.14,0,8,8,0,0,0,13.4-8.74A95.83,95.83,0,0,0,117.25,157.92ZM40,108a44,44,0,1,1,44,44A44.05,44.05,0,0,1,40,108Zm210.14,98.7a8,8,0,0,1-11.07-2.33A79.83,79.83,0,0,0,172,168a8,8,0,0,1,0-16,44,44,0,1,0-16.34-84.87,8,8,0,1,1-5.94-14.85,60,60,0,0,1,55.53,105.64,95.83,95.83,0,0,1,47.22,37.71A8,8,0,0,1,250.14,206.7Z'%3E%3C/path%3E%3C/svg%3E");
@@ -372,7 +376,7 @@
     --icon-edited: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='32' height='32' fill='%23ffffff' viewBox='0 0 256 256'%3E%3Cpath d='M230.15,70.54,185.46,25.86a20,20,0,0,0-28.28,0L33.86,149.17A19.86,19.86,0,0,0,28,163.31V208a20,20,0,0,0,20,20H216a12,12,0,0,0,0-24H125L230.15,98.83A20,20,0,0,0,230.15,70.54ZM91,204H52V165l84-84,39,39ZM192,103,153,64l18.34-18.34,39,39Z'%3E%3C/path%3E%3C/svg%3E");
     --icon-edited-accent: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='32' height='32' fill='%237a7af9' viewBox='0 0 256 256'%3E%3Cpath d='M221.66,90.34,192,120,136,64l29.66-29.66a8,8,0,0,1,11.31,0L221.66,79A8,8,0,0,1,221.66,90.34Z' opacity='0.2'%3E%3C/path%3E%3Cpath d='M227.32,73.37,182.63,28.69a16,16,0,0,0-22.63,0L36.69,152A15.86,15.86,0,0,0,32,163.31V208a16,16,0,0,0,16,16H216a8,8,0,0,0,0-16H115.32l112-112A16,16,0,0,0,227.32,73.37ZM48,163.31l88-88L180.69,120l-88,88H48Zm144-54.62L147.32,64l24-24L216,84.69Z'%3E%3C/path%3E%3C/svg%3E");
     --icon-timer: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='32' height='32' fill='%237a7af9' viewBox='0 0 256 256'%3E%3Cpath d='M128,44a96,96,0,1,0,96,96A96.11,96.11,0,0,0,128,44Zm0,168a72,72,0,1,1,72-72A72.08,72.08,0,0,1,128,212ZM164.49,99.51a12,12,0,0,1,0,17l-28,28a12,12,0,0,1-17-17l28-28A12,12,0,0,1,164.49,99.51ZM92,16A12,12,0,0,1,104,4h48a12,12,0,0,1,0,24H104A12,12,0,0,1,92,16Z'%3E%3C/path%3E%3C/svg%3E");
-    --icon-check-radio: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='32' height='32' fill='%237a7af9' viewBox='0 0 256 256'%3E%3Cpath d='M176.49,95.51a12,12,0,0,1,0,17l-56,56a12,12,0,0,1-17,0l-24-24a12,12,0,1,1,17-17L112,143l47.51-47.52A12,12,0,0,1,176.49,95.51ZM236,128A108,108,0,1,1,128,20,108.12,108.12,0,0,1,236,128Zm-24,0a84,84,0,1,0-84,84A84.09,84.09,0,0,0,212,128Z'%3E%3C/path%3E%3C/svg%3E");;
+    --icon-check-radio: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='32' height='32' fill='%237a7af9' viewBox='0 0 256 256'%3E%3Cpath d='M176.49,95.51a12,12,0,0,1,0,17l-56,56a12,12,0,0,1-17,0l-24-24a12,12,0,1,1,17-17L112,143l47.51-47.52A12,12,0,0,1,176.49,95.51ZM236,128A108,108,0,1,1,128,20,108.12,108.12,0,0,1,236,128Zm-24,0a84,84,0,1,0-84,84A84.09,84.09,0,0,0,212,128Z'%3E%3C/path%3E%3C/svg%3E");
     --icon-check-box: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='32' height='32' fill='%237a7af9' viewBox='0 0 256 256'%3E%3Cpath d='M79.51,144.49a12,12,0,1,1,17-17L112,143l47.51-47.52a12,12,0,0,1,17,17l-56,56a12,12,0,0,1-17,0ZM228,48V208a20,20,0,0,1-20,20H48a20,20,0,0,1-20-20V48A20,20,0,0,1,48,28H208A20,20,0,0,1,228,48Zm-24,4H52V204H204Z'%3E%3C/path%3E%3C/svg%3E");
     --icon-broom: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='32' height='32' fill='%237a7af9' viewBox='0 0 256 256'%3E%3Cpath d='M192.8,165.12,43.93,105.57A110.88,110.88,0,0,1,61.47,82.38a8,8,0,0,1,8.67-1.81L95.52,90.85a16,16,0,0,0,20.82-9l21-53.1c4.15-10,15.47-15.33,25.63-11.53a20,20,0,0,1,11.51,26.39L153.13,96.71a16,16,0,0,0,8.93,20.75L187,127.3a8,8,0,0,1,5,7.43V152A104.58,104.58,0,0,0,192.8,165.12Z' opacity='0.2'%3E%3C/path%3E%3Cpath d='M235.5,216.81c-22.56-11-35.5-34.58-35.5-64.8V134.73a15.94,15.94,0,0,0-10.09-14.87L165,110a8,8,0,0,1-4.48-10.34l21.32-53a28,28,0,0,0-16.1-37,28.14,28.14,0,0,0-35.82,16,.61.61,0,0,0,0,.12L108.9,79a8,8,0,0,1-10.37,4.49L73.11,73.14A15.89,15.89,0,0,0,55.74,76.8C34.68,98.45,24,123.75,24,152a111.45,111.45,0,0,0,31.18,77.53A8,8,0,0,0,61,232H232a8,8,0,0,0,3.5-15.19ZM67.14,88l25.41,10.3a24,24,0,0,0,31.23-13.45l21-53c2.56-6.11,9.47-9.27,15.43-7a12,12,0,0,1,6.88,15.92L145.69,93.76a24,24,0,0,0,13.43,31.14L184,134.73V152c0,.33,0,.66,0,1L55.77,101.71A108.84,108.84,0,0,1,67.14,88Zm48,128a87.53,87.53,0,0,1-24.34-42,8,8,0,0,0-15.49,4,105.16,105.16,0,0,0,18.36,38H64.44A95.54,95.54,0,0,1,40,152a85.9,85.9,0,0,1,7.73-36.29l137.8,55.12c3,18,10.56,33.48,21.89,45.16Z'%3E%3C/path%3E%3C/svg%3E");
 
@@ -405,14 +409,34 @@
   }
 }
 
-body.app-body  {
+body.app-body {
   background-color: var(--color-bg);
   color: var(--color-fg);
-  font-family: "Pretendard JP Variable", "Pretendard JP", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Hiragino Sans", "Apple SD Gothic Neo", Meiryo, "Noto Sans JP", "Noto Sans KR", "Malgun Gothic", Osaka, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+  font-family:
+    'Pretendard JP Variable',
+    'Pretendard JP',
+    Pretendard,
+    -apple-system,
+    BlinkMacSystemFont,
+    system-ui,
+    Roboto,
+    'Helvetica Neue',
+    'Segoe UI',
+    'Hiragino Sans',
+    'Apple SD Gothic Neo',
+    Meiryo,
+    'Noto Sans JP',
+    'Noto Sans KR',
+    'Malgun Gothic',
+    Osaka,
+    'Apple Color Emoji',
+    'Segoe UI Emoji',
+    'Segoe UI Symbol',
+    sans-serif;
 }
 
 .layout-single-column .ui::before {
-  content: " ";
+  content: ' ';
   display: block;
   height: 16px;
   position: fixed;
@@ -442,7 +466,7 @@ body.app-body  {
 :root:has(.app-body) *::-webkit-scrollbar-thumb {
   background-color: var(--color-accent);
   border-radius: 8px;
-  opacity: .4;
+  opacity: 0.4;
   box-shadow: none;
 }
 
@@ -452,7 +476,7 @@ body.app-body  {
 
 :root:has(.app-body) *::-webkit-scrollbar-thumb:hover {
   background-color: var(--color-accent);
-  opacity: .7;
+  opacity: 0.7;
 }
 @media screen and (width <=1174px) {
   :root:has(.app-body) *::-webkit-scrollbar {
@@ -467,8 +491,7 @@ body.app-body  {
 }
 
 .app-body {
-  --dropdown-shadow:
-    0 20px 25px -5px rgba(0, 0, 0, 15%),
+  --dropdown-shadow: 0 20px 25px -5px rgba(0, 0, 0, 15%),
     0 8px 10px -6px rgba(0, 0, 0, 15%);
   --safe-area-bottom: env(safe-area-inset-bottom);
 }
@@ -507,7 +530,7 @@ body.app-body  {
 .app-body .compose-form .spoiler-input__input,
 .app-body .compose-form__autosuggest-wrapper,
 .app-body .compose-form__poll-wrapper select,
-.app-body .poll__option input[type="text"],
+.app-body .poll__option input[type='text'],
 .app-body .report-dialog-modal__textarea,
 .app-body .search__input,
 .app-body .setting-text,
@@ -517,7 +540,7 @@ body.app-body  {
 }
 
 .app-body .column-inline-form,
-.app-body .column>.scrollable,
+.app-body .column > .scrollable,
 .app-body .getting-started,
 .app-body .regeneration-indicator {
   background: transparent;
@@ -547,7 +570,7 @@ body.app-body  {
   }
 
   75% {
-    transform: scale(.8);
+    transform: scale(0.8);
   }
 
   100% {
@@ -681,7 +704,6 @@ body.app-body  {
   }
 }
 
-
 /* Rordered layout */
 .app-body .columns-area__panels__pane--navigational {
   order: 1;
@@ -779,143 +801,143 @@ body.app-body  {
 }
 
 .app-body
-:is(
-        .icon-bookmark,
-        .icon-star,
-        .icon-retweet,
-        .icon-repeat,
-        .icon-reply,
-        .icon-reply-all,
-        .icon-tasks,
-        .icon-quote-right,
-        .icon-home,
-        .icon-notifications-active,
-        .icon-hashtag,
-        .icon-explore,
-        .icon-search,
-        .icon-times-circle,
-        .icon-bell,
-        .icon-at,
-        .icon-bookmarks,
-        .icon-list-ul,
-        .column-link .icon-cog,
-        .drawer__tab .icon-cog,
-        .icon-flag,
-        .icon-tachometer,
-        .icon-bars,
-        .icon-bar-chart-4-bars,
-        .navigation-bar .icon-close,
-        .icon-user-plus,
-        .icon-person-add,
-        .icon-user,
-        .icon-users,
-        .icon-bullhorn,
-        .icon-sliders,
-        .icon-globe,
-        .icon-unlock,
-        .icon-lock,
-        .icon-paperclip,
-        .edit-indicator__attachments > .icon,
-        .icon-photo-library,
-        .compose-form__buttons .icon-button:nth-child(3) .icon,
-        .emoji-picker-dropdown > .icon-button .icon,
-        .icon-bell-o,
-        .icon-thumb-tack,
-        .icon-file-text,
-        .account--panel .icon-times,
-        .follow-request-banner .icon-times,
-        .account__relationship .icon-times,
-        .icon-ellipsis-h,
-        .icon-ellipsis-v,
-        .icon-check:is(.verified__mark, .verified-badge__mark),
-        .follow-request-banner .button .icon-check,
-        .account--panel button .icon-check,
-        .account__relationship .icon-check,
-        .status__action-bar .icon-close,
-        .detailed-status__action-bar .icon-close,
-        .account__header__tabs__buttons .icon-close,
-        .icon-sign-out,
-        .account__header__tabs__buttons .icon-undefined,
-        .icon-eye-slash,
-        .icon-eye,
-        .icon-eraser,
-        .icon-pencil,
-        .icon-edit,
-        .app-form__header-input .icon,
-        .account__domain-pill__popout__parts__icon .icon,
-        .safety-action-modal__bullet-points__icon .icon
-    )
-path {
+  :is(
+    .icon-bookmark,
+    .icon-star,
+    .icon-retweet,
+    .icon-repeat,
+    .icon-reply,
+    .icon-reply-all,
+    .icon-tasks,
+    .icon-quote-right,
+    .icon-home,
+    .icon-notifications-active,
+    .icon-hashtag,
+    .icon-explore,
+    .icon-search,
+    .icon-times-circle,
+    .icon-bell,
+    .icon-at,
+    .icon-bookmarks,
+    .icon-list-ul,
+    .column-link .icon-cog,
+    .drawer__tab .icon-cog,
+    .icon-flag,
+    .icon-tachometer,
+    .icon-bars,
+    .icon-bar-chart-4-bars,
+    .navigation-bar .icon-close,
+    .icon-user-plus,
+    .icon-person-add,
+    .icon-user,
+    .icon-users,
+    .icon-bullhorn,
+    .icon-sliders,
+    .icon-globe,
+    .icon-unlock,
+    .icon-lock,
+    .icon-paperclip,
+    .edit-indicator__attachments > .icon,
+    .icon-photo-library,
+    .compose-form__buttons .icon-button:nth-child(3) .icon,
+    .emoji-picker-dropdown > .icon-button .icon,
+    .icon-bell-o,
+    .icon-thumb-tack,
+    .icon-file-text,
+    .account--panel .icon-times,
+    .follow-request-banner .icon-times,
+    .account__relationship .icon-times,
+    .icon-ellipsis-h,
+    .icon-ellipsis-v,
+    .icon-check:is(.verified__mark, .verified-badge__mark),
+    .follow-request-banner .button .icon-check,
+    .account--panel button .icon-check,
+    .account__relationship .icon-check,
+    .status__action-bar .icon-close,
+    .detailed-status__action-bar .icon-close,
+    .account__header__tabs__buttons .icon-close,
+    .icon-sign-out,
+    .account__header__tabs__buttons .icon-undefined,
+    .icon-eye-slash,
+    .icon-eye,
+    .icon-eraser,
+    .icon-pencil,
+    .icon-edit,
+    .app-form__header-input .icon,
+    .account__domain-pill__popout__parts__icon .icon,
+    .safety-action-modal__bullet-points__icon .icon
+  )
+  path {
   display: none;
 }
 
 .app-body
-:is(
-        .icon-bookmark,
-        .icon-star,
-        .icon-retweet,
-        .icon-repeat,
-        .icon-reply,
-        .icon-reply-all,
-        .icon-tasks,
-        .icon-quote-right,
-        .icon-home,
-        .icon-notifications-active,
-        .icon-hashtag,
-        .icon-explore,
-        .icon-search,
-        .icon-times-circle,
-        .icon-bell,
-        .icon-at,
-        .icon-bookmarks,
-        .icon-list-ul,
-        .column-link .icon-cog,
-        .drawer__tab .icon-cog,
-        .icon-flag,
-        .icon-tachometer,
-        .icon-bars,
-        .icon-bar-chart-4-bars,
-        .navigation-bar .icon-close,
-        .icon-user-plus,
-        .icon-person-add,
-        .icon-user,
-        .icon-users,
-        .icon-bullhorn,
-        .icon-sliders,
-        .icon-globe,
-        .icon-unlock,
-        .icon-lock,
-        .icon-paperclip,
-        .edit-indicator__attachments > .icon,
-        .icon-photo-library,
-        .compose-form__buttons .icon-button:nth-child(3) .icon,
-        .emoji-picker-dropdown > .icon-button .icon,
-        .icon-bell-o,
-        .icon-thumb-tack,
-        .icon-file-text,
-        .account--panel .icon-times,
-        .follow-request-banner .icon-times,
-        .account__relationship .icon-times,
-        .icon-ellipsis-h,
-        .icon-ellipsis-v,
-        .icon-check:is(.verified__mark, .verified-badge__mark),
-        .follow-request-banner .button .icon-check,
-        .account--panel button .icon-check,
-        .account__relationship .icon-check,
-        .status__action-bar .icon-close,
-        .detailed-status__action-bar .icon-close,
-        .account__header__tabs__buttons .icon-close,
-        .icon-sign-out,
-        .account__header__tabs__buttons .icon-undefined,
-        .icon-eye-slash,
-        .icon-eye,
-        .icon-eraser,
-        .icon-pencil,
-        .icon-edit,
-        .app-form__header-input .icon,
-        .account__domain-pill__popout__parts__icon .icon,
-        .safety-action-modal__bullet-points__icon .icon
-    ) {
+  :is(
+    .icon-bookmark,
+    .icon-star,
+    .icon-retweet,
+    .icon-repeat,
+    .icon-reply,
+    .icon-reply-all,
+    .icon-tasks,
+    .icon-quote-right,
+    .icon-home,
+    .icon-notifications-active,
+    .icon-hashtag,
+    .icon-explore,
+    .icon-search,
+    .icon-times-circle,
+    .icon-bell,
+    .icon-at,
+    .icon-bookmarks,
+    .icon-list-ul,
+    .column-link .icon-cog,
+    .drawer__tab .icon-cog,
+    .icon-flag,
+    .icon-tachometer,
+    .icon-bars,
+    .icon-bar-chart-4-bars,
+    .navigation-bar .icon-close,
+    .icon-user-plus,
+    .icon-person-add,
+    .icon-user,
+    .icon-users,
+    .icon-bullhorn,
+    .icon-sliders,
+    .icon-globe,
+    .icon-unlock,
+    .icon-lock,
+    .icon-paperclip,
+    .edit-indicator__attachments > .icon,
+    .icon-photo-library,
+    .compose-form__buttons .icon-button:nth-child(3) .icon,
+    .emoji-picker-dropdown > .icon-button .icon,
+    .icon-bell-o,
+    .icon-thumb-tack,
+    .icon-file-text,
+    .account--panel .icon-times,
+    .follow-request-banner .icon-times,
+    .account__relationship .icon-times,
+    .icon-ellipsis-h,
+    .icon-ellipsis-v,
+    .icon-check:is(.verified__mark, .verified-badge__mark),
+    .follow-request-banner .button .icon-check,
+    .account--panel button .icon-check,
+    .account__relationship .icon-check,
+    .status__action-bar .icon-close,
+    .detailed-status__action-bar .icon-close,
+    .account__header__tabs__buttons .icon-close,
+    .icon-sign-out,
+    .account__header__tabs__buttons .icon-undefined,
+    .icon-eye-slash,
+    .icon-eye,
+    .icon-eraser,
+    .icon-pencil,
+    .icon-edit,
+    .app-form__header-input .icon,
+    .account__domain-pill__popout__parts__icon .icon,
+    .safety-action-modal__bullet-points__icon .icon
+  ) {
   background-repeat: no-repeat;
   background-size: 100%;
   background-position: center;
@@ -960,7 +982,10 @@ path {
 }
 
 .app-body button.icon-button.active .icon-retweet,
-.app-body .detailed-status__button button.icon-button.active:hover .icon-retweet {
+.app-body
+  .detailed-status__button
+  button.icon-button.active:hover
+  .icon-retweet {
   background-image: var(--icon-boost-accent-active);
 }
 
@@ -979,15 +1004,15 @@ path {
 }
 
 .app-body
-button.icon-button:is(
-        .reblogPrivate:where(.disabled, [disabled]),
-        .reblogPrivate:where(.disabled, [disabled]):hover,
-        .disabled,
-        .disabled:hover
-    )
-.icon-retweet {
+  button.icon-button:is(
+    .reblogPrivate:where(.disabled, [disabled]),
+    .reblogPrivate:where(.disabled, [disabled]):hover,
+    .disabled,
+    .disabled:hover
+  )
+  .icon-retweet {
   background-image: var(--icon-boost-accent);
-  opacity: .2;
+  opacity: 0.2;
   pointer-events: none;
 }
 
@@ -1028,7 +1053,13 @@ button.icon-button:is(
   background-image: var(--icon-ellipsis-accent);
 }
 
-.app-body :is(.status__action-bar, .detailed-status__action-bar, .account__header__tabs__buttons) .icon-close {
+.app-body
+  :is(
+    .status__action-bar,
+    .detailed-status__action-bar,
+    .account__header__tabs__buttons
+  )
+  .icon-close {
   background-image: var(--icon-ellipsis-active);
 }
 
@@ -1253,7 +1284,7 @@ button.icon-button:is(
 
 .app-body .navigation-bar .icon-button.active {
   transform: rotate(60deg) scale(1.1);
-  animation: rotate-bounce .4s 1;
+  animation: rotate-bounce 0.4s 1;
 }
 
 /* Follow user icon */
@@ -1362,7 +1393,10 @@ button.icon-button:is(
   background-image: var(--icon-warning);
 }
 
-.app-body .compose-form__buttons .icon-button:nth-child(3):is(.active, .active:hover) .icon {
+.app-body
+  .compose-form__buttons
+  .icon-button:nth-child(3):is(.active, .active:hover)
+  .icon {
   background-image: var(--icon-warning-inv);
 }
 
@@ -1370,7 +1404,10 @@ button.icon-button:is(
   background-image: var(--icon-verified);
 }
 
-.app-body .follow-request-banner .button:is(:active, :focus, :hover) .icon-check {
+.app-body
+  .follow-request-banner
+  .button:is(:active, :focus, :hover)
+  .icon-check {
   background-image: var(--icon-check-inv);
 }
 
@@ -1396,17 +1433,16 @@ button.icon-button:is(
 }
 
 .app-body
-:is(
-        .account--panel,
-        .follow-request-banner,
-        .account__relationship
-    )
-.icon-times {
+  :is(.account--panel, .follow-request-banner, .account__relationship)
+  .icon-times {
   background-image: var(--icon-reject);
 }
 
 .app-body .account--panel .icon-times,
-.app-body .follow-request-banner .button:is(:active, :focus, :hover) .icon-times {
+.app-body
+  .follow-request-banner
+  .button:is(:active, :focus, :hover)
+  .icon-times {
   background-image: var(--icon-reject-inv);
 }
 
@@ -1526,7 +1562,10 @@ button.icon-button:is(
   }
 
   .app-body .navigation-panel .column-link.active .icon-list-ul,
-  .app-body .navigation-panel .column-link:has(+ .list-panel > .column-link.active) .icon-list-ul {
+  .app-body
+    .navigation-panel
+    .column-link:has(+ .list-panel > .column-link.active)
+    .icon-list-ul {
     background-image: var(--icon-list-accent-active);
   }
 
@@ -1551,8 +1590,6 @@ button.icon-button:is(
   }
 }
 
-
-
 /* Links */
 .app-body a.status-link:not(.mention, .hashtag),
 .app-body a:is(.status-link, .mention, .navigation-bar__profile-edit) span,
@@ -1564,18 +1601,31 @@ button.icon-button:is(
 }
 
 .app-body a.status-link:not(.mention, .hashtag):is(:active, :focus, :hover),
-.app-body a:is(.status-link, .mention, .navigation-bar__profile-edit):is(:active, :focus, :hover) span,
-.app-body :is(.account__header__fields, .account__header__content, .trends__item__name) a:is(:active, :focus, :hover) span,
 .app-body
-:is(
-        .detailed-status__display-name,
-        .reply-indicator__display-name,
-        .status__display-name,
-        a.account__display-name
-    ):is(:active, :focus, :hover)
-.display-name strong,
+  a:is(.status-link, .mention, .navigation-bar__profile-edit):is(
+    :active,
+    :focus,
+    :hover
+  )
+  span,
+.app-body
+  :is(.account__header__fields, .account__header__content, .trends__item__name)
+  a:is(:active, :focus, :hover)
+  span,
+.app-body
+  :is(
+    .detailed-status__display-name,
+    .reply-indicator__display-name,
+    .status__display-name,
+    a.account__display-name
+  ):is(:active, :focus, :hover)
+  .display-name
+  strong,
 .app-body .status__prepend a:is(:active, :focus, :hover) bdi,
-.app-body a.notification-request__link:is(:active, :focus, :hover) .notification-request__name__display-name strong,
+.app-body
+  a.notification-request__link:is(:active, :focus, :hover)
+  .notification-request__name__display-name
+  strong,
 .app-body .more-from-author a:is(:active, :focus, :hover) bdi {
   text-decoration-line: underline;
   text-decoration-color: currentColor;
@@ -1584,16 +1634,21 @@ button.icon-button:is(
 }
 
 .app-body a.mention:is(:active, :focus, :hover),
-.app-body :is(.account__header__fields, .account__header__content) a:is(:active, :focus, :hover),
-.app-body :is(.detailed-status__datetime, .status__relative-time):is(:active, :focus, :hover) {
+.app-body
+  :is(.account__header__fields, .account__header__content)
+  a:is(:active, :focus, :hover),
+.app-body
+  :is(.detailed-status__datetime, .status__relative-time):is(
+    :active,
+    :focus,
+    :hover
+  ) {
   text-decoration: none !important;
 }
 
 .app-body .account__header__fields .verified a span {
   display: inline;
 }
-
-
 
 /* 📝 Compose panel
    ---------------- */
@@ -1610,8 +1665,8 @@ button.icon-button:is(
   border-left: 1px solid var(--color-lines);
   border-right: 1px solid var(--color-lines);
   transition:
-    background-color .2s,
-    border-color .2s;
+    background-color 0.2s,
+    border-color 0.2s;
 }
 
 .app-body .navigation-bar strong {
@@ -1652,18 +1707,26 @@ button.icon-button:is(
   border-top-left-radius: 0;
   border-top-right-radius: 0;
   background-color: var(--color-content-bg);
-  transition: all .2s;
+  transition: all 0.2s;
 }
 
-.app-body .compose-form .reply-indicator:has(~ .compose-form__highlightable:focus-within),
-.app-body .compose-form .navigation-bar:has(~ .compose-form__highlightable:focus-within),
-.app-body .compose-form .compose-form__warning:has(~ .compose-form__highlightable:focus-within),
+.app-body
+  .compose-form
+  .reply-indicator:has(~ .compose-form__highlightable:focus-within),
+.app-body
+  .compose-form
+  .navigation-bar:has(~ .compose-form__highlightable:focus-within),
+.app-body
+  .compose-form
+  .compose-form__warning:has(~ .compose-form__highlightable:focus-within),
 .app-body .compose-form__highlightable:focus-within {
   border-color: var(--color-accent);
 }
 
 .app-body .compose-form .reply-indicator + .navigation-bar,
-.app-body .compose-form .navigation-bar:has(~ .compose-form__highlightable:focus-within),
+.app-body
+  .compose-form
+  .navigation-bar:has(~ .compose-form__highlightable:focus-within),
 .app-body .reply-indicator {
   background-color: var(--color-content-bg);
 }
@@ -1672,13 +1735,14 @@ button.icon-button:is(
   box-shadow: none;
 }
 
-.app-body .compose-form
-:is(
-        .autosuggest-textarea__suggestions,
-        .autosuggest-textarea__textarea,
-        .autosuggest-textarea__suggestions__item,
-        .compose-form__modifiers
-    ) {
+.app-body
+  .compose-form
+  :is(
+    .autosuggest-textarea__suggestions,
+    .autosuggest-textarea__textarea,
+    .autosuggest-textarea__suggestions__item,
+    .compose-form__modifiers
+  ) {
   background-color: var(--color-content-bg);
   color: var(--color-content-fg);
   border: 0;
@@ -1692,7 +1756,7 @@ button.icon-button:is(
 
 .app-body .compose-form .autosuggest-textarea__textarea::placeholder {
   font-size: 130%;
-  opacity: .5;
+  opacity: 0.5;
 }
 
 .app-body .autosuggest-textarea__textarea::placeholder,
@@ -1718,8 +1782,22 @@ button.icon-button:is(
   color: var(--color-content-fg);
 }
 
-.app-body .autosuggest-textarea__suggestions__item:is(.selected, :active, :focus, :hover),
-.app-body .autosuggest-textarea__suggestions__item:is(.selected, :active, :focus, :hover) .autosuggest-account :is(.display-name__account, .display-name__html) {
+.app-body
+  .autosuggest-textarea__suggestions__item:is(
+    .selected,
+    :active,
+    :focus,
+    :hover
+  ),
+.app-body
+  .autosuggest-textarea__suggestions__item:is(
+    .selected,
+    :active,
+    :focus,
+    :hover
+  )
+  .autosuggest-account
+  :is(.display-name__account, .display-name__html) {
   background-color: var(--color-accent);
   color: var(--color-accent-fg);
 }
@@ -1739,7 +1817,7 @@ button.icon-button:is(
   border-color: var(--color-accent-bg);
   color: var(--color-accent);
   padding: 5px 8px;
-  transition: border-color .2s;
+  transition: border-color 0.2s;
 }
 
 .app-body .dropdown-button:hover {
@@ -1766,7 +1844,7 @@ button.icon-button:is(
   box-shadow: none;
   margin: 0;
   padding: 18px 15px 0 18px;
-  transition: all .2s;
+  transition: all 0.2s;
 }
 
 .app-body .reply-indicator p {
@@ -1776,7 +1854,7 @@ button.icon-button:is(
 .app-body .reply-indicator__line::before {
   background-color: var(--color-accent);
   z-index: 1;
-  opacity: .6;
+  opacity: 0.6;
 }
 
 .app-body .reply-indicator + .navigation-bar {
@@ -1789,7 +1867,7 @@ button.icon-button:is(
 .app-body .reply-indicator .display-name__account,
 .app-body .reply-indicator__attachments {
   color: var(--color-content-fg);
-  opacity: .7;
+  opacity: 0.7;
 }
 
 .app-body .reply-indicator__attachments {
@@ -1809,7 +1887,7 @@ button.icon-button:is(
 }
 
 .app-body .edit-indicator__header > *:not(.edit-indicator__cancel) {
-  opacity: .7;
+  opacity: 0.7;
 }
 
 .app-body .edit-indicator__content {
@@ -1822,24 +1900,23 @@ button.icon-button:is(
 
 .app-body .edit-indicator__attachments {
   color: var(--color-content-fg);
-  opacity: .7;
+  opacity: 0.7;
 }
 
-.app-body .navigation-bar .icon-button:not(:has(.icon-bars),.active) {
+.app-body .navigation-bar .icon-button:not(:has(.icon-bars), .active) {
   border: 1px solid var(--color-accent-bg);
   color: var(--color-accent);
   border-radius: 8px;
-  transition: all .2s;
+  transition: all 0.2s;
 }
 
-.app-body .navigation-bar .icon-button:not(:has(.icon-bars),.active):hover {
+.app-body .navigation-bar .icon-button:not(:has(.icon-bars), .active):hover {
   border-color: var(--color-accent);
 }
 
-.app-body .navigation-bar .icon-button:not(:has(.icon-bars),.active):active {
+.app-body .navigation-bar .icon-button:not(:has(.icon-bars), .active):active {
   background-color: var(--color-accent-bg);
 }
-
 
 .app-body .compose-form .compose-form__warning {
   background-color: var(--color-accent-bg);
@@ -1847,7 +1924,7 @@ button.icon-button:is(
   border-right: 1px solid var(--color-lines);
   border-radius: 0;
   box-shadow: none;
-  transition: border-color .2s;
+  transition: border-color 0.2s;
 }
 
 .app-body .compose-form .compose-form__warning,
@@ -1867,7 +1944,7 @@ button.icon-button:is(
   background-color: transparent;
 }
 
-.app-body .compose-form__sensitive-button input[type="checkbox"]:checked {
+.app-body .compose-form__sensitive-button input[type='checkbox']:checked {
   background-color: var(--color-accent);
   border-color: var(--color-accent);
 }
@@ -1904,7 +1981,7 @@ button.icon-button:is(
   border-radius: 8px;
   padding: 8px 15px 8px 36px;
   font-weight: 500;
-  transition: all .2s;
+  transition: all 0.2s;
 }
 
 .app-body .compose-form .spoiler-input__input:focus {
@@ -1916,16 +1993,27 @@ button.icon-button:is(
   color: var(--color-content-fg);
 }
 
-.app-body .compose-form__upload .icon-button.compose-form__upload__delete .icon {
+.app-body
+  .compose-form__upload
+  .icon-button.compose-form__upload__delete
+  .icon {
   width: 15px;
   height: 15px;
 }
 
-.app-body .compose-form .compose-form__modifiers .compose-form__upload .icon-button {
+.app-body
+  .compose-form
+  .compose-form__modifiers
+  .compose-form__upload
+  .icon-button {
   color: #ffffff;
 }
 
-.app-body .compose-form .compose-form__modifiers .compose-form__upload .icon-button:is(:active, :focus, :hover) {
+.app-body
+  .compose-form
+  .compose-form__modifiers
+  .compose-form__upload
+  .icon-button:is(:active, :focus, :hover) {
   background-color: rgba(0, 0, 0, 40%);
 }
 @media screen and (width <=1174px) {
@@ -1939,20 +2027,21 @@ button.icon-button:is(
   vertical-align: bottom;
 }
 
-
 .app-body .character-counter {
   color: var(--color-content-fg);
   opacity: 0;
   font-size: 15px;
   font-weight: 500;
   transition:
-    opacity .3s,
-    margin-right .3s;
+    opacity 0.3s,
+    margin-right 0.3s;
   transform-origin: right center;
   margin-right: -10px;
 }
 
-.app-body .compose-form:not(:has(.autosuggest-textarea__textarea:placeholder-shown)) .character-counter {
+.app-body
+  .compose-form:not(:has(.autosuggest-textarea__textarea:placeholder-shown))
+  .character-counter {
   opacity: 1;
   margin-right: 0;
 }
@@ -1960,7 +2049,7 @@ button.icon-button:is(
 .app-body .character-counter--over {
   color: #df405a;
   font-weight: 500;
-  animation: bounce .3s 1;
+  animation: bounce 0.3s 1;
 }
 
 .compose-form__footer {
@@ -1986,7 +2075,7 @@ button.icon-button:is(
 .app-body .compose-form__buttons .icon-button {
   padding: 6px;
   border-radius: 8px;
-  transition: all .2s;
+  transition: all 0.2s;
 }
 
 .app-body .compose-form__buttons .icon {
@@ -2012,22 +2101,27 @@ button.icon-button:is(
   background-image: var(--icon-send-inv);
   background-color: var(--color-accent);
   transition:
-    transform .2s,
-    background-color .2s,
-    border-color .2s;
+    transform 0.2s,
+    background-color 0.2s,
+    border-color 0.2s;
 }
 
 .app-body .compose-form__submit .button:active {
-  transform: scale(.95);
+  transform: scale(0.95);
 }
 
-.app-body .compose-form:has(.autosuggest-textarea__textarea:placeholder-shown) .compose-form__submit .button {
+.app-body
+  .compose-form:has(.autosuggest-textarea__textarea:placeholder-shown)
+  .compose-form__submit
+  .button {
   background-image: var(--icon-send);
   background-color: var(--color-accent-bg);
 }
 
-.app-body .compose-form:not(:has(.autosuggest-textarea__textarea:placeholder-shown)) .compose-form__submit {
-  animation: bounce-sml .2s ease-out 1;
+.app-body
+  .compose-form:not(:has(.autosuggest-textarea__textarea:placeholder-shown))
+  .compose-form__submit {
+  animation: bounce-sml 0.2s ease-out 1;
 }
 
 .app-body .upload-area__background {
@@ -2049,7 +2143,7 @@ button.icon-button:is(
 }
 
 .app-body .upload-progress .icon {
-  color: var(--color-accent)
+  color: var(--color-accent);
 }
 
 .app-body .upload-progress__message,
@@ -2080,16 +2174,16 @@ button.icon-button:is(
   margin-bottom: 2px;
 }
 
-.app-body .poll__option input[type="text"] {
+.app-body .poll__option input[type='text'] {
   border-radius: 8px;
   padding: 7px 12px;
   border: 1px solid var(--color-lines);
   background-color: var(--color-content-bg);
   color: var(--color-content-fg);
-  transition: all .2s;
+  transition: all 0.2s;
 }
 
-.app-body .poll__option input[type="text"]:focus {
+.app-body .poll__option input[type='text']:focus {
   border-color: var(--color-accent);
 }
 
@@ -2115,8 +2209,8 @@ button.icon-button:is(
   font-size: 12px;
   line-height: 1.33;
   transition:
-    background-color .2s,
-    border-color .2s;
+    background-color 0.2s,
+    border-color 0.2s;
   cursor: pointer;
 }
 
@@ -2130,32 +2224,56 @@ button.icon-button:is(
   color: var(--color-accent-fg);
 }
 
-.app-body .compose-form__poll__footer .compose-form__poll__select:first-child .compose-form__poll__select__value {
+.app-body
+  .compose-form__poll__footer
+  .compose-form__poll__select:first-child
+  .compose-form__poll__select__value {
   background-image: var(--icon-timer);
 }
 
-.app-body .compose-form__poll__footer .compose-form__poll__select:first-child .compose-form__poll__select__value:active {
+.app-body
+  .compose-form__poll__footer
+  .compose-form__poll__select:first-child
+  .compose-form__poll__select__value:active {
   background-image: var(--icon-timer-inv);
 }
 
-.app-body .compose-form__poll__footer .compose-form__poll__select:last-child .compose-form__poll__select__value {
+.app-body
+  .compose-form__poll__footer
+  .compose-form__poll__select:last-child
+  .compose-form__poll__select__value {
   background-image: var(--icon-check-radio);
 }
 
-.app-body .compose-form__poll__footer .compose-form__poll__select:last-child .compose-form__poll__select__value:active,
-.app-body .compose-form__poll__footer .compose-form__poll__select:last-child .compose-form__poll__select__value:has(option:first-child:checked):active {
+.app-body
+  .compose-form__poll__footer
+  .compose-form__poll__select:last-child
+  .compose-form__poll__select__value:active,
+.app-body
+  .compose-form__poll__footer
+  .compose-form__poll__select:last-child
+  .compose-form__poll__select__value:has(option:first-child:checked):active {
   background-image: var(--icon-check-radio-inv);
 }
 
-.app-body .compose-form__poll__footer .compose-form__poll__select:last-child .compose-form__poll__select__value:has(option:first-child:checked) {
+.app-body
+  .compose-form__poll__footer
+  .compose-form__poll__select:last-child
+  .compose-form__poll__select__value:has(option:first-child:checked) {
   background-image: var(--icon-check-radio);
 }
 
-.app-body .compose-form__poll__footer .compose-form__poll__select:last-child .compose-form__poll__select__value:has(option:last-child:checked) {
+.app-body
+  .compose-form__poll__footer
+  .compose-form__poll__select:last-child
+  .compose-form__poll__select__value:has(option:last-child:checked) {
   background-image: var(--icon-check-box);
 }
 
-.app-body .compose-form__poll__footer .compose-form__poll__select:last-child .compose-form__poll__select__value:has(option:last-child:checked):active {
+.app-body
+  .compose-form__poll__footer
+  .compose-form__poll__select:last-child
+  .compose-form__poll__select__value:has(option:last-child:checked):active {
   background-image: var(--icon-check-box-inv);
 }
 
@@ -2164,7 +2282,7 @@ button.icon-button:is(
 }
 
 .app-body .compose-form__poll .poll__option.empty:not(:focus-within) {
-  opacity: .8;
+  opacity: 0.8;
 }
 
 .app-body .compose-form__poll-wrapper,
@@ -2232,7 +2350,7 @@ button.icon-button:is(
   font-size: 12px;
   font-weight: 500;
   height: 32px;
-  transition: all .3s;
+  transition: all 0.3s;
 }
 
 .app-body .poll__link:hover {
@@ -2260,7 +2378,7 @@ button.icon-button:is(
   font-weight: 500;
   padding: 8px;
   border-radius: 8px;
-  transition: all .2s;
+  transition: all 0.2s;
   position: relative;
   z-index: 1;
   align-items: center;
@@ -2271,7 +2389,7 @@ button.icon-button:is(
 }
 
 .app-body .poll__option.selectable:active {
-  transform: scale(.98);
+  transform: scale(0.98);
 }
 
 .app-body .poll__option.selectable:hover {
@@ -2289,8 +2407,7 @@ button.icon-button:is(
   border-width: 0;
   outline-width: 0 !important;
   background-color: var(--color-lines);
-  transition:
-    background .2s;
+  transition: background 0.2s;
 }
 
 .app-body .poll__option.selectable:hover .poll__input:not(.active) {
@@ -2326,11 +2443,11 @@ button.icon-button:is(
 }
 
 .app-body .poll__footer .button.button-secondary:not(:disabled) {
-  animation: bounce-sml .3s ease-out 1;
+  animation: bounce-sml 0.3s ease-out 1;
 }
 
 .app-body .poll__footer .button.button-secondary:active {
-  transform: scale(.95);
+  transform: scale(0.95);
 }
 
 .app-body .poll__voted {
@@ -2347,7 +2464,7 @@ button.icon-button:is(
 
 .app-body .poll__chart {
   background: var(--color-lines);
-  opacity: .8;
+  opacity: 0.8;
   height: auto;
   border-radius: 8px 0 0 8px;
   position: absolute;
@@ -2365,7 +2482,7 @@ button.icon-button:is(
 .app-body .muted .poll__chart.leading,
 .app-body .poll__option:has(.poll__voted) + .poll__chart.leading {
   background: var(--color-confirm);
-  opacity: .5;
+  opacity: 0.5;
 }
 
 .app-body .poll__option:has(.poll__voted) {
@@ -2472,23 +2589,19 @@ button.icon-button:is(
   color: var(--color-accent);
 }
 
-
-
 /* Zoom on emojis on hover (in post content only */
-.app-body .status__content:not(.status__content--collapsed) { /* So the emoji doesn't clip out when zoomed on. */
+.app-body .status__content:not(.status__content--collapsed) {
+  /* So the emoji doesn't clip out when zoomed on. */
   overflow: visible;
 }
 
 .app-body .status__content .emojione {
-  transition: transform .8s .8s;
+  transition: transform 0.8s 0.8s;
 }
 
 .app-body .status__content .emojione:hover {
   transform: scale(2.5);
 }
-
-
-
 
 /* 💬 Posts
    -------- */
@@ -2527,7 +2640,7 @@ button.icon-button:is(
   background-position: center;
   background-image: var(--icon-translate-accent);
   border-radius: 8px;
-  transition: all .3s;
+  transition: all 0.3s;
   background-color: transparent;
 }
 
@@ -2547,11 +2660,11 @@ button.icon-button:is(
   }
 }
 
-.app-body .scrollable > div:is(:last-child, :only-child) .detailed-status__wrapper:last-child
-:is(
-        .translate-button .link-button,
-        .status__content__translate-button
-    ) {
+.app-body
+  .scrollable
+  > div:is(:last-child, :only-child)
+  .detailed-status__wrapper:last-child
+  :is(.translate-button .link-button, .status__content__translate-button) {
   bottom: 12px;
 }
 
@@ -2566,7 +2679,7 @@ button.icon-button:is(
 .app-body .detailed-status .translate-button .link-button:hover {
   background-image: var(--icon-translate-active);
   background-color: var(--color-accent);
-  transform: scale(.8);
+  transform: scale(0.8);
 }
 
 .app-body .status__content__translate-button > span,
@@ -2589,7 +2702,7 @@ button.icon-button:is(
 }
 
 .app-body .status__wrapper {
-  transition: background .3s;
+  transition: background 0.3s;
 }
 
 .app-body .status__wrapper,
@@ -2618,11 +2731,17 @@ button.icon-button:is(
 
 .app-body .scrollable > div:last-child > div:last-child > .status__wrapper,
 .app-body .scrollable > div > article:last-child > div > .status__wrapper,
-.app-body .search-results__section > div:last-child >.status__wrapper {
+.app-body .search-results__section > div:last-child > .status__wrapper {
   border-bottom: 1px solid var(--color-lines);
 }
 
-.app-body .dismissable-banner + .scrollable > div > article:first-child > div > .status__wrapper {
+.app-body
+  .dismissable-banner
+  + .scrollable
+  > div
+  > article:first-child
+  > div
+  > .status__wrapper {
   border-top: 0;
 }
 
@@ -2650,7 +2769,7 @@ button.icon-button:is(
 
 .app-body .status__info .status__display-name .display-name__account {
   display: inline;
-  opacity: .6;
+  opacity: 0.6;
 }
 
 .app-body .status__relative-time {
@@ -2663,24 +2782,24 @@ button.icon-button:is(
 }
 
 .app-body .status__relative-time > * {
-  opacity: .6;
+  opacity: 0.6;
 }
 
 .app-body .status__relative-time::before,
 .app-body .status__relative-time::after {
   position: absolute;
-  content: " ";
+  content: ' ';
   display: block;
   height: 100%;
   z-index: -1;
-  transition: all .3s;
+  transition: all 0.3s;
 }
 
 .app-body .status__relative-time::before {
   width: 20px;
   inset-inline-start: -20px;
   background: linear-gradient(90deg, transparent, var(--color-post-bg));
-  transition: all .2s;
+  transition: all 0.2s;
 }
 
 .app-body .status__relative-time::after {
@@ -2720,22 +2839,36 @@ button.icon-button:is(
   border-radius: 50%;
   outline: 6px solid var(--color-post-bg);
   background-color: var(--color-post-bg);
-  transition: outline .3s;
+  transition: outline 0.3s;
 }
 
-.app-body .status__prepend + .status .status__avatar .account__avatar-overlay-base .account__avatar {
+.app-body
+  .status__prepend
+  + .status
+  .status__avatar
+  .account__avatar-overlay-base
+  .account__avatar {
   width: 46px !important;
   height: 46px !important;
 }
 
-.app-body .status__prepend + .status .status__avatar .account__avatar-overlay-overlay {
+.app-body
+  .status__prepend
+  + .status
+  .status__avatar
+  .account__avatar-overlay-overlay {
   position: absolute;
   top: -34px;
   right: -38px;
   pointer-events: none;
 }
 
-.app-body .status__prepend + .status .status__avatar .account__avatar-overlay-overlay .account__avatar {
+.app-body
+  .status__prepend
+  + .status
+  .status__avatar
+  .account__avatar-overlay-overlay
+  .account__avatar {
   width: 29px !important;
   height: 29px !important;
 }
@@ -2754,7 +2887,6 @@ button.icon-button:is(
   font-style: italic;
 }
 
-
 /* 📏 Post dividers */
 
 /* Use ::before to set a non-full-width divider between posts and notifications. The divider sits above the post. */
@@ -2766,8 +2898,8 @@ button.icon-button:is(
   width: calc(100% - 78px);
   right: 0;
   top: -1px;
-  content: "";
-  opacity: .7;
+  content: '';
+  opacity: 0.7;
 }
 @media screen and (width <=889px) {
   .app-body .status::before,
@@ -2792,9 +2924,21 @@ button.icon-button:is(
 .app-body .dismissable-banner + article .status::before {
   display: none;
 }
-@media screen and (width >=890px) and (width <=1174px) { /* no divider above first post in a column thread on medium-size devices */
-  .app-body .scrollable > div:first-child > div:first-child > .status__wrapper .status::before,
-  .app-body .scrollable > div > article:first-child > div > .status__wrapper .status::before{
+@media screen and (width >=890px) and (width <=1174px) {
+  /* no divider above first post in a column thread on medium-size devices */
+  .app-body
+    .scrollable
+    > div:first-child
+    > div:first-child
+    > .status__wrapper
+    .status::before,
+  .app-body
+    .scrollable
+    > div
+    > article:first-child
+    > div
+    > .status__wrapper
+    .status::before {
     display: none;
   }
 }
@@ -2809,18 +2953,19 @@ button.icon-button:is(
   right: 0;
 }
 
-.app-body .status--in-thread
-:is(
-        .attachment-list,
-        .audio-player,
-        .hashtag-bar,
-        .media-gallery,
-        .picture-in-picture-placeholder,
-        .status-card,
-        .status__action-bar,
-        .status__content,
-        .video-player
-    ) {
+.app-body
+  .status--in-thread
+  :is(
+    .attachment-list,
+    .audio-player,
+    .hashtag-bar,
+    .media-gallery,
+    .picture-in-picture-placeholder,
+    .status-card,
+    .status__action-bar,
+    .status__content,
+    .video-player
+  ) {
   margin-left: 0;
   width: auto;
 }
@@ -2834,21 +2979,40 @@ button.icon-button:is(
 }
 
 /* Default lines when replying in real time */
-.app-body div[tabindex="-1"]:has(.status--in-thread) .status--in-thread:not(.status--first-in-thread) > .status__line:not(.status__line--full) {
+.app-body
+  div[tabindex='-1']:has(.status--in-thread)
+  .status--in-thread:not(.status--first-in-thread)
+  > .status__line:not(.status__line--full) {
   height: 0;
 }
 
 /* Hide line before first in thread */
-.app-body div[tabindex="-1"]:has(.status--in-thread) + div[tabindex="-1"] > .status--in-thread.status--first-in-thread > .status__line:not(.status__line--full),
-.app-body div[tabindex="-1"]:has(.detailed-status__wrapper) + div[tabindex="-1"] > .status__wrapper .status__line:not(.status__line--full) {
+.app-body
+  div[tabindex='-1']:has(.status--in-thread)
+  + div[tabindex='-1']
+  > .status--in-thread.status--first-in-thread
+  > .status__line:not(.status__line--full),
+.app-body
+  div[tabindex='-1']:has(.detailed-status__wrapper)
+  + div[tabindex='-1']
+  > .status__wrapper
+  .status__line:not(.status__line--full) {
   height: 0;
 }
 
-.app-body div[tabindex="-1"]:has(+ div[tabindex="-1"] > .detailed-status__wrapper) .status--in-thread .status__line {
+.app-body
+  div[tabindex='-1']:has(+ div[tabindex='-1'] > .detailed-status__wrapper)
+  .status--in-thread
+  .status__line {
   height: calc(100% - 32px) !important;
 }
 
-.app-body div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.status--in-thread > .status__line.status__line--full,
+.app-body
+  div[tabindex='-1']
+  + div[tabindex='-1']
+  > .status__wrapper
+  > .status-reply.status--in-thread
+  > .status__line.status__line--full,
 .app-body .status__line--full.status__line--first {
   top: 32px;
   height: 100%;
@@ -2865,7 +3029,7 @@ button.icon-button:is(
   margin-inline-start: 6px;
   border-inline-start: 2px solid var(--color-accent);
   -webkit-border-start: 2px solid var(--color-accent);
-  opacity: .6;
+  opacity: 0.6;
 }
 
 .app-body .status__line--full::before {
@@ -2873,9 +3037,17 @@ button.icon-button:is(
 }
 
 /* Hide the "stub" from the first status line */
-div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.status--in-thread > .status__line.status__line--full,
-.app-body .status-reply.status--in-thread.status--first-in-thread > .status__line,
-.app-body .status-reply.status--in-thread.status--first-in-thread > .status__line--full::before {
+div[tabindex='-1']
+  + div[tabindex='-1']
+  > .status__wrapper
+  > .status-reply.status--in-thread
+  > .status__line.status__line--full,
+.app-body
+  .status-reply.status--in-thread.status--first-in-thread
+  > .status__line,
+.app-body
+  .status-reply.status--in-thread.status--first-in-thread
+  > .status__line--full::before {
   top: 32px;
 }
 @media screen and (width <=889px) {
@@ -2884,13 +3056,12 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
   }
 }
 
-
 /* ⏺️ Posts when in focus */
 .app-body
-:is(.status__wrapper.focusable, .detailed-status__wrapper.focusable):focus,
+  :is(.status__wrapper.focusable, .detailed-status__wrapper.focusable):focus,
 .app-body
-:is(.focusable, .status__wrapper.focusable):focus
-:is(.detailed-status, .detailed-status__action-bar),
+  :is(.focusable, .status__wrapper.focusable):focus
+  :is(.detailed-status, .detailed-status__action-bar),
 .app-body .focusable:focus .notification-ungrouped__header,
 .app-body .focusable:focus .status__wrapper,
 .app-body .focusable:focus {
@@ -2900,21 +3071,28 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
 
   background-color: var(--color-post-bg);
 }
-@media screen and (width >=1175px) { /* Subtle hover effect when you hover over a post content in the timeline. Only on bigger screens. */
+@media screen and (width >=1175px) {
+  /* Subtle hover effect when you hover over a post content in the timeline. Only on bigger screens. */
   .app-body .status__wrapper:has(.status__content:hover),
-  .app-body .notification__message:has(+ div > .status__wrapper .status__content:hover),
+  .app-body
+    .notification__message:has(+ div > .status__wrapper .status__content:hover),
   .app-body .status__wrapper:has(.status__content:hover) .status__avatar,
-  .app-body .notification-ungrouped:has(.status__wrapper .status__content:hover) .notification-ungrouped__header {
+  .app-body
+    .notification-ungrouped:has(.status__wrapper .status__content:hover)
+    .notification-ungrouped__header {
     --color-post-bg: var(--color-content-bg-focus);
   }
 }
 
-.app-body :is(.status__wrapper.focusable, .detailed-status__wrapper.focusable):focus .status__avatar {
+.app-body
+  :is(.status__wrapper.focusable, .detailed-status__wrapper.focusable):focus
+  .status__avatar {
   outline: 6px solid var(--color-post-bg);
 }
 
 /* 👁️ Post detailed view */
-.app-body .detailed-status__wrapper { /* Set full-width divider above and below a detailed post */
+.app-body .detailed-status__wrapper {
+  /* Set full-width divider above and below a detailed post */
   background-color: var(--color-post-bg);
   border-top: 1px solid var(--color-lines);
   border-bottom: 1px solid var(--color-lines);
@@ -2925,7 +3103,10 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
     inset 0 -6px var(--color-lines);
 }
 
-.app-body .scrollable > div:is(:last-child, :only-child) .detailed-status__wrapper:last-child {
+.app-body
+  .scrollable
+  > div:is(:last-child, :only-child)
+  .detailed-status__wrapper:last-child {
   padding-bottom: 12px;
   box-shadow: none;
 }
@@ -2964,12 +3145,15 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
   font-weight: bold;
 }
 
-.app-body :is(.compose-panel, .compose-form) .detailed-status__display-name strong {
+.app-body
+  :is(.compose-panel, .compose-form)
+  .detailed-status__display-name
+  strong {
   font-size: 14px;
 }
 
 .app-body .detailed-status__display-name .display-name__account {
-  opacity: .7;
+  opacity: 0.7;
 }
 
 .app-body .detailed-status__meta {
@@ -2988,7 +3172,7 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
 
 .app-body .detailed-status__meta::before {
   position: absolute;
-  content: " ";
+  content: ' ';
   display: block;
   height: 100%;
   z-index: 1;
@@ -3004,7 +3188,7 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
   padding-bottom: 0;
   gap: 6px;
   position: relative;
-  opacity: .6;
+  opacity: 0.6;
 }
 
 .app-body .detailed-status__meta__line:first-child {
@@ -3026,28 +3210,28 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
 
 .app-body .detailed-status__meta__line:last-child {
   flex: 100%;
-  opacity: .9;
+  opacity: 0.9;
 }
 
 .app-body .detailed-status__application::before {
-  content: "\00B7\00A0";
+  content: '\00B7\00A0';
   margin-left: -3px;
 }
 
-.app-body .detailed-status__link:is([href$="/reblogs"], [href$="/favourites"]) {
+.app-body .detailed-status__link:is([href$='/reblogs'], [href$='/favourites']) {
   padding-left: 20px;
   border-radius: 8px;
   background-position: left center;
   background-repeat: no-repeat;
   background-size: 15px;
-  transition: all .2s;
+  transition: all 0.2s;
 }
 
-.app-body .detailed-status__link[href$="/reblogs"] {
+.app-body .detailed-status__link[href$='/reblogs'] {
   background-image: var(--icon-boost);
 }
 
-.app-body .detailed-status__link[href$="/favourites"] {
+.app-body .detailed-status__link[href$='/favourites'] {
   background-image: var(--icon-star);
 }
 
@@ -3103,25 +3287,37 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
   font-weight: 500;
 }
 
-.app-body .status__action-bar__button:has(.icon-button__counter > .animated-number) {
+.app-body
+  .status__action-bar__button:has(.icon-button__counter > .animated-number) {
   padding-left: 4px;
   padding-right: 4px;
   margin-right: 2px;
 }
 
 .app-body
-:is(.status__action-bar, .detailed-status__action-bar, .picture-in-picture__footer)
-.active
-.icon-retweet + .icon-button__counter > .animated-number {
+  :is(
+    .status__action-bar,
+    .detailed-status__action-bar,
+    .picture-in-picture__footer
+  )
+  .active
+  .icon-retweet
+  + .icon-button__counter
+  > .animated-number {
   color: var(--color-accent);
 }
 
 .app-body
-:is(.status__action-bar, .detailed-status__action-bar, .picture-in-picture__footer)
-.active
-.icon-star + .icon-button__counter
-> .animated-number {
-  color: #FFBF00;
+  :is(
+    .status__action-bar,
+    .detailed-status__action-bar,
+    .picture-in-picture__footer
+  )
+  .active
+  .icon-star
+  + .icon-button__counter
+  > .animated-number {
+  color: #ffbf00;
 }
 
 .app-body article > .account {
@@ -3142,7 +3338,7 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
 .app-body .hashtag-bar a,
 .app-body .hashtag-bar .link-button {
   color: var(--color-content-fg-muted);
-  transition: all .1s;
+  transition: all 0.1s;
 }
 
 .app-body .hashtag-bar a {
@@ -3154,13 +3350,12 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
 }
 
 .app-body .hashtag-bar a {
-  background-color:
-    color-mix(
-        in srgb,
-        var(--color-content-fg),
-        transparent 92%
-    );
-  transition: all .3s;
+  background-color: color-mix(
+    in srgb,
+    var(--color-content-fg),
+    transparent 92%
+  );
+  transition: all 0.3s;
   padding: 3px 8px;
   border-radius: 8px;
 }
@@ -3196,9 +3391,13 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
 }
 
 .app-body
-:is(.status__action-bar, .detailed-status__action-bar, .picture-in-picture__footer)
-:is(button, .status__action-bar__dropdown) {
-  transition: all .3s;
+  :is(
+    .status__action-bar,
+    .detailed-status__action-bar,
+    .picture-in-picture__footer
+  )
+  :is(button, .status__action-bar__dropdown) {
+  transition: all 0.3s;
 }
 
 .app-body .status__action-bar__button-wrapper:last-child {
@@ -3211,47 +3410,66 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
 }
 
 .app-body
-:is(.status__action-bar, .detailed-status__action-bar, .picture-in-picture__footer)
-.icon-button:is(
-        :active,
-        .active:active,
-        :focus,
-        .active:focus
-    ) {
+  :is(
+    .status__action-bar,
+    .detailed-status__action-bar,
+    .picture-in-picture__footer
+  )
+  .icon-button:is(:active, .active:active, :focus, .active:focus) {
   background-color: transparent;
 }
 
-.app-body .status__action-bar__button-wrapper:last-child .icon-button:is(.active, .active:active, .active:focus),
-.app-body :is(.detailed-status__action-bar-dropdown, .status__action-bar-dropdown) .icon-button:is(.active, .active:active, .active:focus) {
+.app-body
+  .status__action-bar__button-wrapper:last-child
+  .icon-button:is(.active, .active:active, .active:focus),
+.app-body
+  :is(.detailed-status__action-bar-dropdown, .status__action-bar-dropdown)
+  .icon-button:is(.active, .active:active, .active:focus) {
   background-color: var(--color-accent);
-  transform: scale(.9);
+  transform: scale(0.9);
 }
 
 .app-body .icon-button.star-icon.deactivate > .icon-star,
-.app-body .icon-button.star-icon.activate > .icon-star { /* Disable default star spinning animation */
+.app-body .icon-button.star-icon.activate > .icon-star {
+  /* Disable default star spinning animation */
   animation: none;
 }
 
 .app-body
-:is(.status__action-bar, .detailed-status__action-bar, .picture-in-picture__footer)
-.icon-button.star-icon.active
-> .icon-star {
-  animation: bounce .4s ease-out !important;
+  :is(
+    .status__action-bar,
+    .detailed-status__action-bar,
+    .picture-in-picture__footer
+  )
+  .icon-button.star-icon.active
+  > .icon-star {
+  animation: bounce 0.4s ease-out !important;
 }
 
-.app-body .status__action-bar .icon-button.reblogPrivate>.icon-retweet {
+.app-body .status__action-bar .icon-button.reblogPrivate > .icon-retweet {
   opacity: 1;
 }
 
 .app-body
-:is(.status__action-bar, .detailed-status__action-bar, .picture-in-picture__footer)
-.icon-button.active>.icon-retweet {
+  :is(
+    .status__action-bar,
+    .detailed-status__action-bar,
+    .picture-in-picture__footer
+  )
+  .icon-button.active
+  > .icon-retweet {
   animation: launch 1.2s ease-in 1 !important;
 }
 
-.app-body .status__action-bar .icon-button.bookmark-icon.active>.icon-bookmark,
-.app-body .detailed-status__action-bar .icon-button.bookmark-icon.active>.icon-bookmark {
-  animation: bounce-vertical .4s ease-out !important;
+.app-body
+  .status__action-bar
+  .icon-button.bookmark-icon.active
+  > .icon-bookmark,
+.app-body
+  .detailed-status__action-bar
+  .icon-button.bookmark-icon.active
+  > .icon-bookmark {
+  animation: bounce-vertical 0.4s ease-out !important;
 }
 
 .app-body .status__action-bar .icon-button,
@@ -3272,8 +3490,11 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
   height: 25px;
 }
 
-.app-body .detailed-status__action-bar .icon-button
-.app-body .icon-button.star-icon.active,
+.app-body
+  .detailed-status__action-bar
+  .icon-button
+  .app-body
+  .icon-button.star-icon.active,
 .app-body .notification__favourite-icon-wrapper .star-icon {
   color: #ffb609;
 }
@@ -3309,7 +3530,7 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
 }
 
 .app-body .status__prepend__icon .icon {
-  transform: scale(.9);
+  transform: scale(0.9);
 }
 
 .app-body .detailed-status__wrapper .status__prepend__icon {
@@ -3321,7 +3542,9 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
   white-space: nowrap;
 }
 
-.app-body .status__prepend:has(.status__prepend__icon > .icon-thumb-tack) > span {
+.app-body
+  .status__prepend:has(.status__prepend__icon > .icon-thumb-tack)
+  > span {
   color: var(--color-content-fg);
   font-weight: 600;
 }
@@ -3335,7 +3558,7 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
   background-color: var(--color-content-bg);
   border: 1px solid var(--color-lines);
   box-shadow: none;
-  transition: all .3s;
+  transition: all 0.3s;
   border-radius: 8px;
 }
 
@@ -3347,7 +3570,7 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
 
 .app-body .status-card:active,
 .app-body .status-card.compact:active {
-  transform: scale(.98);
+  transform: scale(0.98);
 }
 
 .app-body .status-card__image {
@@ -3359,28 +3582,28 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
   height: 32px;
 }
 
-.app-body .status-card[href*="/@" i] {
+.app-body .status-card[href*='/@' i] {
   align-items: start;
 }
 
-.app-body .status-card[href*="/@" i] .status-card__description {
+.app-body .status-card[href*='/@' i] .status-card__description {
   margin-top: 2px;
   white-space: normal;
 }
 
-.app-body .status-card[href*="/@" i] .status-card__image {
+.app-body .status-card[href*='/@' i] .status-card__image {
   order: 2;
   background-color: transparent;
   padding: 8px;
   box-sizing: border-box;
 }
 
-.app-body .status-card[href*="/@" i]:not(.expanded) .status-card__image {
+.app-body .status-card[href*='/@' i]:not(.expanded) .status-card__image {
   height: 120px;
   width: 120px;
 }
 
-.app-body .status-card[href*="/@" i] .status-card__image-image {
+.app-body .status-card[href*='/@' i] .status-card__image-image {
   border-top-left-radius: 8px;
   border-top-right-radius: 8px;
   border-bottom-left-radius: 8px;
@@ -3389,7 +3612,7 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
   outline-offset: -1px;
 }
 
-.app-body .status-card[href*="/@" i] .status-card__content {
+.app-body .status-card[href*='/@' i] .status-card__content {
   display: flex;
   flex-flow: column;
 }
@@ -3410,7 +3633,7 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
 }
 
 .app-body .status-card__image:has(.icon-file-text:only-child),
-.app-body .status-card__description:empty  {
+.app-body .status-card__description:empty {
   display: none;
 }
 
@@ -3419,7 +3642,7 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
 .app-body .status-card__author,
 .app-body .status-card__host {
   color: var(--color-content-fg);
-  transition: all .2s;
+  transition: all 0.2s;
 }
 
 .app-body .status-card__host {
@@ -3452,12 +3675,16 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
     width: 80px;
   }
 
-  .app-body .status-card:not(.expanded,:has(.icon-file-text)) .status-card__content {
+  .app-body
+    .status-card:not(.expanded, :has(.icon-file-text))
+    .status-card__content {
     padding-top: 0;
     padding-bottom: 0;
   }
 
-  .app-body .status-card[href*="/@" i]:not(.expanded,:has(.icon-file-text)) .status-card__content {
+  .app-body
+    .status-card[href*='/@' i]:not(.expanded, :has(.icon-file-text))
+    .status-card__content {
     padding-top: 12px;
     padding-bottom: 12px;
   }
@@ -3481,7 +3708,9 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
   width: 80px;
 }
 
-.layout-multiple-columns .status-card:not(.expanded,:has(.icon-file-text),[href*="/@" i]) .status-card__content {
+.layout-multiple-columns
+  .status-card:not(.expanded, :has(.icon-file-text), [href*='/@' i])
+  .status-card__content {
   padding-top: 0;
   padding-bottom: 0;
 }
@@ -3532,7 +3761,7 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
   mask-image: linear-gradient(90deg, black 80%, transparent 96%);
 }
 
-.app-body .notification-ungrouped  .more-from-author :is(.account__avatar) {
+.app-body .notification-ungrouped .more-from-author :is(.account__avatar) {
   width: 16px !important;
   height: 16px !important;
 }
@@ -3609,10 +3838,10 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
   display: inline-block;
   transform-origin: center left;
   transition:
-    border-color .3s,
-    outline-color .3s,
-    transform .3s,
-    background-color .3s;
+    border-color 0.3s,
+    outline-color 0.3s,
+    transform 0.3s,
+    background-color 0.3s;
   position: relative;
   z-index: 1;
 }
@@ -3627,14 +3856,20 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
 }
 
 .app-body .content-warning .link-button:active span {
-  transform: scale(.95);
+  transform: scale(0.95);
 }
 
-.app-body .content-warning:has(+ .status__content > .status__content__text--visible) .link-button span {
+.app-body
+  .content-warning:has(+ .status__content > .status__content__text--visible)
+  .link-button
+  span {
   background-image: var(--icon-eye-open);
 }
 @media (prefers-color-scheme: dark) {
-  .app-body :is(.reply-indicator__content, .status__content) .status__content__spoiler-link:hover span {
+  .app-body
+    :is(.reply-indicator__content, .status__content)
+    .status__content__spoiler-link:hover
+    span {
     border-color: rgba(255, 255, 255, 30%);
   }
 }
@@ -3669,7 +3904,7 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
 .app-body .audio-player,
 .app-body .media-gallery,
 .app-body .video-player {
-  transition: transform .3s;
+  transition: transform 0.3s;
 }
 
 .app-body .media-gallery__item {
@@ -3678,8 +3913,18 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
   outline-offset: -1px;
 }
 
-.app-body div:not(.detailed-status) > .media-gallery:has(.media-gallery__item.standalone),
-.app-body .status > *:not(.status__info, .status__content, .status__action-bar, .status__line, .status-card) {
+.app-body
+  div:not(.detailed-status)
+  > .media-gallery:has(.media-gallery__item.standalone),
+.app-body
+  .status
+  > *:not(
+    .status__info,
+    .status__content,
+    .status__action-bar,
+    .status__line,
+    .status-card
+  ) {
   max-height: 450px;
   min-height: unset;
   width: auto;
@@ -3698,11 +3943,11 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
 .app-body .media-gallery__item-thumbnail,
 .app-body .media-gallery__item-gifv-thumbnail {
   cursor: pointer;
-  transition: .2s transform;
+  transition: 0.2s transform;
 }
 
 .app-body .media-gallery__item:active {
-  transform: scale(.98);
+  transform: scale(0.98);
 }
 
 .app-body .media-gallery__item-thumbnail img,
@@ -3728,10 +3973,13 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
   outline-offset: -1px;
   height: calc(100% - 1px);
   border-radius: 8px;
-  transition: all .2s;
+  transition: all 0.2s;
 }
 
-.app-body .spoiler-button:hover ~ .media-gallery__item > .media-gallery__preview {
+.app-body
+  .spoiler-button:hover
+  ~ .media-gallery__item
+  > .media-gallery__preview {
   outline: 1px solid var(--color-lines-translucent);
 }
 
@@ -3740,12 +3988,14 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
   padding: 3px 8px;
   font-weight: 500;
   background-color: rgba(0, 0, 0, 10%);
-  transition: all .2s;
+  transition: all 0.2s;
 }
 
 .app-body .spoiler-button__overlay__label,
 .app-body .spoiler-button__overlay__label:is(:focus, :hover),
-.app-body .spoiler-button__overlay:is(:focus, :hover) .spoiler-button__overlay__label {
+.app-body
+  .spoiler-button__overlay:is(:focus, :hover)
+  .spoiler-button__overlay__label {
   backdrop-filter: none;
   -webkit-backdrop-filter: none;
   background-color: var(--color-content-bg);
@@ -3763,12 +4013,19 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
   border-radius: 6px;
 }
 
-.app-body .spoiler-button:not(.spoiler-button--minified) ~ .media-gallery__item :is(.media-gallery__alt__label, .media-gallery__gifv__label) {
+.app-body
+  .spoiler-button:not(.spoiler-button--minified)
+  ~ .media-gallery__item
+  :is(.media-gallery__alt__label, .media-gallery__gifv__label) {
   display: none;
 }
 
 .app-body .media-gallery__alt__popover {
-  background-color: color-mix(in srgb, var(--color-content-bg), transparent 15%);
+  background-color: color-mix(
+    in srgb,
+    var(--color-content-bg),
+    transparent 15%
+  );
   border: 1px solid var(--color-lines-translucent);
 }
 
@@ -3779,7 +4036,6 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
 .app-body .media-gallery__alt__popover h4 {
   font-weight: bold;
 }
-
 
 /* Empty columns */
 .app-body .empty-column-indicator {
@@ -3796,7 +4052,6 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
 .app-body .explore__links > .empty-column-indicator {
   border: 0;
 }
-
 
 /* Timeline hint */
 .app-body .timeline-hint {
@@ -3816,11 +4071,11 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
 }
 
 .app-body .timeline-hint p {
-  opacity: .7;
+  opacity: 0.7;
 }
 
 .app-body .timeline-hint::before {
-  content: " ";
+  content: ' ';
   display: block;
   background-color: var(--color-content-secondary-bg);
   position: absolute;
@@ -3833,11 +4088,11 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
 }
 
 .app-body .timeline-hint::after {
-  content: " ";
+  content: ' ';
   background-image: var(--icon-reply-all);
   background-repeat: no-repeat;
   background-position: center;
-  opacity: .55;
+  opacity: 0.55;
   position: absolute;
   top: 26px;
   left: 25px;
@@ -3849,7 +4104,6 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
   position: relative;
   z-index: 0;
 }
-
 
 /* 📤 DMs */
 .app-body .follow_requests-unlocked_explanation {
@@ -3893,7 +4147,7 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
 }
 
 .app-body .conversation__content__relative-time {
-  opacity: .7;
+  opacity: 0.7;
 }
 
 .app-body .conversation__content {
@@ -3914,27 +4168,47 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
 }
 
 .app-body .status__wrapper.status__wrapper-direct,
-.app-body .notification__message:has(+ div > .status__wrapper.status__wrapper-direct),
+.app-body
+  .notification__message:has(+ div > .status__wrapper.status__wrapper-direct),
 .app-body .notification-ungrouped--direct .notification-ungrouped__header {
-  --color-post-bg: color-mix(in srgb, var(--color-accent), var(--color-content-bg) 92%);
+  --color-post-bg: color-mix(
+    in srgb,
+    var(--color-accent),
+    var(--color-content-bg) 92%
+  );
 }
 
 .app-body .status__wrapper.status__wrapper-direct:has(.status__content:hover),
-.app-body .status__wrapper.status__wrapper-direct:has(.status__content:hover) .status__avatar,
+.app-body
+  .status__wrapper.status__wrapper-direct:has(.status__content:hover)
+  .status__avatar,
 .app-body .status__wrapper.status__wrapper-direct.focusable:focus,
-.app-body .notification__message:has(+ div > .status__wrapper.status__wrapper-direct .status__content:hover),
-.app-body .notification-ungrouped--direct:has(.status__wrapper.status__wrapper-direct .status__content:hover) .notification-ungrouped__header {
-  --color-post-bg: color-mix(in srgb, var(--color-accent), var(--color-content-bg) 88%);
+.app-body
+  .notification__message:has(
+    + div > .status__wrapper.status__wrapper-direct .status__content:hover
+  ),
+.app-body
+  .notification-ungrouped--direct:has(
+    .status__wrapper.status__wrapper-direct .status__content:hover
+  )
+  .notification-ungrouped__header {
+  --color-post-bg: color-mix(
+    in srgb,
+    var(--color-accent),
+    var(--color-content-bg) 88%
+  );
 }
 
-.app-body :is(.status__wrapper-direct, .detailed-status__wrapper-direct) .status__prepend {
+.app-body
+  :is(.status__wrapper-direct, .detailed-status__wrapper-direct)
+  .status__prepend {
   background-color: var(--color-accent);
   margin-inline-start: 10px;
   z-index: 3;
   position: relative;
   outline: 5px solid var(--color-post-bg);
   border-radius: 50px 50px 50px 10px;
-  transition: all .2s;
+  transition: all 0.2s;
 }
 
 .app-body :is(.detailed-status__wrapper-direct) .status__prepend {
@@ -3953,34 +4227,55 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
   padding-top: 40px;
 }
 
-.app-body :is(.status__wrapper-direct):not(:has(.status__line)) .status__prepend {
+.app-body
+  :is(.status__wrapper-direct):not(:has(.status__line))
+  .status__prepend {
   margin-inline-start: 66px;
 }
 
-.app-body :is(.status__wrapper-direct, .detailed-status__wrapper-direct) .status__prepend .status__prepend-icon-wrapper {
+.app-body
+  :is(.status__wrapper-direct, .detailed-status__wrapper-direct)
+  .status__prepend
+  .status__prepend-icon-wrapper {
   height: 20px;
 }
 
-.app-body :is(.status__wrapper-direct, .detailed-status__wrapper-direct) .status__prepend .icon-at {
+.app-body
+  :is(.status__wrapper-direct, .detailed-status__wrapper-direct)
+  .status__prepend
+  .icon-at {
   background-image: var(--icon-at-inv);
 }
 
-.app-body :is(.status__wrapper-direct, .detailed-status__wrapper-direct) .status__prepend .status__prepend-icon {
+.app-body
+  :is(.status__wrapper-direct, .detailed-status__wrapper-direct)
+  .status__prepend
+  .status__prepend-icon {
   width: 20px;
   height: 20px;
-  transform: scale(.85);
+  transform: scale(0.85);
 }
 
-.app-body :is(.status__wrapper-direct, .detailed-status__wrapper-direct) .status__prepend > span {
+.app-body
+  :is(.status__wrapper-direct, .detailed-status__wrapper-direct)
+  .status__prepend
+  > span {
   color: var(--color-accent-fg);
   margin-top: -1px;
 }
 
-.app-body .notification-ungrouped--direct .notification-ungrouped__header > .notification-ungrouped__header__icon > svg {
+.app-body
+  .notification-ungrouped--direct
+  .notification-ungrouped__header
+  > .notification-ungrouped__header__icon
+  > svg {
   display: none;
 }
 
-.app-body .notification-ungrouped--direct .notification-ungrouped__header > span {
+.app-body
+  .notification-ungrouped--direct
+  .notification-ungrouped__header
+  > span {
   background-color: var(--color-accent);
   color: var(--color-accent-fg);
   border-radius: 50px 50px 50px 10px;
@@ -3988,8 +4283,6 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
   margin-top: 2px;
   font-size: 90%;
 }
-
-
 
 /* ⏺️ Column headers
    ----------------- */
@@ -4028,7 +4321,11 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
 
 .app-body .column-header,
 .app-body .column-back-button {
-  background-color: color-mix(in srgb, var(--color-content-bg), transparent 15%);
+  background-color: color-mix(
+    in srgb,
+    var(--color-content-bg),
+    transparent 15%
+  );
   color: var(--color-content-fg);
   border-right: 1px solid var(--color-lines);
   border-left: 1px solid var(--color-lines);
@@ -4055,14 +4352,14 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
 
 .app-body .column-header__button {
   color: var(--color-content-fg);
-  transition: all .2s;
+  transition: all 0.2s;
   border-radius: 6px;
   height: 42px;
   margin: 4px 4px 4px 0;
 }
 
 .app-body .column-header__button:active {
-  transform: scale(.8);
+  transform: scale(0.8);
 }
 
 .app-body .column-header__icon {
@@ -4070,7 +4367,9 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
   margin-right: 4px;
 }
 
-.app-body .column-header__buttons .column-header__button:has(> .icon:only-child) {
+.app-body
+  .column-header__buttons
+  .column-header__button:has(> .icon:only-child) {
   width: 42px;
 }
 
@@ -4105,7 +4404,8 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
   }
 
   .app-body:not(.layout-multiple-columns) .column-header__button,
-  .app-body:not(.layout-multiple-columns) .column-header__button:is(.active, .active:hover, :hover) {
+  .app-body:not(.layout-multiple-columns)
+    .column-header__button:is(.active, .active:hover, :hover) {
     padding: 0 12px;
     height: 35px !important;
     align-self: center;
@@ -4117,7 +4417,7 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
 }
 
 .app-body .column-back-button--slim-button {
-  top: -50px
+  top: -50px;
 }
 @media screen and (width <=1174px) {
   .app-body:not(.layout-multiple-columns) .column-back-button--slim-button {
@@ -4149,7 +4449,7 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
 
 .app-body :is(.column-header__back-button, .column-back-button) span::before,
 .app-body .column-header__back-button:has(> svg:last-child)::before {
-  content: " ";
+  content: ' ';
   position: absolute;
   left: 4px;
   right: 4px;
@@ -4158,7 +4458,7 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
   z-index: -1;
   border-radius: 8px;
   background-color: transparent;
-  transition: all .3s;
+  transition: all 0.3s;
 }
 
 .app-body :is(.column-header__back-button, .column-back-button) span::before {
@@ -4168,14 +4468,18 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
   top: -10px;
 }
 
-.app-body :is(.column-header__back-button, .column-back-button):hover span::before,
+.app-body
+  :is(.column-header__back-button, .column-back-button):hover
+  span::before,
 .app-body .column-header__back-button:has(> svg:last-child):hover::before {
   background-color: var(--color-accent-bg);
 }
 
-.app-body :is(.column-header__back-button, .column-back-button):active span::before,
+.app-body
+  :is(.column-header__back-button, .column-back-button):active
+  span::before,
 .app-body .column-header__back-button:has(> svg:last-child):active::before {
-  transform: scale(.9);
+  transform: scale(0.9);
 }
 
 .app-body :is(.load-gap, .load-more) {
@@ -4184,7 +4488,7 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
   border-bottom: 0;
   display: flex;
   justify-content: center;
-  transition: background .3s;
+  transition: background 0.3s;
   padding: 8px;
 }
 
@@ -4310,21 +4614,29 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
     position: fixed;
   }
 
-  .app-body:not(.layout-multiple-columns, :has(.ui .ui__header__links > .button[href="/auth/sign_in"])) .tabs-bar__wrapper {
+  .app-body:not(
+      .layout-multiple-columns,
+      :has(.ui .ui__header__links > .button[href='/auth/sign_in'])
+    )
+    .tabs-bar__wrapper {
     z-index: 3;
   }
 
-  .app-body:not(.layout-multiple-columns):has(.ui .ui__header__links > .button[href="/auth/sign_in"]) .tabs-bar__wrapper :is(.column-back-button, .column-header > *) {
+  .app-body:not(.layout-multiple-columns):has(
+      .ui .ui__header__links > .button[href='/auth/sign_in']
+    )
+    .tabs-bar__wrapper
+    :is(.column-back-button, .column-header > *) {
     display: none;
   }
 
   .app-body:not(.layout-multiple-columns)
-  :is(
-            .column-header,
-            .column-back-button,
-            .column-header__button,
-            .column-header__back-button
-        ) {
+    :is(
+      .column-header,
+      .column-back-button,
+      .column-header__button,
+      .column-header__back-button
+    ) {
     background-color: transparent;
     height: 55px;
     border: 0;
@@ -4335,12 +4647,17 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
     display: none;
   }
 
-  .app-body:not(.layout-multiple-columns) .ui::after { /* Set a backdrop blur background to both top bars */
+  .app-body:not(.layout-multiple-columns) .ui::after {
+    /* Set a backdrop blur background to both top bars */
     -webkit-backdrop-filter: blur(20px);
     backdrop-filter: blur(20px);
-    background-color: color-mix(in srgb, var(--color-content-bg), transparent 25%);
+    background-color: color-mix(
+      in srgb,
+      var(--color-content-bg),
+      transparent 25%
+    );
     border-bottom: 1px solid var(--color-lines-translucent);
-    content: "";
+    content: '';
     height: 55px;
     left: 0;
     position: fixed;
@@ -4374,12 +4691,14 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
     right: -55px;
   }
 
-  .app-body:not(.layout-multiple-columns) .column-header__collapsible:not(.collapsed) {
+  .app-body:not(.layout-multiple-columns)
+    .column-header__collapsible:not(.collapsed) {
     border-bottom: 1px solid var(--color-lines);
   }
 }
 @media screen and (width <=885px) {
-  .app-body:not(.layout-multiple-columns) .column-header__collapsible:is(:not(.collapsed), .animating) {
+  .app-body:not(.layout-multiple-columns)
+    .column-header__collapsible:is(:not(.collapsed), .animating) {
     border-left-color: var(--color-content-secondary-bg);
     border-right-color: var(--color-content-secondary-bg);
   }
@@ -4401,12 +4720,9 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
   }
 }
 
-
-
 /* ⏺️ Horizontal selectors
    (used to navigate subsections on the Explore, Live Feeds and Account pages) */
-.app-body
-:is(.account__section-headline, .notification__filter-bar) {
+.app-body :is(.account__section-headline, .notification__filter-bar) {
   background: var(--color-accent-bg);
   border: 1px solid var(--color-accent-lines);
 }
@@ -4416,7 +4732,9 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
   border-right: 0;
 }
 @media screen and (width >=890px) and (width <=1174px) {
-  .app-body:not(.layout-multiple-columns) .explore__search-header + .account__section-headline {
+  .app-body:not(.layout-multiple-columns)
+    .explore__search-header
+    + .account__section-headline {
     border-top-left-radius: 8px;
     border-top-right-radius: 8px;
   }
@@ -4428,64 +4746,61 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
   }
 }
 @media screen and (width <=889px) {
-  .app-body:not(.layout-multiple-columns) :is(.account__section-headline, .notification__filter-bar) {
+  .app-body:not(.layout-multiple-columns)
+    :is(.account__section-headline, .notification__filter-bar) {
     border-left: 0;
     border-right: 0;
   }
 }
 
 .app-body
-:is(.account__section-headline, .notification__filter-bar)
-:is(a, button) {
+  :is(.account__section-headline, .notification__filter-bar)
+  :is(a, button) {
   background-color: var(--color-accent-bg);
   color: var(--color-accent);
   box-shadow: 0 0 0 4px var(--color-accent-bg) inset;
   border-radius: 9px;
-  transition: all .2s;
+  transition: all 0.2s;
   max-height: 45px;
   padding: 14px 10px;
 }
 
-.app-body
-:is(.account__section-headline, .notification__filter-bar)
-.icon {
+.app-body :is(.account__section-headline, .notification__filter-bar) .icon {
   margin-top: -1.5px;
 }
 
 .app-body
-:is(.account__section-headline, .notification__filter-bar)
-:is(a, button):hover {
+  :is(.account__section-headline, .notification__filter-bar)
+  :is(a, button):hover {
   background-color: var(--color-accent-lines);
   color: var(--color-accent);
   box-shadow: 0 0 0 4px var(--color-accent-bg) inset;
 }
 
 .app-body
-:is(.account__section-headline, .notification__filter-bar)
-:is(a, button).active {
+  :is(.account__section-headline, .notification__filter-bar)
+  :is(a, button).active {
   background-color: var(--color-content-bg);
   color: var(--color-content-fg);
   box-shadow: 0 0 0 4px var(--color-accent-bg) inset;
 }
 
 .app-body
-:is(.account__section-headline, .notification__filter-bar)
-:is(a, button).active::before {
+  :is(.account__section-headline, .notification__filter-bar)
+  :is(a, button).active::before {
   display: none;
 }
 
-.app-body
-:is(.account__section-headline, .notification__filter-bar)
-button {
+.app-body :is(.account__section-headline, .notification__filter-bar) button {
   background-color: transparent;
 }
 
 .app-body
-:is(.account__section-headline, .notification__filter-bar)
-:is(a, button, a.active, button.active)::after {
+  :is(.account__section-headline, .notification__filter-bar)
+  :is(a, button, a.active, button.active)::after {
   display: block;
   position: absolute;
-  content: " ";
+  content: ' ';
   width: 2px;
   height: auto;
   background-color: var(--color-accent-lines);
@@ -4500,14 +4815,14 @@ button {
 }
 
 .app-body
-:is(.account__section-headline, .notification__filter-bar)
-:is(a, button):last-child::after {
+  :is(.account__section-headline, .notification__filter-bar)
+  :is(a, button):last-child::after {
   display: none;
 }
 @media (prefers-color-scheme: dark) {
   .app-body
-  :is(.account__section-headline, .notification__filter-bar)
-  :is(a, button).active {
+    :is(.account__section-headline, .notification__filter-bar)
+    :is(a, button).active {
     background-color: var(--color-bg);
   }
 }
@@ -4558,7 +4873,6 @@ button {
   }
 }
 
-
 /* 📍 Navigation panel
    ------------------- */
 .app-body .navigation-panel__menu {
@@ -4578,11 +4892,11 @@ button {
   padding: 8px 15px;
 }
 
-.app-body .ui__header__links .button.button-secondary[href="/search"] {
+.app-body .ui__header__links .button.button-secondary[href='/search'] {
   display: none;
 }
 
-.app-body .ui__header__links .button.button-secondary[href="/publish"] {
+.app-body .ui__header__links .button.button-secondary[href='/publish'] {
   background-color: var(--color-accent);
   color: var(--color-accent-fg);
   width: 50px;
@@ -4601,12 +4915,14 @@ button {
     0 2px 10px rgba(0, 0, 0, 20%);
 }
 
-.app-body .ui__header__links .button.button-secondary[href="/publish"]:is(:hover, :focus, :active) {
+.app-body
+  .ui__header__links
+  .button.button-secondary[href='/publish']:is(:hover, :focus, :active) {
   background-color: var(--color-accent-focus);
   color: var(--color-accent-fg);
 }
 
-.app-body .ui__header__links .button.button-secondary[href="/publish"] span {
+.app-body .ui__header__links .button.button-secondary[href='/publish'] span {
   color: transparent;
 }
 
@@ -4629,10 +4945,10 @@ button {
   width: 50px;
   height: 50px;
 
-//  background-image: var(--logo);
-//  background-repeat: no-repeat;
-//  background-position: center;
-//  background-size: 32px auto;
+  //  background-image: var(--logo);
+  //  background-repeat: no-repeat;
+  //  background-position: center;
+  //  background-size: 32px auto;
 }
 
 // .app-body .column-link.column-link--logo img,
@@ -4670,14 +4986,14 @@ button {
 }
 @media screen and (width >=1175px) {
   .app-body .column-link:not(.column-link--logo) {
-    transition: all .3s;
+    transition: all 0.3s;
   }
 
   .app-body .column-link--transparent span::before {
-    content: " ";
+    content: ' ';
     left: -52px;
     background-color: transparent;
-    transition: .3s background-color;
+    transition: 0.3s background-color;
     top: -14px;
     right: -16px;
     position: absolute;
@@ -4695,7 +5011,7 @@ button {
   }
 
   .app-body .column-link--transparent:active {
-    transform: scale(.95);
+    transform: scale(0.95);
   }
 }
 
@@ -4715,7 +5031,9 @@ button {
 }
 
 @media screen and (width >=1175px) {
-  .app-body .navigation-panel hr:has(+ .column-link[href="/settings/preferences"]) {
+  .app-body
+    .navigation-panel
+    hr:has(+ .column-link[href='/settings/preferences']) {
     margin-right: 25px;
     margin-left: 10px;
     margin-bottom: 12px;
@@ -4727,7 +5045,9 @@ button {
   vertical-align: middle;
 }
 @media screen and (width <=1174px) {
-  .app-body .columns-area__panels__pane--navigational .columns-area__panels__pane__inner {
+  .app-body
+    .columns-area__panels__pane--navigational
+    .columns-area__panels__pane__inner {
     width: 100vw;
     height: calc(4.2em + var(--safe-area-bottom));
     bottom: 0;
@@ -4741,7 +5061,11 @@ button {
     padding-bottom: var(--safe-area-bottom);
     flex-direction: row;
     overflow-x: auto;
-    background-color: color-mix(in srgb, var(--color-content-bg), transparent 25%);
+    background-color: color-mix(
+      in srgb,
+      var(--color-content-bg),
+      transparent 25%
+    );
     border-top: 1px solid var(--color-lines-translucent);
     border-left: 0;
     -webkit-backdrop-filter: blur(20px);
@@ -4768,40 +5092,70 @@ button {
     box-sizing: border-box;
     background-color: transparent;
     transform-origin: center;
-    transition: .3s transform;
+    transition: 0.3s transform;
   }
 
   .app-body .navigation-panel .navigation-panel__menu::after {
-    content: " ";
+    content: ' ';
   }
 
-  .app-body .navigation-panel__menu:has(.column-link:first-child:nth-last-child(3)),
-  .app-body .navigation-panel__menu:has(.column-link:first-child:nth-last-child(4)),
-  .app-body .navigation-panel__menu:has(.column-link:first-child:nth-last-child(5)),
-  .app-body .navigation-panel__menu:has(.column-link:first-child:nth-last-child(6)) {
+  .app-body
+    .navigation-panel__menu:has(.column-link:first-child:nth-last-child(3)),
+  .app-body
+    .navigation-panel__menu:has(.column-link:first-child:nth-last-child(4)),
+  .app-body
+    .navigation-panel__menu:has(.column-link:first-child:nth-last-child(5)),
+  .app-body
+    .navigation-panel__menu:has(.column-link:first-child:nth-last-child(6)) {
     mask-image: none;
   }
 
   .app-body .navigation-panel__menu .column-link:first-child:nth-last-child(3),
-  .app-body .navigation-panel__menu .column-link:first-child:nth-last-child(3) ~ *,
+  .app-body
+    .navigation-panel__menu
+    .column-link:first-child:nth-last-child(3)
+    ~ *,
   .app-body .navigation-panel__menu .column-link:first-child:nth-last-child(4),
-  .app-body .navigation-panel__menu .column-link:first-child:nth-last-child(4) ~ *,
+  .app-body
+    .navigation-panel__menu
+    .column-link:first-child:nth-last-child(4)
+    ~ *,
   .app-body .navigation-panel__menu .column-link:first-child:nth-last-child(5),
-  .app-body .navigation-panel__menu .column-link:first-child:nth-last-child(5) ~ *,
+  .app-body
+    .navigation-panel__menu
+    .column-link:first-child:nth-last-child(5)
+    ~ *,
   .app-body .navigation-panel__menu .column-link:first-child:nth-last-child(6),
-  .app-body .navigation-panel__menu .column-link:first-child:nth-last-child(6) ~ * {
+  .app-body
+    .navigation-panel__menu
+    .column-link:first-child:nth-last-child(6)
+    ~ * {
     flex: 50vw;
   }
 
-  .app-body .navigation-panel__menu:has(.column-link:first-child:nth-last-child(3))::after,
-  .app-body .navigation-panel__menu:has(.column-link:first-child:nth-last-child(4))::after,
-  .app-body .navigation-panel__menu:has(.column-link:first-child:nth-last-child(5))::after,
-  .app-body .navigation-panel__menu:has(.column-link:first-child:nth-last-child(6))::after {
+  .app-body
+    .navigation-panel__menu:has(
+      .column-link:first-child:nth-last-child(3)
+    )::after,
+  .app-body
+    .navigation-panel__menu:has(
+      .column-link:first-child:nth-last-child(4)
+    )::after,
+  .app-body
+    .navigation-panel__menu:has(
+      .column-link:first-child:nth-last-child(5)
+    )::after,
+  .app-body
+    .navigation-panel__menu:has(
+      .column-link:first-child:nth-last-child(6)
+    )::after {
     display: none;
   }
 
-  .app-body .navigation-panel__menu :is(.column-link, .navigation-panel__legal):active {
-    transform: scale(.85);
+  .app-body
+    .navigation-panel__menu
+    :is(.column-link, .navigation-panel__legal):active {
+    transform: scale(0.85);
   }
 
   .app-body .column-link__icon {
@@ -4810,7 +5164,7 @@ button {
   }
 
   .app-body .column-link span {
-    padding-left: .5em;
+    padding-left: 0.5em;
   }
 
   .app-body .columns-area__panels__main {
@@ -4827,7 +5181,10 @@ button {
     padding: 0;
   }
 
-  .app-body .columns-area__panels .navigation-panel__legal .column-link--transparent {
+  .app-body
+    .columns-area__panels
+    .navigation-panel__legal
+    .column-link--transparent {
     height: calc(100% - 13px);
     box-sizing: border-box;
     border: 0;
@@ -4843,7 +5200,6 @@ button {
     margin-left: -55px;
   }
 }
-
 
 /* 👤 Account view
    --------------- */
@@ -4874,11 +5230,11 @@ button {
 }
 
 .app-body .account__header__bar .avatar {
-  transition: transform .3s;
+  transition: transform 0.3s;
 }
 
 .app-body .account__header__bar .avatar:active {
-  transform: scale(.92);
+  transform: scale(0.92);
 }
 
 .app-body .account__header__bar .avatar .account__avatar {
@@ -4901,7 +5257,7 @@ button {
 }
 
 .app-body .account__header__tabs__name h1 small > span:first-child {
-  opacity: .7;
+  opacity: 0.7;
 }
 
 .app-body .account__header__tabs__name .icon-lock {
@@ -4931,7 +5287,7 @@ button {
 .app-body .account__header__account-note label,
 .app-body .account__header__account-note textarea::placeholder {
   color: var(--color-content-fg-bold);
-  opacity: .5;
+  opacity: 0.5;
   font-style: normal;
 }
 
@@ -4943,7 +5299,7 @@ button {
   width: 100%;
   outline: 1px solid transparent;
   outline-offset: -1px;
-  transition: all .2s;
+  transition: all 0.2s;
 }
 
 .app-body .account__header__account-note textarea:placeholder-shown {
@@ -4957,12 +5313,16 @@ button {
   padding-right: 10px;
 }
 
-.app-body .account__header__account-note textarea:not(:placeholder-shown, :focus) {
+.app-body
+  .account__header__account-note
+  textarea:not(:placeholder-shown, :focus) {
   outline-color: var(--color-lines);
   box-shadow: 2px 3px var(--color-content-secondary-bg);
 }
 
-.app-body .account__header__account-note textarea:not(:placeholder-shown):focus {
+.app-body
+  .account__header__account-note
+  textarea:not(:placeholder-shown):focus {
   outline-color: var(--color-accent);
   box-shadow: 2px 3px var(--color-accent-bg);
 }
@@ -4977,7 +5337,10 @@ button {
   gap: 5px;
 }
 
-.app-body .account__header__badges .account-role span:not(.account-role__domain) {
+.app-body
+  .account__header__badges
+  .account-role
+  span:not(.account-role__domain) {
   font-weight: 500;
 }
 
@@ -5017,9 +5380,12 @@ button {
   position: relative;
 }
 
-.app-body .account__header__bio .account__header__fields dl:not(:last-child)::after {
+.app-body
+  .account__header__bio
+  .account__header__fields
+  dl:not(:last-child)::after {
   display: block;
-  content: " ";
+  content: ' ';
   height: 1px;
   bottom: -1px;
   right: 15px;
@@ -5029,18 +5395,23 @@ button {
   border-radius: 50px;
 }
 @media (prefers-color-scheme: dark) {
-  .app-body .account__header__bio .account__header__fields dl:not(:last-child)::after {
+  .app-body
+    .account__header__bio
+    .account__header__fields
+    dl:not(:last-child)::after {
     background-color: var(--color-accent-bg);
   }
 }
 
-.app-body .account__header__bio .account__header__fields dl:nth-child(2) { /* Add a corner radius to the second profile field because we're hiding the Joined field */
+.app-body .account__header__bio .account__header__fields dl:nth-child(2) {
+  /* Add a corner radius to the second profile field because we're hiding the Joined field */
   border-top-left-radius: 8px;
   border-top-right-radius: 8px;
   margin-top: 0;
 }
 
-.app-body .account__header__bio .account__header__fields .verified + .verified { /* Fix double border between 2 successive verified fields */
+.app-body .account__header__bio .account__header__fields .verified + .verified {
+  /* Fix double border between 2 successive verified fields */
   margin-top: 0;
   border-top-width: 0;
 }
@@ -5055,14 +5426,20 @@ button {
   color: var(--color-content-fg);
 }
 
-.app-body .account__header__bio .account__header__fields .verified { /* Verified field tweak: restore default background and border */
+.app-body .account__header__bio .account__header__fields .verified {
+  /* Verified field tweak: restore default background and border */
   border-top: 0;
   border-right: 0;
   border-left: 0;
   background: none;
 }
 
-.app-body .account__header__extra .account__header__fields .verified dd > span:first-child {
+.app-body
+  .account__header__extra
+  .account__header__fields
+  .verified
+  dd
+  > span:first-child {
   vertical-align: bottom;
 }
 
@@ -5076,7 +5453,9 @@ button {
 }
 
 .app-body .account__header__tabs__buttons .icon-button.copied,
-.app-body .account__header__tabs__buttons .icon-button.copied:is(:active, :focus, :hover) {
+.app-body
+  .account__header__tabs__buttons
+  .icon-button.copied:is(:active, :focus, :hover) {
   background-color: rgba(121, 189, 154, 30%);
 }
 
@@ -5096,7 +5475,7 @@ button {
 }
 
 .app-body .account__header__tabs__buttons > button:first-child:active {
-  transform: scale(.95);
+  transform: scale(0.95);
 }
 
 .app-body .account__domain-pill,
@@ -5106,7 +5485,7 @@ button {
   border-color: var(--color-accent);
   border-radius: 8px;
   font-weight: 500;
-  transition: all .2s;
+  transition: all 0.2s;
 }
 
 .app-body .account__domain-pill:hover {
@@ -5137,31 +5516,55 @@ button {
   padding: 12px;
 }
 
-.app-body :where(.account__domain-pill__popout__header, .account__domain-pill__popout__parts) :is(h3, h6) {
+.app-body
+  :where(
+    .account__domain-pill__popout__header,
+    .account__domain-pill__popout__parts
+  )
+  :is(h3, h6) {
   color: var(--color-content-fg);
   font-weight: 600;
 }
 
-.app-body .account__domain-pill__popout__parts > div .account__domain-pill__popout__parts__icon {
+.app-body
+  .account__domain-pill__popout__parts
+  > div
+  .account__domain-pill__popout__parts__icon {
   align-items: start;
   padding-top: 2px;
 }
 
-.app-body .account__domain-pill__popout__parts > div .account__domain-pill__popout__parts__icon .icon {
+.app-body
+  .account__domain-pill__popout__parts
+  > div
+  .account__domain-pill__popout__parts__icon
+  .icon {
   width: 28px;
   height: 28px;
 }
 
-.app-body .account__domain-pill__popout__parts > div:first-child .account__domain-pill__popout__parts__icon .icon {
+.app-body
+  .account__domain-pill__popout__parts
+  > div:first-child
+  .account__domain-pill__popout__parts__icon
+  .icon {
   background-image: var(--icon-direct-messages-accent);
 }
 
-.app-body .account__domain-pill__popout__parts > div:last-child .account__domain-pill__popout__parts__icon .icon {
+.app-body
+  .account__domain-pill__popout__parts
+  > div:last-child
+  .account__domain-pill__popout__parts__icon
+  .icon {
   background-image: var(--icon-globe-accent);
 }
 
 .app-body .hover-card {
-  background-color: color-mix(in srgb, var(--color-content-bg), transparent 10%);
+  background-color: color-mix(
+    in srgb,
+    var(--color-content-bg),
+    transparent 10%
+  );
   -webkit-backdrop-filter: blur(10px);
   backdrop-filter: blur(10px);
   border-color: var(--color-lines);
@@ -5191,7 +5594,8 @@ button {
 .app-body .hover-card .account-fields dl:not(:first-child:last-child) {
   gap: 10px;
   padding-bottom: 6px;
-  border-bottom: 1px solid color-mix(in srgb, var(--color-lines) 70%, transparent);
+  border-bottom: 1px solid
+    color-mix(in srgb, var(--color-lines) 70%, transparent);
 }
 @media (prefers-color-scheme: dark) {
   .app-body .hover-card .account-fields {
@@ -5232,7 +5636,7 @@ button {
   bottom: 0;
   height: 6px;
   width: 100%;
-  content: "";
+  content: '';
   border-top: 1px solid var(--color-lines);
   border-bottom: 1px solid var(--color-lines);
   background-color: var(--color-content-secondary-bg);
@@ -5245,7 +5649,7 @@ button {
   top: -8px;
   height: 8px;
   width: 100%;
-  content: "";
+  content: '';
   background-color: var(--color-content-bg);
 }
 
@@ -5254,18 +5658,25 @@ button {
   margin-top: -8px;
 }
 
-.app-body .status__wrapper:has(.icon-thumb-tack) :is(.status__content__translate-button, .translate-button .link-button) {
+.app-body
+  .status__wrapper:has(.icon-thumb-tack)
+  :is(.status__content__translate-button, .translate-button .link-button) {
   bottom: 20px;
 }
 
-.app-body .account-timeline__header + article .status__wrapper:has(.icon-thumb-tack) {
+.app-body
+  .account-timeline__header
+  + article
+  .status__wrapper:has(.icon-thumb-tack) {
   margin-top: 0;
 }
 
-.app-body .account-timeline__header + article .status__wrapper:has(.icon-thumb-tack)::before {
+.app-body
+  .account-timeline__header
+  + article
+  .status__wrapper:has(.icon-thumb-tack)::before {
   display: none;
 }
-
 
 /* ✨ Explore tab
    -------------- */
@@ -5316,7 +5727,7 @@ button {
   color: var(--color-fg-muted);
   border-left: 4px solid transparent;
   display: block;
-  transition: all .3s;
+  transition: all 0.3s;
 }
 
 .app-body .getting-started__trends h4 a:hover {
@@ -5324,14 +5735,14 @@ button {
 }
 
 .app-body .getting-started__trends h4 a:active {
-  transform: scale(.95);
+  transform: scale(0.95);
 }
 
 .app-body .getting-started__trends h4 a::after {
   content: '\2192';
   margin-left: 0;
   opacity: 0;
-  transition: all .2s;
+  transition: all 0.2s;
 }
 
 .app-body .getting-started__trends:hover h4 a::after {
@@ -5357,7 +5768,7 @@ button {
   width: 20px;
   height: 20px;
   transform: scale(1.45);
-  content: " ";
+  content: ' ';
   display: block;
 }
 
@@ -5375,7 +5786,7 @@ button {
   background-color: var(--color-content-secondary-bg);
   box-shadow: inset 0 -2px var(--color-accent-bg);
   transform: scale(1.25);
-  transition: all .3s;
+  transition: all 0.3s;
 }
 
 .app-body .getting-started__trends .trends__item__sparkline {
@@ -5397,13 +5808,13 @@ button {
 .app-body .trends__item__sparkline::after {
   position: absolute;
   display: block;
-  content: " ";
+  content: ' ';
   left: 0;
   right: 0;
   height: 2px;
   bottom: 0;
   background-color: var(--color-accent);
-  opacity: .4;
+  opacity: 0.4;
 }
 
 .app-body .trends__item__sparkline path:last-child {
@@ -5412,10 +5823,9 @@ button {
 
 .app-body .trends__item__sparkline path:first-child {
   fill: var(--color-accent) !important;
-  fill-opacity: .4 !important;
+  fill-opacity: 0.4 !important;
   transform: translate(0, 0.2px);
 }
-
 
 /* Hashtag header */
 .app-body .hashtag-header {
@@ -5439,7 +5849,7 @@ button {
 .app-body .hashtag-header .hashtag-header__header + div {
   color: var(--color-content-fg);
   font-size: 85%;
-  opacity: .8;
+  opacity: 0.8;
   margin-top: -5px;
   width: max-content;
 }
@@ -5472,7 +5882,6 @@ button {
     transform: translate(0, 8px);
   }
 }
-
 
 /* Account recommendations (For You Tab + User directory */
 .app-body .scrollable .account-card {
@@ -5517,7 +5926,7 @@ button {
 }
 
 .app-body .account-card__counters__item small {
-  opacity: .7;
+  opacity: 0.7;
 }
 
 .account-card__title .display-name bdi .display-name__html {
@@ -5552,9 +5961,11 @@ button {
   font-weight: 500;
 }
 
-.app-body .explore__suggestions__card__body__main__name-button .display-name__account {
+.app-body
+  .explore__suggestions__card__body__main__name-button
+  .display-name__account {
   color: var(--color-content-fg);
-  opacity: .75;
+  opacity: 0.75;
 }
 
 .app-body .explore__suggestions__card .icon-button {
@@ -5571,7 +5982,7 @@ button {
   .app-body .explore__suggestions__card .icon-button {
     opacity: 0;
     transform: translateX(50%);
-    transition: all .3s;
+    transition: all 0.3s;
   }
 
   .app-body .explore__suggestions__card:hover .icon-button {
@@ -5580,11 +5991,10 @@ button {
   }
 }
 
-
 /* 📰 Trending stories */
 .app-body .story {
   background-color: var(--color-content-bg);
-  transition: all .3s;
+  transition: all 0.3s;
 }
 
 .app-body .story:not(:last-child) {
@@ -5598,7 +6008,7 @@ button {
 
 .app-body .story__details__title {
   font-weight: bold;
-  transition: all .3s;
+  transition: all 0.3s;
 }
 
 .app-body .story:has(:is(.story__thumbnail, .story__details__title):hover) {
@@ -5610,11 +6020,13 @@ button {
 }
 
 .app-body .story .story__details__publisher {
-  opacity: .7;
-  transition: all .3s;
+  opacity: 0.7;
+  transition: all 0.3s;
 }
 
-.app-body .story:has(:is(.story__thumbnail, .story__details__title):hover) :is(.story__details__publisher, .story__details__title) {
+.app-body
+  .story:has(:is(.story__thumbnail, .story__details__title):hover)
+  :is(.story__details__publisher, .story__details__title) {
   color: var(--color-accent);
   opacity: 1;
 }
@@ -5624,15 +6036,10 @@ button {
 }
 
 .app-body .story__details__shared__pill {
-  background-color:
-    color-mix(
-        in srgb,
-        var(--color-accent),
-        transparent 92%
-    );
+  background-color: color-mix(in srgb, var(--color-accent), transparent 92%);
   color: var(--color-accent);
   border-radius: 8px;
-  transition: all .3s;
+  transition: all 0.3s;
 }
 
 .app-body .story__details__shared__pill:hover {
@@ -5665,15 +6072,14 @@ button {
   color: var(--color-accent);
 }
 
-
 /* 🔍 Search field and search results */
 .app-body .search {
   margin-bottom: 10px;
-  transition: transform .3s;
+  transition: transform 0.3s;
 }
 
 .app-body .search:has(.search__icon:active) {
-  transform: scale(.95);
+  transform: scale(0.95);
 }
 
 .app-body .search__input {
@@ -5688,9 +6094,9 @@ button {
   outline-offset: 0;
   outline: 0 solid var(--color-accent-bg);
   transition:
-    border-color .2s,
-    background-color .2s,
-    outline .2s;
+    border-color 0.2s,
+    background-color 0.2s,
+    outline 0.2s;
 }
 
 .app-body .search__input::placeholder,
@@ -5709,17 +6115,21 @@ button {
 .app-body .search__input:focus::placeholder,
 .app-body .compose-form .spoiler-input__input:focus::placeholder {
   color: var(--color-content-fg);
-  opacity: .4;
+  opacity: 0.4;
+}
+
+.app-body .search__icon {
+  top: 12px;
+  margin-left: 30px;
 }
 
 .app-body .search__icon .icon {
   padding: 5px;
   transform: scale(1) translateY(-50%);
   background-size: 24px !important;
-  top: 12px;
+  top: 50%;
   inset-inline-start: unset;
   inset-inline-end: 12px;
-  margin-left: 30px;
 }
 
 .app-body .search__input:not(:placeholder-shown) + .search__icon:hover .icon {
@@ -5757,19 +6167,35 @@ button {
   border-bottom: 1px solid var(--color-lines);
 }
 
-.app-body :is(.explore__search-results, .search-results__section) .trends__item {
+.app-body
+  :is(.explore__search-results, .search-results__section)
+  .trends__item {
   border-bottom: 2px solid var(--color-content-secondary-bg);
 }
 
-.app-body :is(.explore__search-results, .search-results__section) article:first-child > .trends__item,
-.app-body :is(.explore__search-results, .search-results__section) > .trends__item:first-child,
-.app-body :is(.explore__search-results, .search-results__section) > .account:first-child {
+.app-body
+  :is(.explore__search-results, .search-results__section)
+  article:first-child
+  > .trends__item,
+.app-body
+  :is(.explore__search-results, .search-results__section)
+  > .trends__item:first-child,
+.app-body
+  :is(.explore__search-results, .search-results__section)
+  > .account:first-child {
   border-top: 1px solid var(--color-lines);
 }
 
-.app-body :is(.explore__search-results, .search-results__section) article:last-child > .trends__item,
-.app-body :is(.explore__search-results, .search-results__section) > .trends__item:last-child,
-.app-body :is(.explore__search-results, .search-results__section) > .account:last-child {
+.app-body
+  :is(.explore__search-results, .search-results__section)
+  article:last-child
+  > .trends__item,
+.app-body
+  :is(.explore__search-results, .search-results__section)
+  > .trends__item:last-child,
+.app-body
+  :is(.explore__search-results, .search-results__section)
+  > .account:last-child {
   border-bottom: 1px solid var(--color-lines);
 }
 
@@ -5809,7 +6235,7 @@ button {
   border-radius: 8px;
   margin-top: 10px;
   border: 1px solid var(--color-lines);
-  animation: fadein-short .2s 1;
+  animation: fadein-short 0.2s 1;
 }
 
 .app-body .search__popout h4 {
@@ -5836,27 +6262,37 @@ button {
   transition: none;
 }
 
-.app-body .search__popout__menu__item:is(.selected, :active, :focus, :hover) :is(.icon-button, .icon-button .icon) {
+.app-body
+  .search__popout__menu__item:is(.selected, :active, :focus, :hover)
+  :is(.icon-button, .icon-button .icon) {
   color: var(--color-accent-fg);
 }
 
 .app-body .search__popout__menu__item .icon-button:is(:active, :focus, :hover),
-.app-body .search__popout__menu__item .icon-button:is(:active, :focus, :hover) .icon {
+.app-body
+  .search__popout__menu__item
+  .icon-button:is(:active, :focus, :hover)
+  .icon {
   background-color: var(--color-content-secondary-bg);
   color: var(--color-accent);
 }
 
 .app-body .search__popout__menu__item:is(.selected, :active, :focus, :hover),
-.app-body .search__popout__menu__item:is(.selected, :active, :focus, :hover) mark {
+.app-body
+  .search__popout__menu__item:is(.selected, :active, :focus, :hover)
+  mark {
   background-color: var(--color-accent);
   color: var(--color-accent-fg);
 }
 
-.app-body .search__popout__menu:nth-child(2):not(:has(.search__popout__menu__message)) {
+.app-body
+  .search__popout__menu:nth-child(2):not(:has(.search__popout__menu__message)) {
   margin-bottom: 10px;
 }
 
-.app-body .search__popout h4:has(+ .search__popout__menu:last-child, + .search__popout__menu__message) {
+.app-body
+  .search__popout
+  h4:has(+ .search__popout__menu:last-child, + .search__popout__menu__message) {
   background-color: var(--color-content-secondary-bg);
   padding-top: 15px;
   padding-left: 15px;
@@ -5879,11 +6315,16 @@ button {
   color: var(--color-fg-muted);
 }
 
-.app-body .search__popout__menu:last-child .search__popout__menu__item:not(.selected, :active, :hover, :focus) {
+.app-body
+  .search__popout__menu:last-child
+  .search__popout__menu__item:not(.selected, :active, :hover, :focus) {
   color: var(--color-fg-muted);
 }
 
-.app-body .search__popout__menu:last-child .search__popout__menu__item:not(.selected, :active, :hover, :focus) mark {
+.app-body
+  .search__popout__menu:last-child
+  .search__popout__menu__item:not(.selected, :active, :hover, :focus)
+  mark {
   color: var(--color-content-fg);
 }
 
@@ -5920,9 +6361,9 @@ button {
   }
 }
 
-.app-body:has(.search__input[value="Tangerine UI"])::after,
-.app-body:has(.search__input[value="tangerine ui"])::after {
-  content: "\1F34A";
+.app-body:has(.search__input[value='Tangerine UI'])::after,
+.app-body:has(.search__input[value='tangerine ui'])::after {
+  content: '\1F34A';
   position: fixed;
   display: block;
   text-align: center;
@@ -5934,8 +6375,6 @@ button {
   left: -40px;
   animation: 10s linear 0s makeawish;
 }
-
-
 
 /* Dismissable banners */
 .app-body .dismissable-banner {
@@ -5965,7 +6404,8 @@ button {
   flex-flow: row-reverse;
 }
 
-.app-body .dismissable-banner:has(.dismissable-banner__message > img:first-child) {
+.app-body
+  .dismissable-banner:has(.dismissable-banner__message > img:first-child) {
   background: var(--color-content-bg);
   margin: 0;
   padding-top: 10px;
@@ -5977,11 +6417,16 @@ button {
   border-bottom: 1px solid var(--color-lines);
 }
 
-.app-body .dismissable-banner:has(.dismissable-banner__message > img:first-child) .dismissable-banner__action .icon-button {
+.app-body
+  .dismissable-banner:has(.dismissable-banner__message > img:first-child)
+  .dismissable-banner__action
+  .icon-button {
   color: var(--color-accent);
 }
 
-.app-body .dismissable-banner:has(.dismissable-banner__message > img:first-child) .dismissable-banner__message {
+.app-body
+  .dismissable-banner:has(.dismissable-banner__message > img:first-child)
+  .dismissable-banner__message {
   color: var(--color-content-fg);
 }
 
@@ -5999,17 +6444,16 @@ button {
   gap: 5px;
 }
 
-
-
 /* 🔔 Notifications
    ---------------- */
-.app-body .status.muted
-:is(
-        .status__content,
-        .status__content a,
-        .status__content p,
-        .status__display-name strong
-    ),
+.app-body
+  .status.muted
+  :is(
+    .status__content,
+    .status__content a,
+    .status__content p,
+    .status__display-name strong
+  ),
 .app-body .attachment-list__list a {
   color: var(--color-content-fg-muted);
 }
@@ -6033,7 +6477,7 @@ button {
   padding: 12px 12px 5px;
   background-color: var(--color-post-bg);
   color: var(--color-content-fg-bold);
-  transition: all .3s;
+  transition: all 0.3s;
 }
 
 .app-body .notification__display-name {
@@ -6070,13 +6514,13 @@ button {
 }
 
 .app-body
-:is(
-        .notification-favourite,
-        .notification-reblog,
-        .notification-poll,
-        .notification-status
-    )
-.status__action-bar {
+  :is(
+    .notification-favourite,
+    .notification-reblog,
+    .notification-poll,
+    .notification-status
+  )
+  .status__action-bar {
   display: none;
 }
 
@@ -6097,27 +6541,35 @@ button {
 }
 
 .app-body
-.notification
-.account:has(.account__wrapper > .account__relationship > button:nth-child(2))
-.display-name__account {
+  .notification
+  .account:has(.account__wrapper > .account__relationship > button:nth-child(2))
+  .display-name__account {
   display: block;
 }
 
 .app-body
-.notification
-.account:has(.account__wrapper > .account__relationship > button:nth-child(2))
-.display-name {
+  .notification
+  .account:has(.account__wrapper > .account__relationship > button:nth-child(2))
+  .display-name {
   margin-bottom: 0;
 }
 
 @media screen and (width >=890px) {
-  .app-body .notification .account:has(.account__wrapper > .account__relationship > button:nth-child(2)) {
+  .app-body
+    .notification
+    .account:has(
+      .account__wrapper > .account__relationship > button:nth-child(2)
+    ) {
     padding-left: 32px;
     padding-right: 22px;
   }
 }
 @media screen and (width <=889px) {
-  .app-body .notification .account:has(.account__wrapper > .account__relationship > button:nth-child(2)) {
+  .app-body
+    .notification
+    .account:has(
+      .account__wrapper > .account__relationship > button:nth-child(2)
+    ) {
     padding-left: 27px;
   }
 }
@@ -6130,18 +6582,25 @@ button {
 .app-body .notification .account__relationship .icon-button {
   padding: 5px;
   border-radius: 8px;
-  transition: background-color .2s;
+  transition: background-color 0.2s;
 }
 
 .app-body .notification .account__relationship .icon-button:first-child {
   background-color: var(--color-confirm-bg);
 }
 
-.app-body .notification .account__relationship .icon-button:first-child:is(:active, :focus, :hover) {
+.app-body
+  .notification
+  .account__relationship
+  .icon-button:first-child:is(:active, :focus, :hover) {
   background-color: var(--color-confirm);
 }
 
-.app-body .notification .account__relationship .icon-button:first-child:is(:active, :focus, :hover) .icon-check {
+.app-body
+  .notification
+  .account__relationship
+  .icon-button:first-child:is(:active, :focus, :hover)
+  .icon-check {
   background-image: var(--icon-check-inv);
 }
 
@@ -6149,11 +6608,18 @@ button {
   background-color: var(--color-reject-bg);
 }
 
-.app-body .notification .account__relationship .icon-button:last-child:is(:active, :focus, :hover) {
+.app-body
+  .notification
+  .account__relationship
+  .icon-button:last-child:is(:active, :focus, :hover) {
   background-color: var(--color-reject);
 }
 
-.app-body .notification .account__relationship .icon-button:last-child:is(:active, :focus, :hover) .icon-times {
+.app-body
+  .notification
+  .account__relationship
+  .icon-button:last-child:is(:active, :focus, :hover)
+  .icon-times {
   background-image: var(--icon-reject-inv);
 }
 
@@ -6164,7 +6630,11 @@ button {
 }
 
 .app-body .notification-bar {
-  background-color: color-mix(in srgb, var(--color-content-bg), transparent 25%);
+  background-color: color-mix(
+    in srgb,
+    var(--color-content-bg),
+    transparent 25%
+  );
   color: var(--color-content-fg);
   border: 1px solid var(--color-lines-translucent);
   box-shadow: var(--dropdown-shadow);
@@ -6173,7 +6643,7 @@ button {
 }
 
 .app-body .notification-bar-action {
-  transition: all .2s;
+  transition: all 0.2s;
 }
 
 .app-body .notification-bar-action:is(:active, :focus, :hover) {
@@ -6205,7 +6675,7 @@ button {
 }
 
 .app-body .app-form__toggle__label .hint {
-  opacity: .5;
+  opacity: 0.5;
 }
 
 .app-body .filtered-notifications-banner {
@@ -6223,10 +6693,10 @@ button {
   right: 10px;
   top: 10px;
   bottom: 10px;
-  content: " ";
+  content: ' ';
   background-color: var(--color-content-secondary-bg);
   border-radius: 8px;
-  transition: all .2s;
+  transition: all 0.2s;
 }
 
 .app-body .filtered-notifications-banner:is(:active, :hover, :focus)::before {
@@ -6241,7 +6711,7 @@ button {
 }
 
 .app-body .filtered-notifications-banner:active::before {
-  transform: scale(.98);
+  transform: scale(0.98);
 }
 
 .app-body .filtered-notifications-banner > * {
@@ -6249,7 +6719,9 @@ button {
 }
 
 .app-body .filtered-notifications-banner .filtered-notifications-banner__badge,
-.app-body .filtered-notifications-banner:is(:active, :focus, :hover) .filtered-notifications-banner__badge,
+.app-body
+  .filtered-notifications-banner:is(:active, :focus, :hover)
+  .filtered-notifications-banner__badge,
 .app-body .notification-request__name .filtered-notifications-banner__badge,
 .app-body .notification-request .account__avatar__counter {
   background-color: var(--color-accent);
@@ -6315,8 +6787,8 @@ button {
   width: calc(100% - 78px);
   right: 0;
   bottom: 0;
-  content: " ";
-  opacity: .7;
+  content: ' ';
+  opacity: 0.7;
 }
 
 .app-body .notification-ungrouped {
@@ -6328,19 +6800,20 @@ button {
   width: 46px !important;
 }
 
-.app-body .notification-ungrouped
-:is(
-        .attachment-list,
-        .audio-player,
-        .hashtag-bar,
-        .media-gallery,
-        .more-from-author,
-        .picture-in-picture-placeholder,
-        .status-card,
-        .status__action-bar,
-        .status__content,
-        .video-player
-    ) {
+.app-body
+  .notification-ungrouped
+  :is(
+    .attachment-list,
+    .audio-player,
+    .hashtag-bar,
+    .media-gallery,
+    .more-from-author,
+    .picture-in-picture-placeholder,
+    .status-card,
+    .status__action-bar,
+    .status__content,
+    .video-player
+  ) {
   margin-left: 0;
   width: 100%;
 }
@@ -6353,25 +6826,30 @@ button {
   font-weight: 500;
   color: var(--color-content-fg-muted);
   background-color: var(--color-post-bg);
-  transition: background .3s;
+  transition: background 0.3s;
 }
 
 .app-body .notification-ungrouped--direct .notification-ungrouped__header {
   background-color: var(--color-post-bg);
-  transition: background .3s;
+  transition: background 0.3s;
 }
 
-.app-body .notification-ungrouped--mention:not(.notification-ungrouped--direct) .notification-ungrouped__header {
+.app-body
+  .notification-ungrouped--mention:not(.notification-ungrouped--direct)
+  .notification-ungrouped__header {
   display: none;
 }
 
-.app-body :is(.notification-group__icon, .notification-ungrouped__header__icon) {
+.app-body
+  :is(.notification-group__icon, .notification-ungrouped__header__icon) {
   width: 46px;
   height: 28px;
   justify-content: end;
 }
 
-.app-body :is(.notification-group__icon, .notification-ungrouped__header__icon) svg {
+.app-body
+  :is(.notification-group__icon, .notification-ungrouped__header__icon)
+  svg {
   width: 22px;
   height: 22px;
 }
@@ -6385,8 +6863,8 @@ button {
   background-color: var(--color-content-secondary-bg);
   padding: 10px 12px 12px;
   transition:
-    background .3s,
-    transform .3s;
+    background 0.3s,
+    transform 0.3s;
 }
 
 .app-body .notification-group__main__status:hover {
@@ -6394,19 +6872,16 @@ button {
 }
 
 .app-body .notification-group__main__status:active {
-  transform: scale(.98);
+  transform: scale(0.98);
 }
 
 .app-body
-:is(
-        .notification-group__main__header__label,
-        .notification-group__embedded-status__account,
-        .notification-ungrouped__header
-    )
-:is(
-        bdi,
-        bdi > strong
-    ) {
+  :is(
+    .notification-group__main__header__label,
+    .notification-group__embedded-status__account,
+    .notification-ungrouped__header
+  )
+  :is(bdi, bdi > strong) {
   color: var(--color-content-fg);
   font-weight: 700;
 }
@@ -6431,7 +6906,6 @@ button {
 .app-body .notification-group__embedded-status .account__avatar {
   opacity: 1;
 }
-
 
 /* 📋 Lists tab */
 .app-body .column-inline-form {
@@ -6506,7 +6980,7 @@ button {
 }
 
 .app-body .list-editor .column-inline-form .icon-button.disabled {
-  opacity: .5;
+  opacity: 0.5;
   pointer-events: none;
 }
 
@@ -6607,7 +7081,7 @@ button {
 
 .app-body .account-authorize {
   background-color: var(--color-content-bg);
-  padding: 20px
+  padding: 20px;
 }
 
 .app-body .account--panel {
@@ -6633,7 +7107,7 @@ button {
   padding: 10px;
   box-sizing: border-box;
   border-radius: 8px;
-  transition: all .3s;
+  transition: all 0.3s;
   border: 0;
 }
 
@@ -6652,7 +7126,9 @@ button {
 }
 
 .app-body .account--panel__button:first-child .icon-button:is(:hover, :active),
-.app-body .notification-request__actions .icon-button:last-child:is(:hover, :active) {
+.app-body
+  .notification-request__actions
+  .icon-button:last-child:is(:hover, :active) {
   background-color: var(--color-confirm);
   color: var(--color-accent-fg);
 }
@@ -6672,7 +7148,9 @@ button {
 }
 
 .app-body .account--panel__button:nth-child(2) .icon-button:is(:hover, :active),
-.app-body .notification-request__actions .icon-button:first-child:is(:hover, :active) {
+.app-body
+  .notification-request__actions
+  .icon-button:first-child:is(:hover, :active) {
   background-color: var(--color-reject);
   color: var(--color-accent-fg);
 }
@@ -6684,7 +7162,6 @@ button {
     width: auto;
   }
 }
-
 
 /* Inline Follow Suggesitons */
 .app-body .inline-follow-suggestions {
@@ -6707,7 +7184,8 @@ button {
   height: 5px;
 }
 
-.app-body .inline-follow-suggestions__body__scrollable::-webkit-scrollbar-thumb {
+.app-body
+  .inline-follow-suggestions__body__scrollable::-webkit-scrollbar-thumb {
   opacity: 1;
   border-radius: 0;
 }
@@ -6718,13 +7196,18 @@ button {
   border: 0;
 }
 
-.app-body .inline-follow-suggestions__body__scrollable__card :is(.display-name__html, .display-name__account),
-.app-body .inline-follow-suggestions__body__scrollable__card__text-stack__source {
+.app-body
+  .inline-follow-suggestions__body__scrollable__card
+  :is(.display-name__html, .display-name__account),
+.app-body
+  .inline-follow-suggestions__body__scrollable__card__text-stack__source {
   color: var(--color-content-fg);
 }
 
-.app-body .inline-follow-suggestions__body__scrollable__card .display-name__account {
-  opacity: .6;
+.app-body
+  .inline-follow-suggestions__body__scrollable__card
+  .display-name__account {
+  opacity: 0.6;
 }
 
 .app-body .inline-follow-suggestions__body__scrollable__card .verified-badge {
@@ -6732,25 +7215,29 @@ button {
 }
 
 .app-body .inline-follow-suggestions__body__scrollable__card button:active {
-  transform: scale(.95);
+  transform: scale(0.95);
 }
 
 .app-body .inline-follow-suggestions__body__scroll-button__icon {
   background-color: var(--color-accent);
   border-radius: 8px;
   padding: 6px;
-  transition: all .3s;
+  transition: all 0.3s;
 }
 
 .app-body .inline-follow-suggestions__body__scroll-button {
   opacity: 1;
 }
 
-.app-body .inline-follow-suggestions__body__scroll-button:is(:active) .inline-follow-suggestions__body__scroll-button__icon {
-  transform: scale(.9);
+.app-body
+  .inline-follow-suggestions__body__scroll-button:is(:active)
+  .inline-follow-suggestions__body__scroll-button__icon {
+  transform: scale(0.9);
 }
 
-.app-body .inline-follow-suggestions__body__scroll-button:is(:active, :focus, :hover) .inline-follow-suggestions__body__scroll-button__icon {
+.app-body
+  .inline-follow-suggestions__body__scroll-button:is(:active, :focus, :hover)
+  .inline-follow-suggestions__body__scroll-button__icon {
   background-color: var(--color-accent-focus);
 }
 
@@ -6774,15 +7261,18 @@ button {
   transform: translateY(3px);
 }
 
-.app-body .inline-follow-suggestions .button:is(.button-secondary, .button-tertiary) {
+.app-body
+  .inline-follow-suggestions
+  .button:is(.button-secondary, .button-tertiary) {
   padding: 7px 18px;
 }
 
-.app-body .inline-follow-suggestions__body__scrollable__card__text-stack__source .icon {
+.app-body
+  .inline-follow-suggestions__body__scrollable__card__text-stack__source
+  .icon {
   width: 17px;
   height: 17px;
 }
-
 
 .app-body .button,
 .app-body .account__header__tabs__buttons .icon-button {
@@ -6795,12 +7285,12 @@ button {
 .app-body .icon-with-badge__badge {
   background-color: var(--color-accent);
   color: var(--color-accent-fg);
-  transition: all .2s;
+  transition: all 0.2s;
 }
 
 .app-body .button:disabled,
 .app-body .button.disabled {
-  opacity: .7;
+  opacity: 0.7;
 }
 
 .app-body .text-icon-button.active,
@@ -6849,13 +7339,15 @@ button {
   color: var(--color-accent);
 }
 
-.app-body .account__header__tabs__buttons .icon-button:has(.icon-ellipsis-v, .icon-close).active {
+.app-body
+  .account__header__tabs__buttons
+  .icon-button:has(.icon-ellipsis-v, .icon-close).active {
   background-color: var(--color-accent);
 }
 
 .app-body .icon-button {
   border-radius: 8px;
-  transition: all .2s;
+  transition: all 0.2s;
 }
 
 .app-body .icon-button:is(:active, :focus, :hover) {
@@ -6864,11 +7356,13 @@ button {
 }
 
 .app-body .account__header__tabs__buttons .icon-button.active .icon-bell {
-  animation: bell-ring .4s ease-in 1;
+  animation: bell-ring 0.4s ease-in 1;
   transform-origin: top center;
 }
 
-.app-body .account__header__tabs__buttons .icon-button.active:has(.icon-bell):is(:active, :focus) {
+.app-body
+  .account__header__tabs__buttons
+  .icon-button.active:has(.icon-bell):is(:active, :focus) {
   background-color: var(--color-content-secondary-bg);
 }
 
@@ -6890,7 +7384,8 @@ button {
   color: var(--color-accent-fg);
 }
 
-.app-body .language-dropdown__dropdown__results__item:is(:active, :focus, :hover) {
+.app-body
+  .language-dropdown__dropdown__results__item:is(:active, :focus, :hover) {
   background-color: var(--color-accent-bg);
 }
 
@@ -6899,26 +7394,32 @@ button {
 }
 
 .app-body .language-dropdown__dropdown__results__item__common-name {
-  opacity: .7;
+  opacity: 0.7;
 }
 
 .app-body
-:is(.language-dropdown__dropdown__results__item__common-name,
-    .language-dropdown__dropdown__results__item__native-name) {
+  :is(
+    .language-dropdown__dropdown__results__item__common-name,
+    .language-dropdown__dropdown__results__item__native-name
+  ) {
   color: var(--color-content-fg);
 }
 
 .app-body
-.language-dropdown__dropdown__results__item:is(.active, .active:hover)
-:is(.language-dropdown__dropdown__results__item__common-name,
-    .language-dropdown__dropdown__results__item__native-name) {
+  .language-dropdown__dropdown__results__item:is(.active, .active:hover)
+  :is(
+    .language-dropdown__dropdown__results__item__common-name,
+    .language-dropdown__dropdown__results__item__native-name
+  ) {
   color: var(--color-accent-fg);
 }
 
 .app-body
-.language-dropdown__dropdown__results__item:is(:active, :focus, :hover)
-:is(.language-dropdown__dropdown__results__item__native-name,
-    .language-dropdown__dropdown__results__item__common-name) {
+  .language-dropdown__dropdown__results__item:is(:active, :focus, :hover)
+  :is(
+    .language-dropdown__dropdown__results__item__native-name,
+    .language-dropdown__dropdown__results__item__common-name
+  ) {
   color: var(--color-accent);
 }
 
@@ -6929,17 +7430,17 @@ button {
 }
 
 .app-body .react-toggle {
-  transition: transform .3s;
+  transition: transform 0.3s;
 }
 
 .app-body .react-toggle:active {
-  transform: scale(.9);
+  transform: scale(0.9);
 }
 
 .app-body .react-toggle-track,
 .app-body .react-toggle:hover:not(.react-toggle--disabled) .react-toggle-track {
   background-color: var(--color-fg-muted);
-  transition: all .2s;
+  transition: all 0.2s;
 }
 
 .app-body .react-toggle-thumb {
@@ -6948,8 +7449,14 @@ button {
 }
 
 .app-body .react-toggle.react-toggle--checked .react-toggle-track,
-.app-body .react-toggle.react-toggle--checked:is(:hover,:focus-within):not(.react-toggle--disabled) .react-toggle-track,
-.app-body .react-toggle.react-toggle--checked:hover:not(.react-toggle--disabled) .react-toggle-track {
+.app-body
+  .react-toggle.react-toggle--checked:is(:hover, :focus-within):not(
+    .react-toggle--disabled
+  )
+  .react-toggle-track,
+.app-body
+  .react-toggle.react-toggle--checked:hover:not(.react-toggle--disabled)
+  .react-toggle-track {
   background-color: var(--color-accent);
 }
 
@@ -6973,7 +7480,7 @@ button {
   background-color: var(--color-accent-bg);
   outline: 1px solid var(--color-accent) !important;
   outline-offset: -1px;
-  transition: transform .3s;
+  transition: transform 0.3s;
   width: 20px;
   height: 20px;
 }
@@ -6981,7 +7488,7 @@ button {
 .app-body .radio-button:active .radio-button__input,
 .app-body .poll__option:active .poll__input,
 .app-body .check-box:active .check-box__input {
-  transform: scale(.9);
+  transform: scale(0.9);
 }
 
 .app-body .radio-button__input.checked,
@@ -7000,7 +7507,7 @@ button {
 }
 
 .app-body .check-box__input.checked .icon-check {
-  transform: scale(.5);
+  transform: scale(0.5);
 }
 
 .app-body .dropdown-menu {
@@ -7046,7 +7553,9 @@ button {
   padding: 8px;
 }
 
-.app-body .privacy-dropdown :is(.privacy-dropdown__value, .privacy-dropdown__value),
+.app-body
+  .privacy-dropdown
+  :is(.privacy-dropdown__value, .privacy-dropdown__value),
 .app-body .privacy-dropdown__option {
   background-color: var(--color-content-bg);
   color: var(--color-content-fg);
@@ -7054,13 +7563,17 @@ button {
   margin-bottom: 2px;
 }
 
-.app-body .privacy-dropdown.active :is(.privacy-dropdown__value, .privacy-dropdown__value.active),
+.app-body
+  .privacy-dropdown.active
+  :is(.privacy-dropdown__value, .privacy-dropdown__value.active),
 .app-body .privacy-dropdown__option:is(.active, .active:hover, :hover) {
   background-color: var(--color-accent);
   color: var(--color-accent-fg);
 }
 
-.app-body .privacy-dropdown.active .privacy-dropdown__value:has(.text-icon-button.active) {
+.app-body
+  .privacy-dropdown.active
+  .privacy-dropdown__value:has(.text-icon-button.active) {
   border-radius: 6px 6px 0 0;
 }
 
@@ -7071,28 +7584,42 @@ button {
 }
 
 .app-body .privacy-dropdown__option.active .privacy-dropdown__option__content,
-.app-body .privacy-dropdown__option.active .privacy-dropdown__option__content strong,
+.app-body
+  .privacy-dropdown__option.active
+  .privacy-dropdown__option__content
+  strong,
 .app-body .privacy-dropdown__option:hover .privacy-dropdown__option__content,
-.app-body .privacy-dropdown__option:hover .privacy-dropdown__option__content strong,
+.app-body
+  .privacy-dropdown__option:hover
+  .privacy-dropdown__option__content
+  strong,
 .app-body .privacy-dropdown.active .privacy-dropdown__value.active .icon-button,
 .app-body .privacy-dropdown .icon-button.inverted.active {
   background-color: var(--color-accent);
   color: var(--color-accent-fg);
 }
 
-.app-body .privacy-dropdown__option:is(:hover, .active, .active:hover) .icon-globe {
+.app-body
+  .privacy-dropdown__option:is(:hover, .active, .active:hover)
+  .icon-globe {
   background-image: var(--icon-globe-visibility-inv);
 }
 
-.app-body .privacy-dropdown__option:is(:hover, .active, .active:hover) .icon-unlock {
+.app-body
+  .privacy-dropdown__option:is(:hover, .active, .active:hover)
+  .icon-unlock {
   background-image: var(--icon-unlock-inv);
 }
 
-.app-body .privacy-dropdown__option:is(:hover, .active, .active:hover) .icon-lock {
+.app-body
+  .privacy-dropdown__option:is(:hover, .active, .active:hover)
+  .icon-lock {
   background-image: var(--icon-lock-inv);
 }
 
-.app-body .privacy-dropdown__option:is(:hover, .active, .active:hover) .icon-at {
+.app-body
+  .privacy-dropdown__option:is(:hover, .active, .active:hover)
+  .icon-at {
   background-image: var(--icon-at-inv);
 }
 
@@ -7100,15 +7627,19 @@ button {
   fill: var(--color-content-fg);
 }
 
-.app-body .privacy-dropdown__option:is(:hover, .active, .active:hover) .icon-info-circle path {
+.app-body
+  .privacy-dropdown__option:is(:hover, .active, .active:hover)
+  .icon-info-circle
+  path {
   fill: var(--color-accent-fg);
 }
 
 .app-body .dropdown-animation {
-  animation: fadein-short .2s 1;
+  animation: fadein-short 0.2s 1;
 }
 
-.app-body .button.button-tertiary:is(.button--confirmation, .button--destructive) {
+.app-body
+  .button.button-tertiary:is(.button--confirmation, .button--destructive) {
   background-color: transparent;
 }
 
@@ -7122,12 +7653,14 @@ button {
   background-color: rgba(223, 64, 90, 30%);
 }
 
-.app-body .button.button-tertiary.button--confirmation:is(:active, :focus, :hover) {
+.app-body
+  .button.button-tertiary.button--confirmation:is(:active, :focus, :hover) {
   background-color: #79bd9a;
   color: #ffffff;
 }
 
-.app-body .button.button-tertiary.button--destructive:is(:active, :focus, :hover) {
+.app-body
+  .button.button-tertiary.button--destructive:is(:active, :focus, :hover) {
   background-color: #df405a;
   color: #ffffff;
 }
@@ -7142,49 +7675,51 @@ button {
 }
 
 .app-body
-:is(
-        .block-modal__cancel-button,
-        .confirmation-modal__cancel-button,
-        .confirmation-modal__secondary-button,
-        .mute-modal__cancel-button
-    ):not(:hover) {
+  :is(
+    .block-modal__cancel-button,
+    .confirmation-modal__cancel-button,
+    .confirmation-modal__secondary-button,
+    .mute-modal__cancel-button
+  ):not(:hover) {
   background-color: color-mix(in srgb, var(--color-accent), transparent 90%);
   color: var(--color-accent);
 }
 
 .app-body
-:is(
-        .block-modal__cancel-button,
-        .confirmation-modal__cancel-button,
-        .confirmation-modal__secondary-button,
-        .mute-modal__cancel-button
-    ):is(:active, :hover) {
-  background-color: color-mix(in srgb, var(--color-accent), transparent 70%) !important;
+  :is(
+    .block-modal__cancel-button,
+    .confirmation-modal__cancel-button,
+    .confirmation-modal__secondary-button,
+    .mute-modal__cancel-button
+  ):is(:active, :hover) {
+  background-color: color-mix(
+    in srgb,
+    var(--color-accent),
+    transparent 70%
+  ) !important;
   color: var(--color-accent);
 }
 
 .app-body
+  :is(
+    .block-modal__cancel-button,
+    .confirmation-modal__cancel-button,
+    .confirmation-modal__secondary-button,
+    .mute-modal__cancel-button
+  ):active,
 :is(
-        .block-modal__cancel-button,
-        .confirmation-modal__cancel-button,
-        .confirmation-modal__secondary-button,
-        .mute-modal__cancel-button
-    ):active,
-:is(
-        .block-modal__cancel-button,
-        .confirmation-modal__cancel-button,
-        .confirmation-modal__secondary-button,
-        .mute-modal__cancel-button
-    )
-+ button:active {
-  transform: scale(.95);
+    .block-modal__cancel-button,
+    .confirmation-modal__cancel-button,
+    .confirmation-modal__secondary-button,
+    .mute-modal__cancel-button
+  )
+  + button:active {
+  transform: scale(0.95);
 }
 
 .app-body .status__content a.hashtag {
   color: var(--color-accent);
 }
-
-
 
 /* 🖱️ Interaction modals
    --------------------- */
@@ -7230,7 +7765,9 @@ button {
   color: var(--color-content-fg);
 }
 
-.app-body :is(.safety-action-modal__header, .safety-action-modal__confirmation) h1 {
+.app-body
+  :is(.safety-action-modal__header, .safety-action-modal__confirmation)
+  h1 {
   font-weight: 600;
 }
 
@@ -7240,7 +7777,7 @@ button {
 }
 
 .app-body .safety-action-modal__header h1 + div {
-  opacity: .6;
+  opacity: 0.6;
 }
 
 .app-body .safety-action-modal__top {
@@ -7259,19 +7796,35 @@ button {
   transform: scale(1.3);
 }
 
-.app-body .safety-action-modal__bullet-points > div:first-child .safety-action-modal__bullet-points__icon .icon {
+.app-body
+  .safety-action-modal__bullet-points
+  > div:first-child
+  .safety-action-modal__bullet-points__icon
+  .icon {
   background-image: var(--icon-megaphone);
 }
 
-.app-body .safety-action-modal__bullet-points > div:nth-child(2) .safety-action-modal__bullet-points__icon .icon {
+.app-body
+  .safety-action-modal__bullet-points
+  > div:nth-child(2)
+  .safety-action-modal__bullet-points__icon
+  .icon {
   background-image: var(--icon-eye-shut);
 }
 
-.app-body .safety-action-modal__bullet-points > div:nth-child(3) .safety-action-modal__bullet-points__icon .icon {
+.app-body
+  .safety-action-modal__bullet-points
+  > div:nth-child(3)
+  .safety-action-modal__bullet-points__icon
+  .icon {
   background-image: var(--icon-direct-messages);
 }
 
-.app-body .safety-action-modal__bullet-points > div:nth-child(4) .safety-action-modal__bullet-points__icon .icon {
+.app-body
+  .safety-action-modal__bullet-points
+  > div:nth-child(4)
+  .safety-action-modal__bullet-points__icon
+  .icon {
   background-image: var(--icon-reply);
   transform: scale(1);
 }
@@ -7331,7 +7884,7 @@ button {
   color: var(--color-content-fg);
   border-radius: 8px;
   outline: 0 solid var(--color-accent-bg);
-  transition: all .2s;
+  transition: all 0.2s;
 }
 
 .app-body .interaction-modal__login.expanded .interaction-modal__login__input {
@@ -7401,19 +7954,23 @@ button {
   color: var(--color-content-fg);
 }
 
-.app-body .actions-modal ul li:not(:empty)
-a:is(.active,
+.app-body
+  .actions-modal
+  ul
+  li:not(:empty)
+  a:is(
+    .active,
     .active button,
     :active,
     :active button,
     :focus,
     :focus button,
     :hover,
-    :hover button) {
+    :hover button
+  ) {
   background-color: var(--color-accent);
   color: var(--color-accent-fg);
 }
-
 
 /* Media modals */
 .app-body .modal-root__overlay:has(+ div > .media-modal) {
@@ -7439,8 +7996,7 @@ a:is(.active,
   align-items: center;
   justify-content: center;
   padding: 0;
-  transition: .2s all;
-
+  transition: 0.2s all;
 }
 
 .app-body .media-modal__buttons .icon-button:is(:active, :focus, :hover),
@@ -7481,7 +8037,10 @@ a:is(.active,
   height: 25px;
 }
 
-.app-body .media-modal__overlay .picture-in-picture__footer .icon-button:is(:active, :hover, :focus) {
+.app-body
+  .media-modal__overlay
+  .picture-in-picture__footer
+  .icon-button:is(:active, :hover, :focus) {
   background-color: transparent !important;
 }
 
@@ -7498,10 +8057,8 @@ a:is(.active,
 }
 
 .app-body .modal-root > div {
-  animation: slowin .3s 1;
+  animation: slowin 0.3s 1;
 }
-
-
 
 /* Report modals */
 .app-body .report-dialog-modal__lead {
@@ -7521,7 +8078,7 @@ a:is(.active,
   padding: 15px;
   margin-bottom: 5px;
   border-radius: 8px;
-  transition: all .2s;
+  transition: all 0.2s;
 }
 
 .app-body .report-dialog-modal .dialog-option:hover,
@@ -7546,9 +8103,16 @@ a:is(.active,
   display: none;
 }
 
-.app-body .report-dialog-modal .poll__option.dialog-option>.poll__option__text,
+.app-body
+  .report-dialog-modal
+  .poll__option.dialog-option
+  > .poll__option__text,
 .app-body .report-dialog-modal .dialog-option time,
-.app-body .report-dialog-modal .status__content > p:first-child:has(.status__content__spoiler-link) > span,
+.app-body
+  .report-dialog-modal
+  .status__content
+  > p:first-child:has(.status__content__spoiler-link)
+  > span,
 .app-body .report-dialog-modal__toggle,
 .app-body .report-dialog-modal__subtitle,
 .app-body .report-modal__comment .setting-text-label,
@@ -7558,8 +8122,12 @@ a:is(.active,
   color: var(--color-content-fg);
 }
 
-.app-body .report-dialog-modal .poll__option.dialog-option>.poll__option__text strong {
-  color: var(--color-content-fg-bold)
+.app-body
+  .report-dialog-modal
+  .poll__option.dialog-option
+  > .poll__option__text
+  strong {
+  color: var(--color-content-fg-bold);
 }
 
 .app-body .report-modal__comment,
@@ -7597,10 +8165,8 @@ a:is(.active,
 
 .app-body .report-dialog-modal__textarea::placeholder {
   color: var(--color-content-fg);
-  opacity: .5;
+  opacity: 0.5;
 }
-
-
 
 /* 🖼️ Picture in Picture */
 .app-body .picture-in-picture {
@@ -7647,7 +8213,6 @@ a:is(.active,
 .app-body .video-player__seek__handle {
   background-color: var(--color-accent);
 }
-
 
 /* 📄 Meta footer */
 .app-body .link-footer {
@@ -7733,7 +8298,7 @@ a:is(.active,
 }
 
 .app-body .server-banner .account .display-name__account {
-  opacity: .7;
+  opacity: 0.7;
 }
 
 .app-body .server-banner__meta__column:first-child {
@@ -7783,7 +8348,7 @@ a:is(.active,
 
 .app-body .sign-in-banner .button:active,
 .app-body .button:is(.button-secondary, .button-tertiary):active {
-  transform: scale(.95);
+  transform: scale(0.95);
 }
 @media screen and (width <=1174px) {
   .app-body .button.button-tertiary {
@@ -7799,7 +8364,7 @@ a:is(.active,
   display: block;
   border-color: var(--color-lines-translucent);
   margin: 12px 15px;
-  opacity: .5;
+  opacity: 0.5;
 }
 
 .app-body .sign-in-banner p {
@@ -7824,8 +8389,6 @@ a:is(.active,
 .app-body .sign-in-banner p:first-child {
   margin-bottom: 5px;
 }
-
-
 
 /* 🤗 Onboarding */
 .app-body .scrollable.follow-recommendations-container,
@@ -7854,7 +8417,7 @@ a:is(.active,
 .app-body .onboarding__link {
   background-color: var(--color-content-secondary-bg);
   margin-bottom: 8px;
-  transition: all .2s;
+  transition: all 0.2s;
 }
 
 .app-body .onboarding__steps__item:is(:active, :focus, :hover),
@@ -7882,7 +8445,7 @@ a:is(.active,
 .app-body .app-form__avatar-input,
 .app-body .app-form__header-input {
   background-color: var(--color-accent-bg);
-  transition: all .2s;
+  transition: all 0.2s;
 }
 
 .app-body .app-form__avatar-input:hover,
@@ -7933,32 +8496,34 @@ a:is(.active,
   color: var(--color-accent);
 }
 
-.app-body .simple_form
-:is(
-        input[type="datetime-local"],
-        input[type="email"],
-        input[type="number"],
-        input[type="password"],
-        input[type="text"],
-        input[type="url"],
-        textarea
-    ) {
+.app-body
+  .simple_form
+  :is(
+    input[type='datetime-local'],
+    input[type='email'],
+    input[type='number'],
+    input[type='password'],
+    input[type='text'],
+    input[type='url'],
+    textarea
+  ) {
   background-color: var(--color-content-secondary-bg);
   border-color: var(--color-lines);
   border-radius: 8px;
   color: var(--color-content-fg);
 }
 
-.app-body .simple_form
-:is(
-        input[type="datetime-local"],
-        input[type="email"],
-        input[type="number"],
-        input[type="password"],
-        input[type="text"],
-        input[type="url"],
-        textarea
-    ):is(:active, :focus) {
+.app-body
+  .simple_form
+  :is(
+    input[type='datetime-local'],
+    input[type='email'],
+    input[type='number'],
+    input[type='password'],
+    input[type='text'],
+    input[type='url'],
+    textarea
+  ):is(:active, :focus) {
   border-color: var(--color-accent);
 }
 
@@ -7988,7 +8553,7 @@ a:is(.active,
 
 .app-body .follow-recommendations .account__note {
   color: var(--color-content-fg);
-  opacity: .7;
+  opacity: 0.7;
 }
 
 .app-body .follow-recommendations .account__note p {
@@ -8069,11 +8634,17 @@ a:is(.active,
   color: var(--color-accent);
 }
 
-.app-body .reactions-bar__item:is(:active, :hover, :focus) .reactions-bar__item__count .animated-number {
+.app-body
+  .reactions-bar__item:is(:active, :hover, :focus)
+  .reactions-bar__item__count
+  .animated-number {
   color: var(--color-content-fg);
 }
 
-.app-body .reactions-bar__item.active .reactions-bar__item__count .animated-number {
+.app-body
+  .reactions-bar__item.active
+  .reactions-bar__item__count
+  .animated-number {
   color: var(--color-accent-fg);
 }
 
@@ -8101,8 +8672,6 @@ a:is(.active,
   }
 }
 
-
-
 /* 404 */
 .app-body .empty-column-indicator,
 .app-body .error-column {
@@ -8128,8 +8697,6 @@ a:is(.active,
     padding-bottom: 40px;
   }
 }
-
-
 
 /* 📜 About page
    ------------- */
@@ -8178,7 +8745,17 @@ a:is(.active,
   order: 7;
 }
 
-.app-body #mastodon > div > div > div.columns-area__panels > div.columns-area__panels__main > div.columns-area.columns-area--mobile > div > div > div.about__section.active:nth-of-type(2) > div.about__section__title {
+.app-body
+  #mastodon
+  > div
+  > div
+  > div.columns-area__panels
+  > div.columns-area__panels__main
+  > div.columns-area.columns-area--mobile
+  > div
+  > div
+  > div.about__section.active:nth-of-type(2)
+  > div.about__section__title {
   display: none;
 }
 
@@ -8212,7 +8789,7 @@ a:is(.active,
 
 .app-body .about__header > h1 + p {
   color: var(--color-content-fg);
-  opacity: .8;
+  opacity: 0.8;
   text-align: left;
   margin-left: 20px;
 
@@ -8302,8 +8879,8 @@ a:is(.active,
 
 .app-body .prose ul > li::before {
   background-color: var(--color-content-fg);
-  opacity: .3;
-  top: .55em;
+  opacity: 0.3;
+  top: 0.55em;
   width: 7px;
   height: 7px;
 }
@@ -8361,7 +8938,7 @@ a:is(.active,
 }
 
 .app-body .rules-list__hint {
-  opacity: .7;
+  opacity: 0.7;
   padding-top: 4px;
 }
 
@@ -8394,7 +8971,6 @@ a:is(.active,
   }
 }
 
-
 /* Keyboard shortcuts page */
 .keyboard-shortcuts kbd {
   background-color: var(--color-content-secondary-bg);
@@ -8407,7 +8983,6 @@ a:is(.active,
   font-weight: 500;
 }
 
-
 /* Privacy Policy page */
 .app-body .column > .scrollable.privacy-policy {
   border: 1px solid var(--color-lines);
@@ -8416,13 +8991,13 @@ a:is(.active,
   z-index: 1;
 }
 @media screen and (width >=1175px) {
-  .app-body:not(:has(#tabs-bar__portal > *)) .column > .scrollable.privacy-policy {
+  .app-body:not(:has(#tabs-bar__portal > *))
+    .column
+    > .scrollable.privacy-policy {
     border-top-left-radius: 8px;
     border-top-right-radius: 8px;
   }
 }
-
-
 
 /* 👋 Hide superfluous UI */
 .app-body div#mastodon > div > div > div:nth-child(2) > div:nth-child(3) > div > div > div:nth-child(3) > hr,
@@ -8433,8 +9008,6 @@ a:is(.active,
 .app-body .account__header__bio .account__header__fields > dl:first-child /* Hide "Joined" field on profiles */ {
   display: none;
 }
-
-
 
 /* Multi-column layout
    ------------------- */
@@ -8448,7 +9021,7 @@ a:is(.active,
 }
 
 :root:has(.layout-multiple-columns) *::-webkit-scrollbar-thumb {
-  opacity: .8;
+  opacity: 0.8;
 }
 
 .layout-multiple-columns .scrollable,
@@ -8481,7 +9054,7 @@ a:is(.active,
 }
 
 .layout-multiple-columns .drawer__tab {
-  transition: all .3s;
+  transition: all 0.3s;
   border-radius: 6px;
   height: 40px;
   padding: 5px;
@@ -8495,7 +9068,7 @@ a:is(.active,
 }
 
 .layout-multiple-columns .drawer__tab:active {
-  transform: scale(.9);
+  transform: scale(0.9);
 }
 
 .layout-multiple-columns .drawer__tab:is(:active, :focus, :hover) {
@@ -8557,7 +9130,9 @@ a:is(.active,
   color: var(--color-fg);
 }
 
-.layout-multiple-columns .getting-started .column-link:is(:active, :focus, :hover) {
+.layout-multiple-columns
+  .getting-started
+  .column-link:is(:active, :focus, :hover) {
   background-color: var(--color-accent-bg);
   color: var(--color-fg);
 }
@@ -8597,8 +9172,8 @@ a:is(.active,
 }
 
 .layout-multiple-columns
-.column:has(> .getting-started)
-:is(.column-header, .column-back-button),
+  .column:has(> .getting-started)
+  :is(.column-header, .column-back-button),
 .layout-single-column .navigation-bar:has(+ .getting-started) {
   display: none;
 }
@@ -8614,15 +9189,21 @@ a:is(.active,
 
 .layout-multiple-columns .drawer {
   width: 280px;
-  transition: width .3s;
+  transition: width 0.3s;
 }
 
 .layout-multiple-columns
-.drawer:has(> .drawer__pager > .drawer__inner > .search-results > .search-results__section) {
+  .drawer:has(
+    > .drawer__pager
+      > .drawer__inner
+      > .search-results
+      > .search-results__section
+  ) {
   width: 400px;
 }
 
-.layout-multiple-columns .drawer__inner:has(> .search-results > .search-results__section) {
+.layout-multiple-columns
+  .drawer__inner:has(> .search-results > .search-results__section) {
   z-index: 2;
   background-color: var(--color-content-bg);
   border-left: 1px solid var(--color-lines);
@@ -8630,15 +9211,25 @@ a:is(.active,
 }
 
 .layout-multiple-columns
-.drawer
-> .search:has(+ .drawer__pager > .drawer__inner > .search-results > .search-results__section) {
+  .drawer
+  > .search:has(
+    + .drawer__pager
+      > .drawer__inner
+      > .search-results
+      > .search-results__section
+  ) {
   margin-bottom: 0;
 }
 
 .layout-multiple-columns
-.drawer
-> .search:has(+ .drawer__pager > .drawer__inner > .search-results > .search-results__section)
-> .search__input {
+  .drawer
+  > .search:has(
+    + .drawer__pager
+      > .drawer__inner
+      > .search-results
+      > .search-results__section
+  )
+  > .search__input {
   border-radius: 8px 8px 0 0;
 }
 
@@ -8648,14 +9239,20 @@ a:is(.active,
 }
 
 .layout-multiple-columns
-.drawer
-> .search:has(+ .drawer__pager > .drawer__inner > .search-results > .search-results__section)
-> .search__popout {
+  .drawer
+  > .search:has(
+    + .drawer__pager
+      > .drawer__inner
+      > .search-results
+      > .search-results__section
+  )
+  > .search__popout {
   border-radius: 0 0 8px 8px;
   margin-top: 0;
 }
 
-.layout-multiple-columns .drawer__inner:has(.search-results .empty-column-indicator) {
+.layout-multiple-columns
+  .drawer__inner:has(.search-results .empty-column-indicator) {
   z-index: 3;
 }
 
@@ -8668,7 +9265,10 @@ a:is(.active,
   padding: 0;
 }
 
-.layout-multiple-columns .search + .drawer__pager .drawer__inner:has(.compose-form):not(:has(> .search-results))::after {
+.layout-multiple-columns
+  .search
+  + .drawer__pager
+  .drawer__inner:has(.compose-form):not(:has(> .search-results))::after {
   content: var(--meta);
   color: var(--color-fg-muted);
   padding: 12px;
@@ -8687,11 +9287,7 @@ a:is(.active,
 }
 
 @media screen and (width >=630px) and (width <=1174px) {
-  .layout-multiple-columns
-  :is(
-            .column-header,
-            .column-back-button
-        ) {
+  .layout-multiple-columns :is(.column-header, .column-back-button) {
     border-top: 1px solid var(--color-lines);
     border-right: 1px solid var(--color-lines);
     border-left: 1px solid var(--color-lines);
@@ -8710,390 +9306,376 @@ a:is(.active,
   color: var(--color-accent);
 }
 
-
 /* Popular hashtag icons
    --------------------- */
 .app-body
-.trends__item:has(
-    .trends__item__name a:is(
-        [href*="tangerine" i]
-    )
-)::before {
+  .trends__item:has(.trends__item__name a:is([href*='tangerine' i]))::before {
   background-image: var(--icon-tangerine-slice);
 }
 
 .app-body
-.trends__item:has(
-    .trends__item__name a:is(
-        [href$="day" i],
-        [href$="tag" i],
-        [href*="monday" i],
-        [href*="tuesday" i],
-        [href*="wednesday" i],
-        [href*="thursday" i],
-        [href*="friday" i],
-        [href*="saturday" i],
-        [href*="sunday" i],
-        [href*="montag" i],
-        [href*="dienstag" i],
-        [href*="mittwoch" i],
-        [href*="donnerstag" i],
-        [href*="freitag" i],
-        [href*="samstag" i],
-        [href*="sonntag" i],
-        [href*="lundi" i],
-        [href*="mardi" i],
-        [href*="mercredi" i],
-        [href*="jeudi" i],
-        [href*="vendredi" i],
-        [href*="samedi" i],
-        [href*="dimanche" i],
-        [href*="lunes" i],
-        [href*="martes" i],
-        [href*="miercoles" i],
-        [href*="jueves" i],
-        [href*="viernes" i],
-        [href*="sabado" i],
-        [href*="domingo" i]
-    )
-)::before {
+  .trends__item:has(
+    .trends__item__name
+      a:is(
+        [href$='day' i],
+        [href$='tag' i],
+        [href*='monday' i],
+        [href*='tuesday' i],
+        [href*='wednesday' i],
+        [href*='thursday' i],
+        [href*='friday' i],
+        [href*='saturday' i],
+        [href*='sunday' i],
+        [href*='montag' i],
+        [href*='dienstag' i],
+        [href*='mittwoch' i],
+        [href*='donnerstag' i],
+        [href*='freitag' i],
+        [href*='samstag' i],
+        [href*='sonntag' i],
+        [href*='lundi' i],
+        [href*='mardi' i],
+        [href*='mercredi' i],
+        [href*='jeudi' i],
+        [href*='vendredi' i],
+        [href*='samedi' i],
+        [href*='dimanche' i],
+        [href*='lunes' i],
+        [href*='martes' i],
+        [href*='miercoles' i],
+        [href*='jueves' i],
+        [href*='viernes' i],
+        [href*='sabado' i],
+        [href*='domingo' i]
+      )
+  )::before {
   background-image: var(--icon-calendar);
 }
 
 .app-body
-.trends__item:has(
-    .trends__item__name a:is(
-        [href*="tune" i],
-        [href$="/np" i],
-        [href*="nowplaying" i],
-        [href*="singit" i],
-        [href*="music" i],
-        [href*="eurovision" i],
-        [href*="song" i],
-        [href$="synth" i],
-        [href$="jazz" i],
-        [href$="rock" i],
-        [href$="rap" i],
-        [href$="BandcampFriday" i],
-        [href*="Jukebox" i],
-        [href*="/kpop" i],
-        [href*="/rock" i],
-        [href$="/pop" i]
-    )
-)::before {
+  .trends__item:has(
+    .trends__item__name
+      a:is(
+        [href*='tune' i],
+        [href$='/np' i],
+        [href*='nowplaying' i],
+        [href*='singit' i],
+        [href*='music' i],
+        [href*='eurovision' i],
+        [href*='song' i],
+        [href$='synth' i],
+        [href$='jazz' i],
+        [href$='rock' i],
+        [href$='rap' i],
+        [href$='BandcampFriday' i],
+        [href*='Jukebox' i],
+        [href*='/kpop' i],
+        [href*='/rock' i],
+        [href$='/pop' i]
+      )
+  )::before {
   background-image: var(--icon-music);
 }
 
 .app-body
-.trends__item:has(
-    .trends__item__name a:is(
-        [href*="eurovision" i]
-    )
-)::before {
+  .trends__item:has(.trends__item__name a:is([href*='eurovision' i]))::before {
   background-image: var(--icon-microphone);
 }
 
 .app-body
-.trends__item:has(
-    .trends__item__name a:is(
-        [href*="birthday" i]
-    )
-)::before {
+  .trends__item:has(.trends__item__name a:is([href*='birthday' i]))::before {
   background-image: var(--icon-cake);
 }
 
 .app-body
-.trends__item:has(
-    .trends__item__name a:is(
-        [href*="letterboxd" i],
-        [href$="trakt" i],
-        [href$="TV" i],
-        [href$="cinema" i],
-        [href*="nowwatching" i],
-        [href*="WatchingNow" i],
-        [href*="movie" i],
-        [href*="/cinema" i],
-        [href*="/oscars" i]
-    )
-)::before {
+  .trends__item:has(
+    .trends__item__name
+      a:is(
+        [href*='letterboxd' i],
+        [href$='trakt' i],
+        [href$='TV' i],
+        [href$='cinema' i],
+        [href*='nowwatching' i],
+        [href*='WatchingNow' i],
+        [href*='movie' i],
+        [href*='/cinema' i],
+        [href*='/oscars' i]
+      )
+  )::before {
   background-image: var(--icon-popcorn);
 }
 
 .app-body
-.trends__item:has(
-    .trends__item__name a:is(
-        [href*="photography" i],
-        [href*="photo" i],
-        [href*="foto" i],
-        [href*="pics" i],
-        [href*="selfie" i],
-        [href*="/ShotWith" i],
-        [href*="WindowFriday" i],
-        [href*="FensterFreitag" i],
-        [href$="/instagram" i]
-    )
-)::before {
+  .trends__item:has(
+    .trends__item__name
+      a:is(
+        [href*='photography' i],
+        [href*='photo' i],
+        [href*='foto' i],
+        [href*='pics' i],
+        [href*='selfie' i],
+        [href*='/ShotWith' i],
+        [href*='WindowFriday' i],
+        [href*='FensterFreitag' i],
+        [href$='/instagram' i]
+      )
+  )::before {
   background-image: var(--icon-camera);
 }
 
 .app-body
-.trends__item:has(
-    .trends__item__name a:is(
-        [href*="SilentSunday" i],
-        [href*="sunset" i],
-        [href*="sunrise" i],
-        [href$="/sky" i],
-        [href*="skyblue" i],
-        [href*="ocean" i]
-    )
-)::before {
+  .trends__item:has(
+    .trends__item__name
+      a:is(
+        [href*='SilentSunday' i],
+        [href*='sunset' i],
+        [href*='sunrise' i],
+        [href$='/sky' i],
+        [href*='skyblue' i],
+        [href*='ocean' i]
+      )
+  )::before {
   background-image: var(--icon-sunset);
 }
 
 .app-body
-.trends__item:has(
-    .trends__item__name a:is(
-        [href*="christmas" i],
-        [href*="weihnachten" i],
-        [href*="noel" i]
-    )
-)::before {
+  .trends__item:has(
+    .trends__item__name
+      a:is([href*='christmas' i], [href*='weihnachten' i], [href*='noel' i])
+  )::before {
   background-image: var(--icon-pine);
 }
 
 .app-body
-.trends__item:has(
-    .trends__item__name a:is(
-        [href*="tree" i],
-        [href*="trunk" i],
-        [href*="ecology" i],
-        [href*="klima" i],
-        [href*="climat" i],
-        [href*="environment" i],
-        [href*="/garden" i],
-        [href*="mosstodon" i],
-        [href*="/vegan" i],
-        [href*="/plants" i]
-    )
-)::before {
+  .trends__item:has(
+    .trends__item__name
+      a:is(
+        [href*='tree' i],
+        [href*='trunk' i],
+        [href*='ecology' i],
+        [href*='klima' i],
+        [href*='climat' i],
+        [href*='environment' i],
+        [href*='/garden' i],
+        [href*='mosstodon' i],
+        [href*='/vegan' i],
+        [href*='/plants' i]
+      )
+  )::before {
   background-image: var(--icon-tree);
 }
 
 .app-body
-.trends__item:has(
-    .trends__item__name a:is(
-        [href$="/cat" i],
-        [href*="/cats" i],
-        [href*="catloaf" i],
-        [href*="Caturday" i],
-        [href*="catsofmastodon" i],
-        [href*="WhiskersWednesday" i]
-    ):not(
-        [href*="cath" i]
-    )
-)::before {
+  .trends__item:has(
+    .trends__item__name
+      a:is(
+        [href$='/cat' i],
+        [href*='/cats' i],
+        [href*='catloaf' i],
+        [href*='Caturday' i],
+        [href*='catsofmastodon' i],
+        [href*='WhiskersWednesday' i]
+      ):not([href*='cath' i])
+  )::before {
   background-image: var(--icon-cat);
 }
 
 .app-body
-.trends__item:has(
-    .trends__item__name a:is(
-        [href$="dog" i],
-        [href$="dogs" i],
-        [href*="/dog" i],
-        [href*="DogLovers" i],
-        [href*="dogsofmastodon" i],
-        [href*="DogsOfFedi" i],
-        [href*="dogstadon" i]
-    )
-)::before {
+  .trends__item:has(
+    .trends__item__name
+      a:is(
+        [href$='dog' i],
+        [href$='dogs' i],
+        [href*='/dog' i],
+        [href*='DogLovers' i],
+        [href*='dogsofmastodon' i],
+        [href*='DogsOfFedi' i],
+        [href*='dogstadon' i]
+      )
+  )::before {
   background-image: var(--icon-dog);
 }
 
 .app-body
-.trends__item:has(
-    .trends__item__name a:is(
-        [href$="art" i],
-        [href*="artmatters" i],
-        [href*="DigitalArt" i],
-        [href*="PixelArt" i],
-        [href*="artwork" i],
-        [href*="artist" i],
-        [href$="design" i],
-        [href*="designer" i],
-        [href*="watercolo" i],
-        [href*="painting" i]
-    ):not(
-        [href*="aiart" i],
-        [href*="artificial" i],
-        [href*="aidesign" i]
-    )
-)::before {
+  .trends__item:has(
+    .trends__item__name
+      a:is(
+        [href$='art' i],
+        [href*='artmatters' i],
+        [href*='DigitalArt' i],
+        [href*='PixelArt' i],
+        [href*='artwork' i],
+        [href*='artist' i],
+        [href$='design' i],
+        [href*='designer' i],
+        [href*='watercolo' i],
+        [href*='painting' i]
+      ):not([href*='aiart' i], [href*='artificial' i], [href*='aidesign' i])
+  )::before {
   background-image: var(--icon-brush);
 }
 
 .app-body
-.trends__item:has(
-    .trends__item__name a:is(
-        [href$="apple" i],
-        [href$="macos" i],
-        [href$="/mac" i],
-        [href$="ios" i],
-        [href*="ipad" i],
-        [href*="iphone" i],
-        [href*="/wwdc" i],
-        [href*="/appleevent" i]
-    )
-)::before {
+  .trends__item:has(
+    .trends__item__name
+      a:is(
+        [href$='apple' i],
+        [href$='macos' i],
+        [href$='/mac' i],
+        [href$='ios' i],
+        [href*='ipad' i],
+        [href*='iphone' i],
+        [href*='/wwdc' i],
+        [href*='/appleevent' i]
+      )
+  )::before {
   background-image: var(--icon-apple);
 }
 
 .app-body
-.trends__item:has(
-    .trends__item__name a:is(
-        [href*="poem" i],
-        [href*="writing" i],
-        [href*="write" i],
-        [href*="article" i]
-    )
-)::before {
+  .trends__item:has(
+    .trends__item__name
+      a:is(
+        [href*='poem' i],
+        [href*='writing' i],
+        [href*='write' i],
+        [href*='article' i]
+      )
+  )::before {
   background-image: var(--icon-pencil);
 }
 
 .app-body
-.trends__item:has(
-    .trends__item__name a:is(
-        [href*="/book" i],
-        [href*="literature" i],
-        [href*="reading" i],
-        [href$="/history" i],
-        [href$="/histoire" i]
-    )
-)::before {
+  .trends__item:has(
+    .trends__item__name
+      a:is(
+        [href*='/book' i],
+        [href*='literature' i],
+        [href*='reading' i],
+        [href$='/history' i],
+        [href$='/histoire' i]
+      )
+  )::before {
   background-image: var(--icon-book);
 }
 
 .app-body
-.trends__item:has(
-    .trends__item__name a:is(
-        [href$="game" i],
-        [href*="gaming" i],
-        [href*="gamedev" i],
-        [href*="games" i],
-        [href*="gamer" i],
-        [href*="playstation" i],
-        [href*="arcade" i],
-        [href*="xbox" i],
-        [href*="nintendo" i]
-    )
-)::before {
+  .trends__item:has(
+    .trends__item__name
+      a:is(
+        [href$='game' i],
+        [href*='gaming' i],
+        [href*='gamedev' i],
+        [href*='games' i],
+        [href*='gamer' i],
+        [href*='playstation' i],
+        [href*='arcade' i],
+        [href*='xbox' i],
+        [href*='nintendo' i]
+      )
+  )::before {
   background-image: var(--icon-gaming);
 }
 
 .app-body
-.trends__item:has(
-    .trends__item__name a:is(
-        [href*="/minecraft" i],
-        [href*="/hermitcraft" i]
-    )
-)::before {
+  .trends__item:has(
+    .trends__item__name a:is([href*='/minecraft' i], [href*='/hermitcraft' i])
+  )::before {
   background-image: var(--icon-cube);
 }
 
 .app-body
-.trends__item:has(
-    .trends__item__name a:is(
-        [href$="/fifa" i],
-        [href$="/fifaworldcup" i],
-        [href$="/soccer" i],
-        [href*="/euro202" i],
-        [href$="/mls" i],
-        [href*="/sport" i]
-    )
-)::before {
+  .trends__item:has(
+    .trends__item__name
+      a:is(
+        [href$='/fifa' i],
+        [href$='/fifaworldcup' i],
+        [href$='/soccer' i],
+        [href*='/euro202' i],
+        [href$='/mls' i],
+        [href*='/sport' i]
+      )
+  )::before {
   background-image: var(--icon-football);
 }
 
 .app-body
-.trends__item:has(
-    .trends__item__name a:is(
-        [href$="lgbt" i],
-        [href*="/lgbt" i],
-        [href*="/queer" i],
-        [href$="trans" i],
-        [href$="pride" i],
-        [href$="womensday" i],
-        [href*="internationalwomensday" i],
-        [href$="/IWD" i],
-        [href*="JourneeDesDroitsDesFemmes" i],
-        [href*="feministischerkampftag" i],
-        [href*="celebratewomen" i],
-        [href*="/8mars" i],
-        [href$="transdayofvisibility" i],
-        [href$="TDOV" i],
-        [href$="transdayofremembrance" i],
-        [href$="TDOR" i],
-        [href$="pridemonth" i],
-        [href$="blm" i],
-        [href$="blacklivesmatter" i],
-        [href$="blackmastodon" i],
-        [href$="blackfedi" i],
-        [href*="protest" i],
-        [href*="greve" i],
-        [href*="manif" i],
-        [href$="riot" i],
-        [href$="freepalestine" i]
-    )
-)::before {
+  .trends__item:has(
+    .trends__item__name
+      a:is(
+        [href$='lgbt' i],
+        [href*='/lgbt' i],
+        [href*='/queer' i],
+        [href$='trans' i],
+        [href$='pride' i],
+        [href$='womensday' i],
+        [href*='internationalwomensday' i],
+        [href$='/IWD' i],
+        [href*='JourneeDesDroitsDesFemmes' i],
+        [href*='feministischerkampftag' i],
+        [href*='celebratewomen' i],
+        [href*='/8mars' i],
+        [href$='transdayofvisibility' i],
+        [href$='TDOV' i],
+        [href$='transdayofremembrance' i],
+        [href$='TDOR' i],
+        [href$='pridemonth' i],
+        [href$='blm' i],
+        [href$='blacklivesmatter' i],
+        [href$='blackmastodon' i],
+        [href$='blackfedi' i],
+        [href*='protest' i],
+        [href*='greve' i],
+        [href*='manif' i],
+        [href$='riot' i],
+        [href$='freepalestine' i]
+      )
+  )::before {
   background-image: var(--icon-pride);
 }
 
 .app-body
-.trends__item:has(
-    .trends__item__name a:is(
-        [href*="electionday" i],
-        [href$="election" i],
-        [href$="/election" i],
-        [href*="presidentielle" i],
-        [href*="presidential" i],
-        [href*="legislativ" i]
-    )
-)::before {
+  .trends__item:has(
+    .trends__item__name
+      a:is(
+        [href*='electionday' i],
+        [href$='election' i],
+        [href$='/election' i],
+        [href*='presidentielle' i],
+        [href*='presidential' i],
+        [href*='legislativ' i]
+      )
+  )::before {
   background-image: var(--icon-vote);
 }
 
 .app-body
-.trends__item:has(
-    .trends__item__name a:is(
-        [href$="dev" i],
-        [href$="code" i],
-        [href*="development" i],
-        [href*="developer" i],
-        [href*="devops" i],
-        [href*="opensource" i]
-    )
-)::before {
+  .trends__item:has(
+    .trends__item__name
+      a:is(
+        [href$='dev' i],
+        [href$='code' i],
+        [href*='development' i],
+        [href*='developer' i],
+        [href*='devops' i],
+        [href*='opensource' i]
+      )
+  )::before {
   background-image: var(--icon-code);
 }
 
 .app-body
-.trends__item:has(
-    .trends__item__name a:is(
-        [href*="mutualaid" i],
-        [href*="crowdfund" i]
-    )
-)::before {
+  .trends__item:has(
+    .trends__item__name a:is([href*='mutualaid' i], [href*='crowdfund' i])
+  )::before {
   background-image: var(--icon-handshake);
 }
 
 .app-body
-.trends__item:has(
-    .trends__item__name a:is(
-        [href*="olympics" i],
-        [href*="/Paris2024" i],
-        [href*="/LA2028" i]
-    )
-)::before {
+  .trends__item:has(
+    .trends__item__name
+      a:is([href*='olympics' i], [href*='/Paris2024' i], [href*='/LA2028' i])
+  )::before {
   background-image: var(--icon-olympics);
   transform: scale(1.85);
 }
