@@ -4,7 +4,7 @@ mastodon-light: styles/mastodon-light.scss
 tangerineui-cherry: styles/tangerineui-cherry.scss
 tangerineui-lagoon: styles/tangerineui-lagoon.scss
 tangerineui-orange: styles/tangerineui-orange.scss
-tangerineui-grape: styles/tangerineui-cherry.scss
+tangerineui-grape: styles/tangerineui-grape.scss
 modern-contrast: styles/modern-contrast.scss
 modern: styles/modern.scss
 modern-light: styles/modern-light.scss
