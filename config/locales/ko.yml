@@ -1183,14 +1183,14 @@ ko:
       title: "당신을 기다리고 있었습니다."
     sign_up:
       manual_review: "%{domain}에 가입하려면 관리자의 승인을 받아야 합니다. 왜 %{domain}에 계정을 생성하고 싶은지 작성해주세요."
-      preamble: 이 레가문트 인스턴스에서 다른 인스턴스의 사용자를 팔로우하거나, 그들의 글을 받아볼 수 있습니다.
+      preamble: "이 레가문트 인스턴스에서 다른 인스턴스의 사용자를 팔로우하거나, 그들의 글을 받아볼 수 있습니다."
       title: "%{domain}에 가입하기 위한 정보들을 입력하세요."
     status:
       account_status: 계정 상태
-      confirming: 이메일 주소 인증을 기다리고 있습니다.
-      functional: 완벽합니다!
-      pending: 계정이 아직 관리자의 승인을 기다리고 있습니다.
-      redirecting_to: %{acct} 계정으로 이사되었으며, 계정이 비활성화되었습니다.
+      confirming: "이메일 주소 인증을 기다리고 있습니다."
+      functional: "완벽합니다!"
+      pending: "계정이 아직 관리자의 승인을 기다리고 있습니다."
+      redirecting_to: "%{acct} 계정으로 이사되었으며, 계정이 비활성화되었습니다."
       self_destruct: "%{domain}에서 운영하는 레가문트가 종료되었으므로, 제한적인 접근만 가능합니다."
       view_strikes: 내 계정에 대한 과거 중재 기록 보기
     too_fast: 너무 빠른 것 같습니다. 심호흡하고, 다시 시도하세요.
