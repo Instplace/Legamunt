@@ -4944,17 +4944,16 @@ div[tabindex='-1']
   border: 0;
   width: 50px;
   height: 50px;
-
-  //  background-image: var(--logo);
-  //  background-repeat: no-repeat;
-  //  background-position: center;
-  //  background-size: 32px auto;
+  background-image: var(--logo);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 32px auto;
 }
 
-// .app-body .column-link.column-link--logo img,
-// .app-body .ui__header__logo img {
-//   display: none;
-// }
+app-body .column-link.column-link--logo img,
+.app-body .ui__header__logo img {
+  display: none;
+}
 
 .app-body .navigation-panel__logo {
   margin-bottom: 5px;
