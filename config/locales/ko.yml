@@ -1136,8 +1136,8 @@ ko:
     delete_account_html: 계정을 삭제하고 싶은 경우, <a href="%{path}">여기서</a> 삭제할 수 있습니다. 삭제하려면 본인 인증이 필요합니다.
     description:
       prefix_invited_by_user: "@%{name}님이 레가문트 인스턴스로 당신을 초대했습니다!"
-      prefix_sign_up: 레가문트 인스턴스에 가입하세요!
-      suffix: 계정을 만들고 연합우주의 다른 사람들과 만나고, 대화하며 자신의 이야기를 펼쳐보세요.
+      prefix_sign_up: "레가문트 인스턴스에 가입하세요!"
+      suffix: "계정을 만들고 연합우주의 다른 사람들과 만나고, 대화하며 자신의 이야기를 펼쳐보세요."
     didnt_get_confirmation: 확인 링크를 못 받았나요?
     dont_have_your_security_key: 보안 키가 없습니까?
     forgot_password: 암호를 잊었나요?
@@ -1148,7 +1148,7 @@ ko:
     login: 로그인
     logout: 로그아웃
     migrate_account: 계정 옮기기
-    migrate_account_html: 이 계정을 다른 계정으로 이사하기를 원하는 경우 <a href="%{path}">여기</a>에서 시작할 수 있습니다.
+    migrate_account_html: "이 계정을 다른 계정으로 이사하기를 원하는 경우 <a href="%{path}">여기</a>에서 시작할 수 있습니다."
     or_log_in_with: 외부 플랫폼으로 인증하기
     progress:
       confirm: 이메일 확인
@@ -1160,24 +1160,24 @@ ko:
       saml: SAML
     register: 계정 만들기
     registration_closed: "%{instance}에서는 신규 사용자를 받고 있지 않습니다."
-    resend_confirmation: 이메일을 받지 못하셨나요?
+    resend_confirmation: "이메일을 받지 못하셨나요?"
     reset_password: 암호 재설정
     rules:
       accept: 수락
       back: 뒤로가기
       invited_by: '당신은 %{domain}에 있는 다른 사용자에게 초대받았습니다:'
-      preamble: %{domain}에서 적용되는 몇 가지 규칙을 확인해야 합니다.
-      preamble_invited: 계속하려면, %{domain}에서 적용되는 몇 가지 규칙을 확인해야 합니다.
-      title: 먼저 확인해야 할 게 있습니다...
-      title_invited: 초대장을 받았습니다!
+      preamble: "%{domain}에서 적용되는 몇 가지 규칙을 확인해야 합니다."
+      preamble_invited: "계속하려면, %{domain}에서 적용되는 몇 가지 규칙을 확인해야 합니다."
+      title: "먼저 확인해야 할 게 있습니다..."
+      title_invited: "초대장을 받았습니다!"
     security: 보안
     set_new_password: 새로운 암호 설정
     setup:
-      email_below_hint_html: 몇 분 이내로 확인 이메일이 발송됩니다. 이메일을 받지 못했다면 아래 이메일 주소를 확인하거나, 스팸 폴더를 확인하세요.
+      email_below_hint_html: "몇 분 이내로 확인 이메일이 발송됩니다. 이메일을 받지 못했다면 아래 이메일 주소를 확인하거나, 스팸 폴더를 확인하세요."
       email_settings_hint_html: "%{email} 이메일로 보낸 링크를 클릭해 시작할 수 있습니다."
-      link_not_received: 이메일을 받지 못하셨나요?
-      new_confirmation_instructions_sent: 몇 분 이내로 확인 이메일이 발송됩니다.
-      title: 마지막으로, 이메일을 확인해주세요.
+      link_not_received: "이메일을 받지 못하셨나요?"
+      new_confirmation_instructions_sent: "몇 분 이내로 확인 이메일이 발송됩니다."
+      title: "마지막으로, 이메일을 확인해주세요."
     sign_in:
       preamble_html: "<strong>%{domain}</strong>에 돌아오신 것을 환영합니다. 외부 플랫폼을 통해 인증하거나, 이 인스턴스의 계정 정보를 입력하세요."
       title: "당신을 기다리고 있었습니다."
