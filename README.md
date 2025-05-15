@@ -1,3 +1,17 @@
+# Mastodon Legamunt Fork
+![TeamCity CI Status](https://city.psec.dev/app/rest/builds/buildType:(id:Legamunt_Container)/statusIcon)
+
+**This repository is not for "general" purpose, so use this code at your own risk.**
+
+You can use this container image to deploy with docker.
+```
+reg.psec.dev/unfloyded/legamunt:latest
+```
+
+Following one is original Mastodon repository's README.
+
+---
+
 > [!NOTE]
 > Want to learn more about Mastodon?
 > Click below to find out more in a video.
