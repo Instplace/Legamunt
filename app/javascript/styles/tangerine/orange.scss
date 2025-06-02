@@ -8758,6 +8758,10 @@ div[tabindex='-1']
   display: none;
 }
 
+.app-body .about__section:nth-child(2) .about__section__title {
+  display: none;
+}
+
 .app-body .about__header p,
 .app-body .about__meta h4 {
   color: var(--color-fg);
