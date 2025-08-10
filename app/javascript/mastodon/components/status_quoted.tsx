@@ -1,21 +1,18 @@
-import { useMemo } from 'react';
+import { useEffect, useMemo } from 'react';
 
 import { FormattedMessage } from 'react-intl';
 
 import classNames from 'classnames';
-import { Link } from 'react-router-dom';
 
 import type { Map as ImmutableMap } from 'immutable';
 
-import ArticleIcon from '@/material-icons/400-24px/article.svg?react';
-import ChevronRightIcon from '@/material-icons/400-24px/chevron_right.svg?react';
-import { Icon } from 'mastodon/components/icon';
+import { LearnMoreLink } from 'mastodon/components/learn_more_link';
 import StatusContainer from 'mastodon/containers/status_container';
 import type { Status } from 'mastodon/models/status';
 import type { RootState } from 'mastodon/store';
-import { useAppSelector } from 'mastodon/store';
+import { useAppDispatch, useAppSelector } from 'mastodon/store';
 
-import QuoteIcon from '../../images/quote.svg?react';
+import { fetchStatus } from '../actions/statuses';
 import { makeGetStatus } from '../selectors';
 
 const MAX_QUOTE_POSTS_NESTING_LEVEL = 1;
@@ -30,13 +27,12 @@ const QuoteWrapper: React.FC<{
         'status__quote--error': isError,
       })}
     >
-      <Icon id='quote' icon={QuoteIcon} className='status__quote-icon' />
       {children}
     </div>
   );
 };
 
-const QuoteLink: React.FC<{
+const NestedQuoteLink: React.FC<{
   status: Status;
 }> = ({ status }) => {
   const accountId = status.get('account') as string;
@@ -44,27 +40,20 @@ const QuoteLink: React.FC<{
     accountId ? state.accounts.get(accountId) : undefined,
   );
 
-  const quoteAuthorName = account?.display_name_html;
+  const quoteAuthorName = account?.acct;
 
   if (!quoteAuthorName) {
     return null;
   }
 
-  const quoteAuthorElement = (
-    <span dangerouslySetInnerHTML={{ __html: quoteAuthorName }} />
-  );
-  const quoteUrl = `/@${account.get('acct')}/${status.get('id') as string}`;
-
   return (
-    <Link to={quoteUrl} className='status__quote-author-button'>
+    <div className='status__quote-author-button'>
       <FormattedMessage
         id='status.quote_post_author'
-        defaultMessage='Post by {name}'
-        values={{ name: quoteAuthorElement }}
+        defaultMessage='Quoted a post by @{name}'
+        values={{ name: quoteAuthorName }}
       />
-      <Icon id='chevron_right' icon={ChevronRightIcon} />
-      <Icon id='article' icon={ArticleIcon} />
-    </Link>
+    </div>
   );
 };
 
@@ -80,12 +69,18 @@ export const QuotedStatus: React.FC<{
   variant?: 'full' | 'link';
   nestingLevel?: number;
 }> = ({ quote, contextType, nestingLevel = 1, variant = 'full' }) => {
+  const dispatch = useAppDispatch();
   const quotedStatusId = quote.get('quoted_status');
   const quoteState = quote.get('state');
   const status = useAppSelector((state) =>
     quotedStatusId ? state.statuses.get(quotedStatusId) : undefined,
   );
-  let quoteError: React.ReactNode = null;
+
+  useEffect(() => {
+    if (!status && quotedStatusId) {
+      dispatch(fetchStatus(quotedStatusId));
+    }
+  }, [status, quotedStatusId, dispatch]);
 
   // In order to find out whether the quoted post should be completely hidden
   // due to a matching filter, we run it through the selector used by `status_container`.
@@ -96,6 +91,8 @@ export const QuotedStatus: React.FC<{
   );
   const isFilteredAndHidden = status && statusWithExtraData === null;
 
+  let quoteError: React.ReactNode = null;
+
   if (isFilteredAndHidden) {
     quoteError = (
       <FormattedMessage
@@ -103,39 +100,42 @@ export const QuotedStatus: React.FC<{
         defaultMessage='Hidden due to one of your filters'
       />
     );
-  } else if (quoteState === 'deleted') {
-    quoteError = (
-      <FormattedMessage
-        id='status.quote_error.removed'
-        defaultMessage='This post was removed by its author.'
-      />
-    );
-  } else if (quoteState === 'unauthorized') {
-    quoteError = (
-      <FormattedMessage
-        id='status.quote_error.unauthorized'
-        defaultMessage='This post cannot be displayed as you are not authorized to view it.'
-      />
-    );
   } else if (quoteState === 'pending') {
     quoteError = (
-      <FormattedMessage
-        id='status.quote_error.pending_approval'
-        defaultMessage='This post is pending approval from the original author.'
-      />
+      <>
+        <FormattedMessage
+          id='status.quote_error.pending_approval'
+          defaultMessage='Post pending'
+        />
+
+        <LearnMoreLink>
+          <h6>
+            <FormattedMessage
+              id='status.quote_error.pending_approval_popout.title'
+              defaultMessage='Pending quote? Remain calm'
+            />
+          </h6>
+          <p>
+            <FormattedMessage
+              id='status.quote_error.pending_approval_popout.body'
+              defaultMessage='Quotes shared across the Fediverse may take time to display, as different servers have different protocols.'
+            />
+          </p>
+        </LearnMoreLink>
+      </>
     );
-  } else if (quoteState === 'rejected' || quoteState === 'revoked') {
+  } else if (
+    !status ||
+    !quotedStatusId ||
+    quoteState === 'deleted' ||
+    quoteState === 'rejected' ||
+    quoteState === 'revoked' ||
+    quoteState === 'unauthorized'
+  ) {
     quoteError = (
       <FormattedMessage
-        id='status.quote_error.rejected'
-        defaultMessage='This post cannot be displayed as the original author does not allow it to be quoted.'
-      />
-    );
-  } else if (!status || !quotedStatusId) {
-    quoteError = (
-      <FormattedMessage
-        id='status.quote_error.not_found'
-        defaultMessage='This post cannot be displayed.'
+        id='status.quote_error.not_available'
+        defaultMessage='Post unavailable'
       />
     );
   }
@@ -145,7 +145,7 @@ export const QuotedStatus: React.FC<{
   }
 
   if (variant === 'link' && status) {
-    return <QuoteLink status={status} />;
+    return <NestedQuoteLink status={status} />;
   }
 
   const childQuote = status?.get('quote') as QuoteMap | undefined;
@@ -159,7 +159,7 @@ export const QuotedStatus: React.FC<{
         isQuotedPost
         id={quotedStatusId}
         contextType={contextType}
-        avatarSize={40}
+        avatarSize={32}
       >
         {canRenderChildQuote && (
           <QuotedStatus

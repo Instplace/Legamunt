@@ -5,7 +5,7 @@ class InitialStateSerializer < ActiveModel::Serializer
 
   attributes :meta, :compose, :accounts,
              :media_attachments, :settings,
-             :languages
+             :languages, :features
 
   attribute :critical_updates_pending, if: -> { object&.role&.can?(:view_devops) && SoftwareUpdate.check_enabled? }
 
@@ -30,6 +30,7 @@ class InitialStateSerializer < ActiveModel::Serializer
       store[:use_blurhash]      = object_account_user.setting_use_blurhash
       store[:use_pending_items] = object_account_user.setting_use_pending_items
       store[:show_trends]       = Setting.trends && object_account_user.setting_trends
+      store[:emoji_style]       = object_account_user.settings['web.emoji_style'] if Mastodon::Feature.modern_emojis_enabled?
     else
       store[:auto_play_gif] = Setting.auto_play_gif
       store[:display_media] = Setting.display_media
@@ -53,6 +54,7 @@ class InitialStateSerializer < ActiveModel::Serializer
       store[:default_privacy]   = object.visibility || object_account_user.setting_default_privacy
       store[:default_sensitive] = object_account_user.setting_default_sensitive
       store[:default_language]  = object_account_user.preferred_posting_language
+      store[:default_quote_policy] = object_account_user.setting_default_quote_policy
     end
 
     store[:text] = object.text if object.text
@@ -85,6 +87,10 @@ class InitialStateSerializer < ActiveModel::Serializer
     LanguagesHelper::SUPPORTED_LOCALES.map { |(key, value)| [key, value[0], value[1]] }
   end
 
+  def features
+    Mastodon::Feature.enabled_features
+  end
+
   private
 
   def default_meta_store
@@ -93,7 +99,7 @@ class InitialStateSerializer < ActiveModel::Serializer
       activity_api_enabled: Setting.activity_api_enabled,
       admin: object.admin&.id&.to_s,
       domain: Addressable::IDNA.to_unicode(instance_presenter.domain),
-      limited_federation_mode: Rails.configuration.x.limited_federation_mode,
+      limited_federation_mode: Rails.configuration.x.mastodon.limited_federation_mode,
       locale: I18n.locale,
       mascot: instance_presenter.mascot&.file&.url,
       profile_directory: Setting.profile_directory,
@@ -110,7 +116,7 @@ class InitialStateSerializer < ActiveModel::Serializer
       trends_as_landing_page: Setting.trends_as_landing_page,
       trends_enabled: Setting.trends,
       version: instance_presenter.version,
-      terms_of_service_enabled: TermsOfService.live.exists?,
+      terms_of_service_enabled: TermsOfService.current.present?,
     }
   end
 
