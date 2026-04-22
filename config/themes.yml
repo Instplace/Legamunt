@@ -3,9 +3,5 @@ tangerineui-cherry: styles/tangerineui-cherry.scss
 tangerineui-lagoon: styles/tangerineui-lagoon.scss
 tangerineui-orange: styles/tangerineui-orange.scss
 tangerineui-grape: styles/tangerineui-grape.scss
-modern-contrast: styles/modern-contrast.scss
 modern: styles/modern.scss
-modern-light: styles/modern-light.scss
-bird-contrast: styles/bird-contrast.scss
 bird: styles/bird.scss
-bird-light: styles/bird-light.scss
