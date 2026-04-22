@@ -3,6 +3,7 @@
 class Api::V1::StatusesController < Api::BaseController
   include Authorization
   include AsyncRefreshesConcern
+  include Api::InteractionPoliciesConcern
 
   before_action -> { authorize_if_got_token! :read, :'read:statuses' }, except: [:create, :update, :destroy]
   before_action -> { doorkeeper_authorize! :write, :'write:statuses' }, only:   [:create, :update, :destroy]
@@ -65,7 +66,7 @@ class Api::V1::StatusesController < Api::BaseController
     if async_refresh.running?
       add_async_refresh_header(async_refresh)
     elsif !current_account.nil? && @status.should_fetch_replies?
-      add_async_refresh_header(AsyncRefresh.create(refresh_key))
+      add_async_refresh_header(AsyncRefresh.create(refresh_key, count_results: true))
 
       WorkerBatch.new.within do |batch|
         batch.connect(refresh_key, threshold: 1.0)
@@ -105,9 +106,7 @@ class Api::V1::StatusesController < Api::BaseController
     @status = Status.where(account: current_account).find(params[:id])
     authorize @status, :update?
 
-    UpdateStatusService.new.call(
-      @status,
-      current_account.id,
+    update_options = {
       text: status_params[:status],
       media_ids: status_params[:media_ids],
       media_attributes: status_params[:media_attributes],
@@ -115,8 +114,11 @@ class Api::V1::StatusesController < Api::BaseController
       language: status_params[:language],
       spoiler_text: status_params[:spoiler_text],
       poll: status_params[:poll],
-      quote_approval_policy: quote_approval_policy
-    )
+    }
+
+    update_options[:quote_approval_policy] = quote_approval_policy if status_params[:quote_approval_policy].present?
+
+    UpdateStatusService.new.call(@status, current_account.id, update_options)
 
     render json: @status, serializer: REST::StatusSerializer
   end
@@ -125,10 +127,13 @@ class Api::V1::StatusesController < Api::BaseController
     @status = Status.where(account: current_account).find(params[:id])
     authorize @status, :destroy?
 
+    # JSON is generated before `discard_with_reblogs` in order to have the proper URL
+    # for media attachments, as it would otherwise redirect to the media proxy
+    json = render_to_body json: @status, serializer: REST::StatusSerializer, source_requested: true
+
     @status.discard_with_reblogs
     StatusPin.find_by(status: @status)&.destroy
     @status.account.statuses_count = @status.account.statuses_count - 1
-    json = render_to_body json: @status, serializer: REST::StatusSerializer, source_requested: true
 
     RemovalWorker.perform_async(@status.id, { 'redraft' => !truthy_param?(:delete_media) })
 
@@ -144,7 +149,7 @@ class Api::V1::StatusesController < Api::BaseController
   def set_status
     @status = Status.find(params[:id])
     authorize @status, :show?
-  rescue Mastodon::NotPermittedError
+  rescue ActiveRecord::RecordNotFound, Mastodon::NotPermittedError
     not_found
   end
 
@@ -156,9 +161,7 @@ class Api::V1::StatusesController < Api::BaseController
   end
 
   def set_quoted_status
-    return unless Mastodon::Feature.outgoing_quotes_enabled?
-
-    @quoted_status = Status.find(status_params[:quoted_status_id]) if status_params[:quoted_status_id].present?
+    @quoted_status = Status.find(status_params[:quoted_status_id])&.proper if status_params[:quoted_status_id].present?
     authorize(@quoted_status, :quote?) if @quoted_status.present?
   rescue ActiveRecord::RecordNotFound, Mastodon::NotPermittedError
     # TODO: distinguish between non-existing and non-quotable posts
@@ -203,23 +206,6 @@ class Api::V1::StatusesController < Api::BaseController
         options: [],
       ]
     )
-  end
-
-  def quote_approval_policy
-    # TODO: handle `nil` separately
-    return nil unless Mastodon::Feature.outgoing_quotes_enabled? && status_params[:quote_approval_policy].present?
-
-    case status_params[:quote_approval_policy]
-    when 'public'
-      Status::QUOTE_APPROVAL_POLICY_FLAGS[:public] << 16
-    when 'followers'
-      Status::QUOTE_APPROVAL_POLICY_FLAGS[:followers] << 16
-    when 'nobody'
-      0
-    else
-      # TODO: raise more useful message
-      raise ActiveRecord::RecordInvalid
-    end
   end
 
   def serializer_for_status

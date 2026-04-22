@@ -8,6 +8,8 @@ class CustomEmojiFilter
     shortcode
   ).freeze
 
+  IGNORED_PARAMS = %w(page).freeze
+
   attr_reader :params
 
   def initialize(params)
@@ -18,7 +20,7 @@ class CustomEmojiFilter
     scope = CustomEmoji.alphabetic
 
     params.each do |key, value|
-      next if key.to_s == 'page'
+      next if IGNORED_PARAMS.include?(key.to_s)
 
       scope.merge!(scope_for(key, value)) if value.present?
     end
@@ -35,7 +37,7 @@ class CustomEmojiFilter
     when 'remote'
       CustomEmoji.remote
     when 'by_domain'
-      CustomEmoji.where(domain: value.strip.downcase)
+      CustomEmoji.where(domain: value)
     when 'shortcode'
       CustomEmoji.search(value.strip)
     else

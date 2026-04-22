@@ -5,15 +5,15 @@
 # Table name: notifications
 #
 #  id              :bigint(8)        not null, primary key
-#  activity_id     :bigint(8)        not null
 #  activity_type   :string           not null
+#  filtered        :boolean          default(FALSE), not null
+#  group_key       :string
+#  type            :string
 #  created_at      :datetime         not null
 #  updated_at      :datetime         not null
 #  account_id      :bigint(8)        not null
+#  activity_id     :bigint(8)        not null
 #  from_account_id :bigint(8)        not null
-#  type            :string
-#  filtered        :boolean          default(FALSE), not null
-#  group_key       :string
 #
 
 class Notification < ApplicationRecord
@@ -33,7 +33,7 @@ class Notification < ApplicationRecord
     'Quote' => :quote,
   }.freeze
 
-  # Please update app/javascript/api_types/notification.ts if you change this
+  # Please update app/javascript/mastodon/api_types/notifications.ts if you change this
   PROPERTIES = {
     mention: {
       filterable: true,
@@ -77,6 +77,15 @@ class Notification < ApplicationRecord
     quote: {
       filterable: true,
     }.freeze,
+    quoted_update: {
+      filterable: false,
+    }.freeze,
+    added_to_collection: {
+      filterable: true,
+    }.freeze,
+    collection_update: {
+      filterable: false,
+    }.freeze,
   }.freeze
 
   TYPES = PROPERTIES.keys.freeze
@@ -89,6 +98,7 @@ class Notification < ApplicationRecord
     favourite: [favourite: :status],
     poll: [poll: :status],
     update: :status,
+    quoted_update: :status,
     'admin.report': [report: :target_account],
   }.freeze
 
@@ -108,6 +118,8 @@ class Notification < ApplicationRecord
     belongs_to :account_warning, inverse_of: false
     belongs_to :generated_annual_report, inverse_of: false
     belongs_to :quote, inverse_of: :notification
+    belongs_to :collection_item, inverse_of: false # TODO: have an inverse?
+    belongs_to :collection, inverse_of: false # TODO: have an inverse?
   end
 
   validates :type, inclusion: { in: TYPES }
@@ -120,7 +132,7 @@ class Notification < ApplicationRecord
 
   def target_status
     case type
-    when :status, :update
+    when :status, :update, :quoted_update
       status
     when :reblog
       status&.reblog
@@ -132,6 +144,15 @@ class Notification < ApplicationRecord
       quote&.status
     when :poll
       poll&.status
+    end
+  end
+
+  def target_collection
+    case type
+    when :added_to_collection
+      collection_item&.collection
+    when :collection_update
+      collection
     end
   end
 
@@ -172,7 +193,7 @@ class Notification < ApplicationRecord
         cached_status = cached_statuses_by_id[notification.target_status.id]
 
         case notification.type
-        when :status, :update
+        when :status, :update, :quoted_update
           notification.status = cached_status
         when :reblog
           notification.status.reblog = cached_status
@@ -202,8 +223,12 @@ class Notification < ApplicationRecord
     return unless new_record?
 
     case activity_type
-    when 'Status', 'Follow', 'Favourite', 'FollowRequest', 'Poll', 'Report', 'Quote'
+    when 'Status'
+      self.from_account_id = type == :quoted_update ? activity&.quote&.quoted_account_id : activity&.account_id
+    when 'Follow', 'Favourite', 'FollowRequest', 'Poll', 'Report', 'Quote', 'Collection'
       self.from_account_id = activity&.account_id
+    when 'CollectionItem'
+      self.from_account_id = activity&.collection&.account_id
     when 'Mention'
       self.from_account_id = activity&.status&.account_id
     when 'Account'

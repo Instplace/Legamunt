@@ -10,6 +10,7 @@ ko:
       inactive: 계정이 활성화되지 않았습니다.
       invalid: 입력한 정보 또는 사용한 보안 수단이 올바르지 않습니다.
       last_attempt: 한 번 더 실패할 경우, 계정이 잠기게 됩니다.
+      closed_registrations: 네트워크 정책에 의해 가입 시도가 차단되었습니다. 오류라고 생각된다면 %{email}에 문의해주세요.
       locked: 계정이 잠겼습니다.
       not_found_in_database: 입력한 정보 또는 사용한 보안 수단이 올바르지 않습니다.
       omniauth_user_creation_failure: 문제가 발생해 외부 소스에서 인증할 수 없었습니다.
@@ -21,7 +22,7 @@ ko:
       confirmation_instructions:
         action: 이메일 확인
         action_with_app: 확인하고 %{app}으로 돌아가기
-        explanation: 당신은 %{host}에서 이 이메일로 가입하셨습니다. 클릭만 하시면 계정이 활성화 됩니다. 만약 당신이 가입한 게 아니라면 이 메일을 무시해 주세요.
+        explanation: "%{host}에서 이 이메일로 계정을 만드셨습니다. 버튼을 클릭해서 가입 절차를 완료하세요. 본인이 아니라면 이 이메일을 무시해도 됩니다."
         explanation_when_pending: 당신은 %{host}에 가입 요청을 하셨습니다. 이 이메일이 확인 되면 우리가 가입 요청을 리뷰하고 승인할 수 있습니다. 그 전까지는 로그인을 할 수 없습니다. 당신의 가입 요청이 거부 될 경우 당신에 대한 정보는 모두 삭제 되며 따로 요청 할 필요는 없습니다. 만약 당신이 가입 요청을 한 게 아니라면 이 메일을 무시해 주세요.
         extra_html: <a href="%{terms_path}">서버의 규칙</a>과 <a href="%{policy_path}">이용 약관</a>도 확인해 주세요.
         subject: '레가문트: %{instance}에 대한 확인 메일'
@@ -109,7 +110,7 @@ ko:
       already_confirmed: 인증된 계정입니다. 계속하려면 로그인하세요.
       confirmation_period_expired: "%{period} 안에 인증해야 합니다. 다시 시도하세요."
       expired: 만료되었습니다. 다시 시도하세요.
-      not_found: 찾을 수 없습니다
+      not_found: 찾지 못했습니다
       not_locked: 잠기지 않았습니다
       not_saved:
         other: "%{count}개의 문제가 있어 %{resource} 리소스가 저장되지 않았습니다:"
