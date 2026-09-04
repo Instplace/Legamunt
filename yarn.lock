@@ -2411,10 +2411,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@formatjs/bigdecimal@npm:0.2.1":
-  version: 0.2.1
-  resolution: "@formatjs/bigdecimal@npm:0.2.1"
-  checksum: 10c0/04b72caf1608afe59f20313b73b80dba474b65485076c0f9a72b8145fcb0e04580a7a0592c2f88f739f4997b51326e2b9d6142e6c5b04c0c941d0294e2aa2f20
+"@formatjs/bigdecimal@npm:0.2.7":
+  version: 0.2.7
+  resolution: "@formatjs/bigdecimal@npm:0.2.7"
+  checksum: 10c0/9583a4d615553d1353284d0f66d30b6d7ab54b8d57c50f14d42db5fa48029b01c26ac7705b493c4bde716fcffbaee4d2f3cfcb6550d6c111e3a33bcc61cc719a
   languageName: node
   linkType: hard
 
@@ -2475,6 +2475,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@formatjs/fast-memoize@npm:3.1.7":
+  version: 3.1.7
+  resolution: "@formatjs/fast-memoize@npm:3.1.7"
+  checksum: 10c0/dee801f82eda1f6fdc166b0c907e8750c15e409e20b2006c215d9247fe0db720d84d53fcb2fb7559cec21a24932b69dda326c81ee2885aad2cde31bc25449fd0
+  languageName: node
+  linkType: hard
+
 "@formatjs/icu-messageformat-parser@npm:3.5.3":
   version: 3.5.3
   resolution: "@formatjs/icu-messageformat-parser@npm:3.5.3"
@@ -2510,6 +2517,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@formatjs/intl-localematcher@npm:0.8.13":
+  version: 0.8.13
+  resolution: "@formatjs/intl-localematcher@npm:0.8.13"
+  dependencies:
+    "@formatjs/fast-memoize": "npm:3.1.7"
+  checksum: 10c0/8b36937837751b71c4957cfbae6f515edc9faf2ae341de0529b444aa8e1cdee19f59dce1c7c8b30f315aff082fd97dc96f27ea4e2cbadafb3c1d34247244e664
+  languageName: node
+  linkType: hard
+
 "@formatjs/intl-localematcher@npm:0.8.2":
   version: 0.8.2
   resolution: "@formatjs/intl-localematcher@npm:0.8.2"
@@ -2519,22 +2535,13 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@formatjs/intl-localematcher@npm:0.8.3":
-  version: 0.8.3
-  resolution: "@formatjs/intl-localematcher@npm:0.8.3"
-  dependencies:
-    "@formatjs/fast-memoize": "npm:3.1.2"
-  checksum: 10c0/4693548ee9df74deb5f548635242ede0254507a531e04bb52d0983a653e7103bd4bfa1024e0b5b784fce1dadab57a31062bd7412b142f954c6614a7c9ee4cae7
-  languageName: node
-  linkType: hard
-
 "@formatjs/intl-pluralrules@npm:^6.0.0":
-  version: 6.3.2
-  resolution: "@formatjs/intl-pluralrules@npm:6.3.2"
+  version: 6.3.13
+  resolution: "@formatjs/intl-pluralrules@npm:6.3.13"
   dependencies:
-    "@formatjs/bigdecimal": "npm:0.2.1"
-    "@formatjs/intl-localematcher": "npm:0.8.3"
-  checksum: 10c0/7ff9a9a48efc970d6ebcb0902dc28fcf6577fd53f07c2b775ac918858a08d934317c654f6e481a978eeea2146a0e84ab7604f991d8bbdb147b42a004f582bec8
+    "@formatjs/bigdecimal": "npm:0.2.7"
+    "@formatjs/intl-localematcher": "npm:0.8.13"
+  checksum: 10c0/7002a52e3d0d1126ef2e1703c0078dde2a33b162170d880da6f1aeae3e559487ec832761c115b76df2cbf7a4d1b40e648f0154b762b4acb9a78315a2990b4ea9
   languageName: node
   linkType: hard
 
