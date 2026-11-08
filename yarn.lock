@@ -6046,12 +6046,12 @@ __metadata:
   linkType: hard
 
 "bufferutil@npm:^4.0.7":
-  version: 4.1.0
-  resolution: "bufferutil@npm:4.1.0"
+  version: 4.2.0
+  resolution: "bufferutil@npm:4.2.0"
   dependencies:
     node-gyp: "npm:latest"
     node-gyp-build: "npm:^4.3.0"
-  checksum: 10c0/12d63bbc80a3b6525bc62a28387fca0a5aed09e41b74375c500e60721b6a1ab2960b82e48f1773eddea2b14e490f129214b8b57bd6e1a5078b6235857d658508
+  checksum: 10c0/d55f42b4e7aa512546d4e79f07e9caf8783054761054ebbf0007de0a95d53dd5bc701d919daecda19fe3c759d6333a358416fc784590bc0f991a380a12d3f9a1
   languageName: node
   linkType: hard
 
