@@ -12709,14 +12709,14 @@ __metadata:
   linkType: hard
 
 "rollup-plugin-gzip@npm:^4.2.0":
-  version: 4.2.0
-  resolution: "rollup-plugin-gzip@npm:4.2.0"
+  version: 4.2.3
+  resolution: "rollup-plugin-gzip@npm:4.2.3"
   peerDependencies:
     rollup: ">=2.0.0"
   peerDependenciesMeta:
     rollup:
       optional: true
-  checksum: 10c0/05aecd5cb96f5b40ef128d87ea15d86c07e416a1fb98eb5712911254ce1a09ddf60c0128edb7fc8dc7478cbca1f94d04ab07cf4437947f5ce330ce627f80bada
+  checksum: 10c0/9269a821d9e610f9d189fd86e1da22abdd9a769fa13b9ae8c714303f13afd32b8a34d66e9a22c4372f0efd4bf0f478ed5f1988f71596a09fea392a7b8c32f5bf
   languageName: node
   linkType: hard
 
