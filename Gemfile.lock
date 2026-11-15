@@ -299,7 +299,7 @@ GEM
       rubocop (>= 1.0)
       sysexits (~> 1.1)
     hashdiff (1.2.1)
-    hashie (5.1.0)
+    hashie (5.2.0)
       logger
     hcaptcha (7.1.0)
       json
@@ -474,11 +474,11 @@ GEM
     nokogiri (1.19.2)
       mini_portile2 (~> 2.8.2)
       racc (~> 1.4)
-    omniauth (2.1.4)
-      hashie (>= 3.4.6)
+    omniauth (2.4.1)
+      hashie (>= 3.5.2)
       logger
-      rack (>= 2.2.3)
-      rack-protection
+      rack (>= 2.2.8)
+      rack-protection (>= 2.2.0)
     omniauth-cas (3.0.2)
       addressable (~> 2.8)
       nokogiri (~> 1.12)
@@ -631,7 +631,7 @@ GEM
       activesupport (>= 3.0.0)
     raabro (1.4.0)
     racc (1.8.1)
-    rack (3.2.6)
+    rack (3.2.8)
     rack-attack (6.8.0)
       rack (>= 1.0, < 4)
     rack-cors (3.0.0)
