@@ -169,15 +169,15 @@ GEM
     climate_control (1.2.0)
     cocoon (1.2.15)
     color_diff (0.2)
-    concurrent-ruby (1.3.6)
-    connection_pool (3.0.2)
+    concurrent-ruby (1.3.8)
+    connection_pool (3.0.3)
     cose (1.3.1)
       cbor (~> 0.5.9)
       openssl-signature_algorithm (~> 1.0)
     crack (1.0.1)
       bigdecimal
       rexml
-    crass (1.0.6)
+    crass (1.0.8)
     css_parser (2.0.0)
       addressable
     csv (3.3.5)
@@ -185,7 +185,7 @@ GEM
       activerecord (>= 5.a)
       database_cleaner-core (~> 2.0)
     database_cleaner-core (2.0.1)
-    date (3.5.1)
+    date (3.6.0)
     debug (1.11.1)
       irb (~> 1.10)
       reline (>= 0.3.8)
@@ -226,7 +226,7 @@ GEM
     elasticsearch-dsl (0.1.10)
     email_validator (2.2.4)
       activemodel
-    erb (6.0.3)
+    erb (6.0.7)
     erubi (1.13.1)
     et-orbi (1.4.0)
       tzinfo
@@ -283,11 +283,12 @@ GEM
       rake (~> 13.3)
     googleapis-common-protos-types (1.22.0)
       google-protobuf (~> 4.26)
-    haml (7.2.0)
+    haml (7.5.2)
+      prism (>= 1.1.0)
       temple (>= 0.8.2)
       thor
       tilt
-    haml-rails (3.0.0)
+    haml-rails (3.1.0)
       actionpack (>= 5.1)
       activesupport (>= 5.1)
       haml (>= 4.0.6)
@@ -324,7 +325,7 @@ GEM
       benchmark
       rack (>= 2.0)
       rainbow (>= 2.0.0)
-    i18n (1.14.8)
+    i18n (1.15.2)
       concurrent-ruby (~> 1.0)
     i18n-tasks (1.1.2)
       activesupport (>= 4.0.2)
@@ -342,8 +343,8 @@ GEM
     inline_svg (1.10.0)
       activesupport (>= 3.0)
       nokogiri (>= 1.6)
-    io-console (0.8.2)
-    irb (1.17.0)
+    io-console (0.9.5)
+    irb (1.19.0)
       pp (>= 0.6.0)
       prism (>= 1.3.0)
       rdoc (>= 4.0.0)
@@ -353,7 +354,7 @@ GEM
       azure-blob (~> 0.5.2)
       hashie (~> 5.0)
     jmespath (1.6.2)
-    json (2.19.3)
+    json (2.21.2)
     json-canonicalization (1.0.0)
     json-jwt (1.17.0)
       activesupport (>= 4.2)
@@ -430,9 +431,9 @@ GEM
       activesupport (>= 4)
       railties (>= 4)
       request_store (~> 1.0)
-    loofah (2.25.1)
+    loofah (2.25.3)
       crass (~> 1.0.2)
-      nokogiri (>= 1.12.0)
+      nokogiri (>= 1.19.5)
     mail (2.9.0)
       logger
       mini_mime (>= 0.1.1)
@@ -450,9 +451,9 @@ GEM
     mime-types-data (3.2026.0414)
     mini_mime (1.1.5)
     mini_portile2 (2.8.9)
-    minitest (6.0.4)
+    minitest (6.1.0)
       drb (~> 2.0)
-      prism (~> 1.5)
+      prism (>= 1.5, < 3)
     msgpack (1.8.0)
     multi_json (1.20.1)
     mutex_m (0.3.0)
@@ -471,7 +472,7 @@ GEM
     net-smtp (0.5.1)
       net-protocol
     nio4r (2.7.5)
-    nokogiri (1.19.2)
+    nokogiri (1.19.7)
       mini_portile2 (~> 2.8.2)
       racc (~> 1.4)
     omniauth (2.1.4)
@@ -603,7 +604,7 @@ GEM
       base64
       concurrent-ruby (>= 1.1.6)
       mime-types (>= 3.0)
-    pp (0.6.3)
+    pp (0.6.4)
       prettyprint
     premailer (1.29.0)
       addressable
@@ -613,7 +614,7 @@ GEM
       actionmailer (>= 3)
       net-smtp
       premailer (~> 1.7, >= 1.7.9)
-    prettyprint (0.2.0)
+    prettyprint (0.2.1)
     prism (1.9.0)
     prometheus_exporter (2.3.1)
       webrick
@@ -621,7 +622,7 @@ GEM
       actionpack (>= 7.0.0)
       activesupport (>= 7.0.0)
       rack
-    psych (5.3.1)
+    psych (5.5.0)
       date
       stringio
     public_suffix (7.0.5)
@@ -631,7 +632,7 @@ GEM
       activesupport (>= 3.0.0)
     raabro (1.4.0)
     racc (1.8.1)
-    rack (3.2.6)
+    rack (3.2.9)
     rack-attack (6.8.0)
       rack (>= 1.0, < 4)
     rack-cors (3.0.0)
@@ -653,7 +654,7 @@ GEM
     rack-session (2.1.2)
       base64 (>= 0.1.0)
       rack (>= 3.0.0)
-    rack-test (2.2.0)
+    rack-test (2.3.0)
       rack (>= 1.3)
     rackup (2.3.1)
       rack (>= 3)
@@ -675,8 +676,8 @@ GEM
       activesupport (>= 5.0.0)
       minitest
       nokogiri (>= 1.6)
-    rails-html-sanitizer (1.7.0)
-      loofah (~> 2.25)
+    rails-html-sanitizer (1.7.2)
+      loofah (~> 2.25, >= 2.25.3)
       nokogiri (>= 1.15.7, != 1.16.7, != 1.16.6, != 1.16.5, != 1.16.4, != 1.16.3, != 1.16.2, != 1.16.1, != 1.16.0.rc1, != 1.16.0)
     rails-i18n (8.1.0)
       i18n (>= 0.7, < 2)
@@ -691,7 +692,7 @@ GEM
       tsort (>= 0.2)
       zeitwerk (~> 2.6)
     rainbow (3.1.1)
-    rake (13.4.1)
+    rake (13.4.2)
     rdf (3.3.4)
       bcp47_spec (~> 0.2)
       bigdecimal (~> 3.1, >= 3.1.5)
@@ -713,7 +714,7 @@ GEM
     redis-client (0.28.0)
       connection_pool
     regexp_parser (2.12.0)
-    reline (0.6.3)
+    reline (0.7.0)
       io-console (~> 0.5)
     request_store (1.7.0)
       rack (>= 1.4)
@@ -860,14 +861,14 @@ GEM
       faraday (~> 2.0)
       faraday-follow_redirects
     sysexits (1.2.0)
-    temple (0.10.4)
+    temple (0.10.7)
     terminal-table (4.0.0)
       unicode-display_width (>= 1.1.1, < 4)
     terrapin (1.1.1)
       climate_control
     test-prof (1.6.1)
     thor (1.5.0)
-    tilt (2.7.0)
+    tilt (2.9.0)
     timeout (0.6.1)
     tpm-key_attestation (0.14.1)
       bindata (~> 2.4)
@@ -897,7 +898,7 @@ GEM
     unicode-display_width (3.2.0)
       unicode-emoji (~> 4.1)
     unicode-emoji (4.2.0)
-    uri (1.1.1)
+    uri (1.1.2)
     useragent (0.16.11)
     validate_url (1.0.15)
       activemodel (>= 3.0.0)
@@ -938,7 +939,7 @@ GEM
     xorcist (1.1.3)
     xpath (3.2.0)
       nokogiri (~> 1.8)
-    zeitwerk (2.7.5)
+    zeitwerk (2.8.3)
 
 PLATFORMS
   ruby
